@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*	==================================================
+	reset
+	================================================== */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*	==================================================
+	CSS
+	================================================== */
+
+/* box-sizing
+================================================== */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+/* body
+================================================== */
+body {
+	padding: px 0px;
+	color: #;
+	font-size: px;
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	line-height: 1.0em;
+	background: #ffffff;
+	text-align: center;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* a
+================================================== */
+a {
+	text-decoration: underline;
+	outline: none;
+	cursor: pointer;
+}
+a:link,
+a:visited {
+	color: #;
+}
+a:hover,  
+a:active,
+a:focus {
+	color: #;
+	text-decoration:none;
+}
+
+/* wrapper
+================================================== */
+div#wrapper {
+	position: relative;
+	width: px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+/* header
+================================================== */
+header {
+}
+nav#head-nav ul {
+
+}
+
+/* content
+================================================== */
+div#content-all {
+	overflow: hidden;
+}
+
+div#content-side {
+	float: left;
+	width: px;
+}
+
+div#content-main {
+	float: right;
+	width: px;
+}
+
+/* footer
+================================================== */
+footer {
+}
+nav#foot-nav ul {
+
+}
+
+
+
+
+
+
+/*	==================================================
+	Media Queries
+	================================================== */
+@media screen and (max-width: 767px) {
+
+
+
+
+
+
+}
