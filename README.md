@@ -1,7 +1,7 @@
 # インターネットクラブ
 
 ## 💻 Homepage
-https://mamipeko.github.io/wwwinternetclub/
+https://wwwinternet.club/
 
 ## 👕 SUZURI
 https://suzuri.jp/wwwinternetclub/
