@@ -51,7 +51,7 @@ box-sizing: border-box;
 body {
 width: 100%;
 color: #fff;
-font-size: 12px;
+font-size: 14px;
 text-align: center;
 word-break: break-all;
 background: #000;
@@ -115,11 +115,17 @@ header,
 min-width: 100vw;
 min-height: 100vh;
 }
+.youtube {
+min-width: 100vw;
+min-height: 80vh;
+}
 .about,
-.works,
 .member,
 .account {
 padding: 12% 0;
+}
+.works {
+padding: 12% 3%;
 }
 footer {
 padding-bottom: 12%;
@@ -130,14 +136,6 @@ background: #000;
 }
 .works {
 background: #01B7F0;
-}
-.gallery {
-padding: 0 0;
-}
-.youtube {
-background: #fff;
-min-width: 100vw;
-min-height: 80vh;
 }
 .member {
 background: #FF8AD8;
@@ -182,17 +180,32 @@ margin: auto;
 93% {opacity: 1;}
 }
 
-/* about
+/* works
 ================================================== */
-.about p {
-font-size: 150%;
+.works-list {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.works-list li {
+width: 32%;
+margin-right: 1%;
+margin-top: 1%;
+}
+.works-list li:nth-child(1),
+.works-list li:nth-child(2),
+.works-list li:nth-child(3) {
+margin-top: 0;
+}
+.works-list li:nth-child(3n) {
+	margin-right: 0;
+}
+.works-list li img {
+width: 100%;
 }
 
 /* youtube
 ================================================== */
-.youtube {
-
-}
 .youtube iframe {
 position: absolute;
 top: 0;
@@ -214,7 +227,7 @@ justify-content: center;
 margin-left: 8%;
 }
 .member-list img {
-width: 130px;
+width: 160px;
 border-radius: 50%;
 }
 
@@ -233,19 +246,19 @@ vertical-align: middle;
 }
 .account-suzuri i {
 color: #fff;
-font-size: 160%;
+font-size: 220%;
 }
 .account-twitter i {
 color: #1DA1F2;
-font-size: 200%;
+font-size: 300%;
 }
 .account-instagram i {
 color: #D100DC;
-font-size: 220%;
+font-size: 320%;
 }
 .account-youtube i {
 color: #FF0000;
-font-size: 220%;
+font-size: 320%;
 }
 
 /* footer
