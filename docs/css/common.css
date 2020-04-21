@@ -106,15 +106,23 @@ section,
 header,
 footer {
 position:relative;
-padding: 8% 0;
 font-family: "kinakomochi";
 line-height: 2.5;
 letter-spacing: 0.15em;
 }
-section,
-header {
-min-width:100vw;
-min-height:100vh;
+header,
+.gallery {
+min-width: 100vw;
+min-height: 100vh;
+}
+.about,
+.works,
+.member,
+.account {
+padding: 12% 0;
+}
+footer {
+padding-bottom: 12%;
 }
 .about {
 color: #00F900;
@@ -128,22 +136,19 @@ padding: 0 0;
 }
 .youtube {
 background: #fff;
+min-width: 100vw;
+min-height: 80vh;
 }
 .member {
 background: #FF8AD8;
 }
 .account {
-background: #C882FF;
+background: #000;
 }
 h2 {
 font-size: 350%;
-}
-.content {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translateY(-50%) translateX(-50%); 
--webkit-transform: translateY(-50%) translateX(-50%);
+padding-left: 0.5em;
+letter-spacing: -0.05em;
 }
 
 /* logo
@@ -204,10 +209,9 @@ color: #000;
 .member-list {
 display: flex;
 justify-content: center;
-margin-right: -5%;
 }
-.member-list div {
-margin-right: 5%;
+.member-list div:nth-child(2) {
+margin-left: 8%;
 }
 .member-list img {
 width: 130px;
@@ -228,8 +232,8 @@ margin-right: 0.2em;
 vertical-align: middle;
 }
 .account-suzuri i {
-color: #666;
-font-size: 170%;
+color: #fff;
+font-size: 160%;
 }
 .account-twitter i {
 color: #1DA1F2;
@@ -241,7 +245,7 @@ font-size: 220%;
 }
 .account-youtube i {
 color: #FF0000;
-font-size: 190%;
+font-size: 220%;
 }
 
 /* footer
