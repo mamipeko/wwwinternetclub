@@ -88,12 +88,16 @@ a:hover {opacity: 0.6;}
 /* font
 ================================================== */
 @font-face {
-font-family: "NuKinakoMochi-Reg";
-src:url('/font/NuKinakoMochi-Reg.eot');
-src:url('/font/NuKinakoMochi-Reg.eot?#iefix') format('embedded-opentype'),
-url('/font/NuKinakoMochi-Reg.woff2') format('woff2'),
-url('/font/NuKinakoMochi-Reg.ttf') format('truetype'),
-url('/font/NuKinakoMochi-Reg.svg#svgFontName') format('svg');
+font-family: 'kinakomochi';
+src: url('/font/kinakomochi.otf');
+src: url('/font/kinakomochi.otf') format('opentype'),
+url('/font/kinakomochi.eot?#iefix') format('embedded-opentype'),
+url('/font/kinakomochi.woff2') format('woff2'),
+url('/font/kinakomochi.woff') format('woff'),
+url('/font/kinakomochi.ttf') format('truetype'),
+url('/font/kinakomochi.svg') format('svg');
+font-weight: normal;
+font-style: normal;
 }
 
 /* section
@@ -103,7 +107,7 @@ header,
 footer {
 position:relative;
 padding: 8% 0;
-font-family: "NuKinakoMochi-Reg";
+font-family: "kinakomochi";
 line-height: 2.5;
 letter-spacing: 0.15em;
 }
