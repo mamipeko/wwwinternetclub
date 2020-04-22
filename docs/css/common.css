@@ -51,7 +51,7 @@ box-sizing: border-box;
 body {
 width: 100%;
 color: #fff;
-font-size: 14px;
+font-size: 15px;
 text-align: center;
 word-break: break-all;
 background: #000;
@@ -72,9 +72,7 @@ outline: none;
 cursor: pointer;
 }
 a:link,
-a:visited {
-color: #fff;
-}
+a:visited {color: #fff;}
 @media screen and (min-width: 768px) {
 :hover {
 -webkit-transition: all 0.3s ease;
@@ -88,79 +86,47 @@ a:hover {opacity: 0.6;}
 /* font
 ================================================== */
 @font-face {
-font-family: 'kinakomochi';
-src: url('/font/kinakomochi.otf');
-src: url('/font/kinakomochi.otf') format('opentype'),
-url('/font/kinakomochi.eot?#iefix') format('embedded-opentype'),
-url('/font/kinakomochi.woff2') format('woff2'),
-url('/font/kinakomochi.woff') format('woff'),
-url('/font/kinakomochi.ttf') format('truetype'),
-url('/font/kinakomochi.svg') format('svg');
+font-family: "kinakomochi";
+src: url("/fonts/kinakomochi.otf");
+src: url("/fonts/kinakomochi.otf") format("opentype"),
+url("/fonts/kinakomochi.eot?#iefix") format("embedded-opentype"),
+url("/fonts/kinakomochi.woff2") format("woff2"),
+url("/fonts/kinakomochi.woff") format("woff"),
+url("/fonts/kinakomochi.ttf") format("truetype"),
+url("/fonts/kinakomochi.svg") format("svg");
 font-weight: normal;
 font-style: normal;
 }
 
-/* section
+/* br
+================================================== */
+@media screen and (min-width: 768px) {.sp{display: none;}}
+@media screen and (max-width: 767px) {
+br.pc {content: "";}
+br.pc:after {margin-right: -.333em; content:"";}
+}
+
+/* common
 ================================================== */
 section,
 header,
 footer {
 position:relative;
 font-family: "kinakomochi";
-line-height: 2.5;
 letter-spacing: 0.15em;
 }
-header,
-.gallery {
-min-width: 100vw;
-min-height: 100vh;
-}
-.youtube {
-min-width: 100vw;
-min-height: 80vh;
-}
-.about,
-.member,
-.account {
-padding: 12% 0;
-}
-.works {
-padding: 12% 3%;
-}
-footer {
-padding-bottom: 12%;
-}
-.about {
-color: #00F900;
-background: #000;
-}
-.works {
-background: #01B7F0;
-}
-.member {
-background: #FF8AD8;
-}
-.account {
-background: #000;
-}
-h2 {
-font-size: 350%;
-padding-left: 0.5em;
-letter-spacing: -0.05em;
-}
 
-/* logo
+/* header
 ================================================== */
 .logo img {
-width: 80%;
-max-width: 900px;
 position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
+top: 50%;
+left: 50%;
+transform: translateY(-50%) translateX(-50%);
+-webkit-transform: translateY(-50%) translateX(-50%);
 }
+@media screen and (min-width: 768px) {.logo img {width: 80%; max-width: 900px;}}
+@media screen and (max-width: 767px) {.logo img {width: 100%;}}
 .logo-01 {animation: blink linear infinite 3s;}
 .logo-02 {animation: blink linear infinite 3.5s;}
 .logo-03 {animation: blink linear infinite 4s;}
@@ -179,30 +145,53 @@ margin: auto;
 92% {opacity: 0.4;}
 93% {opacity: 1;}
 }
+@media screen and (min-width: 768px) {
+	header {
+	min-height: 100vh;
+	background: transparent url("../img/works/photo-05.jpg") center center;
+	background-size: cover;
+	}
+}
+@media screen and (max-width: 767px) {
+	header {
+	background: transparent url("../img/works/photo-05.jpg") center center;
+	background-size: auto 100%;
+	}
+}
+
+/* about
+================================================== */
+.about {
+color: #00F900;
+line-height: 3.5;
+background: #000;
+}
+@media screen and (min-width: 768px) {.text {padding: 15% 0;}}
+@media screen and (max-width: 767px) {.text {padding: 25% 0; font-size: 80%;}}
 
 /* works
 ================================================== */
 .works-list {
 display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+overflow: scroll;
+scroll-snap-type: x mandatory;
 }
 .works-list li {
-width: 32%;
-margin-right: 1%;
-margin-top: 1%;
-}
-.works-list li:nth-child(1),
-.works-list li:nth-child(2),
-.works-list li:nth-child(3) {
-margin-top: 0;
-}
-.works-list li:nth-child(3n) {
-	margin-right: 0;
+scroll-snap-align: start;
+width: 65vw;
+height: 65vw;
+font-size: 0;
 }
 .works-list li img {
-width: 100%;
+height: 100%;
 }
+.works-list li:nth-child(1) {background-color: blue;}
+.works-list li:nth-child(2) {background-color: pink;}
+.works-list li:nth-child(3) {background-color: yellow;}
+.works-list li:nth-child(4) {background-color: red;}
+.works-list li:nth-child(5) {background-color: green;}
+.works-list li:nth-child(6) {background-color: gray;}
+@media screen and (max-width: 767px) {.works-list li {width: 150vw; height: 150vw;}}
 
 /* youtube
 ================================================== */
@@ -213,66 +202,99 @@ left: 0;
 width: 100%;
 height: 100%;
 }
+@media screen and (min-width: 768px) {.youtube {min-height: 95vh;}}
+@media screen and (max-width: 767px) {.youtube {min-height: 60vh;}}
 
-/* member
+/* members
 ================================================== */
-.member {
+.members {
 color: #000;
+line-height: 2.0;
+background: #76D6FF;
 }
-.member-list {
+.members-list {
 display: flex;
 justify-content: center;
+flex-wrap: nowrap;
 }
-.member-list div:nth-child(2) {
-margin-left: 8%;
+.members p {
+margin-top: 1%;
 }
-.member-list img {
-width: 160px;
-border-radius: 50%;
+@media screen and (min-width: 768px) {
+	.members-list {width: 70%;margin: 0 auto;}
+	.members-list img {width: 35%; border-radius: 50%;}
+}
+@media screen and (max-width: 767px) {
+	.members-list {width: 90%;margin: 0 auto;}
+	.members-list img {width: 70%; border-radius: 50%;}
 }
 
-/* account
+/* news
 ================================================== */
-.account-list {
-display: inline-block;
-text-align: left;
+h2 {
+font-size: 250%;
+margin-bottom: 5%;
 }
-.account-list li {
-margin-top: 1em;
+.news {
+color: #000;
+background: #FF8AD8;
 }
-.account-list i {
-margin-right: 0.2em;
-vertical-align: middle;
+.news dl {
+width: 90%;
+padding: 5%;
+margin: 0 auto;
+line-height: 2.0;
+background: #FFD4FF;
 }
-.account-suzuri i {
-color: #fff;
-font-size: 220%;
+.news dl dt {
+font-size: 85%;
+color: #666;
+padding-top: 5%;
 }
-.account-twitter i {
-color: #1DA1F2;
-font-size: 300%;
+.news dl dt:first-child {
+padding-top: 0;	
 }
-.account-instagram i {
-color: #D100DC;
-font-size: 320%;
+
+
+
+
+
+
+/* accounts
+================================================== */
+.mail {background: #F9E231;}
+.accounts-list {display: flex;}
+.accounts-list li {width: 25%;}
+@media screen and (min-width: 768px) {
+	.mail {padding: 6%;}
+	.mail img {width: 10%;}
+	.accounts-list li {padding: 6% 0;}
+	.accounts-list li img {
+	width: 35%;
+	margin: 0 auto;
+	}
 }
-.account-youtube i {
-color: #FF0000;
-font-size: 320%;
+@media screen and (max-width: 767px) {
+	.mail {padding: 3%;}
+	.mail img {width: 20%;}
+	.accounts-list li {padding: 3% 0;}
+	.accounts-list li img {
+	width: 70%;
+	margin: 0 auto;
+	}
 }
+.accounts-suzuri {background: #EDECED;}
+.accounts-twitter {background: #1DA1F2;}
+.accounts-instagram {
+background: -moz-linear-gradient(top right, #545ACE, #EE299B); 
+background: -webkit-linear-gradient(top right, #545ACE, #EE299B); 
+background: linear-gradient(to bottom left, #545ACE, #EE299B);
+}
+.accounts-youtube {background: #FF0000;}
 
 /* footer
 ================================================== */
-footer {
-color: #999;
-}
+footer {color: #999; font-size: 80%;}
+@media screen and (min-width: 768px) {footer {padding: 5%;}}
+@media screen and (max-width: 767px) {footer {padding: 10% 0;}}
 
-/* Media Queries
-================================================== */
-@media screen and (min-width: 768px) {
-.sp                                 {display: none;}
-}
-@media screen and (max-width: 767px) {
-br.pc                               {content: "";}
-br.pc:after                         {margin-right: -.333em; content:"";}
-}

@@ -23,17 +23,18 @@
 <link rel="apple-touch-icon" href="img/common/apple-touch-icon.png">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/glitch.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+<script src="js/common.js"></script>
 </head>
 
 <body>
-<header>
+<header class="cover">
 <div class="glitch">
-<div class="glitch__img glitch__img02"></div>
-<div class="glitch__img glitch__img02"></div>
-<div class="glitch__img glitch__img02"></div>
-<div class="glitch__img glitch__img02"></div>
-<div class="glitch__img glitch__img02"></div>
+<div class="glitch__img glitch__img01"></div>
+<div class="glitch__img glitch__img01"></div>
+<div class="glitch__img glitch__img01"></div>
+<div class="glitch__img glitch__img01"></div>
+<div class="glitch__img glitch__img01"></div>
 </div>
 <h1 class="logo">
 <span class="logo-01"><img src="img/logo/logo-01.png"></span>
@@ -49,8 +50,7 @@
 </h1>
 </header>
 
-<section class="about">
-<h2>ABOUT</h2>
+<section class="about text">
 <p>私たちは世界にたくさんある<br>
 インターネットクラブのひとつです<br>
 すべてのインターネットユーザのために<br>
@@ -60,18 +60,7 @@
 デザインを作っていきます</p>
 </section>
 
-<section class="gallery">
-<div class="glitch">
-<div class="glitch__img glitch__img01"></div>
-<div class="glitch__img glitch__img01"></div>
-<div class="glitch__img glitch__img01"></div>
-<div class="glitch__img glitch__img01"></div>
-<div class="glitch__img glitch__img01"></div>
-</div>
-</section>
-
 <section class="works">
-<h2>WORKS</h2>
 <ul class="works-list">
 <li><a href="#"><img src="img/works/img01.png"></a></li>
 <li><a href="#"><img src="img/works/img01.png"></a></li>
@@ -86,11 +75,10 @@
 <iframe src="https://www.youtube.com/embed/lfPRp1GVN_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
-<section class="member">
-<h2>MEMBER</h2>
-<div class="member-list">
+<section class="members text">
+<div class="members-list">
 <div>
-<a href="https://instagram.com/kamiko_/"><img src="img/profile/kamiko_.png"><br>
+<a href="https://instagram.com/kamiko_/"><img src="img/members/kamiko_.png"><br>
 @kamiko_</a>
 <p>
 グラフィックデザイナー<br>
@@ -100,7 +88,7 @@
 </p>
 </div>
 <div>
-<a href="https://twitter.com/mamipeko/"><img src="img/profile/mamipeko.png"><br>
+<a href="https://twitter.com/mamipeko/"><img src="img/members/mamipeko.png"><br>
 @mamipeko</a>
 <p>
 ウェブデザイナー<br>
@@ -112,17 +100,40 @@
 </div>
 </section>
 
-<section class="account">
-<ul class="account-list">
-<li class="account-suzuri"><a href="https://suzuri.jp/wwwinternetclub/"><i class="fas fa-tshirt"></i>SUZURI</a></li>
-<li class="account-twitter"><a href="https://twitter.com/wwwinternetclub/"><i class="fab fa-twitter-square"></i>Twitter</a></li>
-<li class="account-instagram"><a href="https://instagram.com/wwwinternetclub/"><i class="fab fa-instagram-square"></i>Instagram</a></li>
-<li class="account-youtube"><a href="https://www.youtube.com/channel/UCyTLqjMd_hS569XIWSBXeow"><i class="fab fa-youtube-square"></i>YouTube</a></li>
+<section class="gallery cover">
+<div class="glitch">
+<div class="glitch__img glitch__img02"></div>
+<div class="glitch__img glitch__img02"></div>
+<div class="glitch__img glitch__img02"></div>
+<div class="glitch__img glitch__img02"></div>
+<div class="glitch__img glitch__img02"></div>
+</div>
+</section>
+
+<section class="news text">
+<h2>NEWS</h2>
+<dl>
+<dt>2020-04-30</dt>
+<dd>公式ホームページを<br>オープンしました💻📱</dd>
+<dt>2020-03-14</dt>
+<dd>インターネットクラブ<br>はじめました🎉🎉🎉</dd>
+</dl>
+</section>
+
+<section class="accounts">
+<div class="mail">
+<p><a href="#"><img src="img/accounts/mail.svg"></a></p>
+</div>
+<ul class="accounts-list">
+<li class="accounts-suzuri"><a href="https://suzuri.jp/wwwinternetclub/" target="_blank"><img src="img/accounts/suzuri.svg"></li>
+<li class="accounts-twitter"><a href="https://twitter.com/wwwinternetclub/" target="_blank"><img src="img/accounts/twitter.svg"></a></li>
+<li class="accounts-instagram"><a href="https://instagram.com/wwwinternetclub/" target="_blank"><img src="img/accounts/instagram.svg"></a></li>
+<li class="accounts-youtube"><a href="https://www.youtube.com/channel/UCyTLqjMd_hS569XIWSBXeow" target="_blank"><img src="img/accounts/youtube.svg"></a></li>
 </ul>
 </section>
 
 <footer>
-<p>&copy;2020 INTERNET CLUB @wwwinternetclub</p>
+<p>&copy; 2020 INTERNET CLUB</p>
 </footer>
 
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
