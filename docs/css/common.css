@@ -185,12 +185,11 @@ font-size: 0;
 .works-list li img {
 height: 100%;
 }
-.works-list li:nth-child(1) {background-color: blue;}
-.works-list li:nth-child(2) {background-color: pink;}
-.works-list li:nth-child(3) {background-color: yellow;}
-.works-list li:nth-child(4) {background-color: red;}
-.works-list li:nth-child(5) {background-color: green;}
-.works-list li:nth-child(6) {background-color: gray;}
+.works-list li.t-shirt-404 {background: #00F0F0;}
+.works-list li.parker-hello-world {background: #00F900;}
+.works-list li.parker-internet-club {background: #FF2F92;}
+.works-list li.sweat-404 {background: #D783FF;}
+.works-list li.sticker {background: #FB2C2C;}
 @media screen and (max-width: 767px) {.works-list li {width: 150vw; height: 150vw;}}
 
 /* youtube
