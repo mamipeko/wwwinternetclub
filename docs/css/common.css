@@ -145,19 +145,6 @@ transform: translateY(-50%) translateX(-50%);
 92% {opacity: 0.4;}
 93% {opacity: 1;}
 }
-@media screen and (min-width: 768px) {
-	header {
-	min-height: 100vh;
-	background: transparent url("../img/works/photo-05.jpg") center center;
-	background-size: cover;
-	}
-}
-@media screen and (max-width: 767px) {
-	header {
-	background: transparent url("../img/works/photo-05.jpg") center center;
-	background-size: auto 100%;
-	}
-}
 
 /* about
 ================================================== */
