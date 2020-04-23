@@ -51,10 +51,13 @@ box-sizing: border-box;
 body {
 width: 100%;
 color: #fff;
-font-size: 15px;
+font-size: 16px;
 text-align: center;
 word-break: break-all;
 background: #000;
+}
+@media screen and (max-width: 767px) {
+body {font-size: 90%;}
 }
 
 /* selection
@@ -115,6 +118,16 @@ position:relative;
 font-family: "kinakomochi";
 letter-spacing: 0.15em;
 }
+@media screen and (min-width: 768px) {.about,.members,.news {padding: 200px 0;}}
+@media screen and (max-width: 767px) {.about,.members,.news {padding: 150px 0;}}
+h2 {
+font-size: 350%;
+padding: 3% 0;
+}
+.cover {
+height: calc( var(--vh) * 100 );
+}
+
 
 /* header
 ================================================== */
@@ -153,32 +166,28 @@ color: #00F900;
 line-height: 3.5;
 background: #000;
 }
-@media screen and (min-width: 768px) {.text {padding: 15% 0;}}
-@media screen and (max-width: 767px) {.text {padding: 25% 0; font-size: 80%;}}
 
-/* works
+/* goods
 ================================================== */
-.works-list {
+.goods-list {
 display: flex;
 overflow: scroll;
 scroll-snap-type: x mandatory;
 }
-.works-list li {
+.goods-list li {
 scroll-snap-align: start;
-width: 65vw;
-height: 65vw;
+width: 63vw;
+height: 63vw;
 font-size: 0;
 }
-.works-list li img {
+.goods-list li img {
 height: 100%;
 }
-.works-list li:nth-child(1) {background-color: blue;}
-.works-list li:nth-child(2) {background-color: pink;}
-.works-list li:nth-child(3) {background-color: yellow;}
-.works-list li:nth-child(4) {background-color: red;}
-.works-list li:nth-child(5) {background-color: green;}
-.works-list li:nth-child(6) {background-color: gray;}
-@media screen and (max-width: 767px) {.works-list li {width: 150vw; height: 150vw;}}
+.goods-list li.not-found {background: #00B7FF;}
+.goods-list li.logo-neon {background: #FF00CA;}
+.goods-list li.sticker {background: #FFFF00;}
+.goods-list li.hello-world {background: #00F900;}
+@media screen and (max-width: 767px) {.goods-list li {width: 140vw; height: 140vw;}}
 
 /* youtube
 ================================================== */
@@ -189,13 +198,15 @@ left: 0;
 width: 100%;
 height: 100%;
 }
-@media screen and (min-width: 768px) {.youtube {min-height: 95vh;}}
+@media screen and (min-width: 768px) {.youtube {min-height: 100vh;}}
 @media screen and (max-width: 767px) {.youtube {min-height: 60vh;}}
 
 /* members
 ================================================== */
 .members {
 color: #000;
+font-size: 90%;
+letter-spacing: 0.1em;
 line-height: 2.0;
 background: #76D6FF;
 }
@@ -218,10 +229,6 @@ margin-top: 1%;
 
 /* news
 ================================================== */
-h2 {
-font-size: 250%;
-margin-bottom: 5%;
-}
 .news {
 color: #000;
 background: #FF8AD8;
