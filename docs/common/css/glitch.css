@@ -38,7 +38,7 @@ http://www.codrops.com
 	height: calc(100% + var(--gap-vertical) * 2);
 }
 .glitch__img01 {
-	background: transparent url("../img/cover/photo-05.jpg") no-repeat 50% 0;
+	background: transparent url("/common/img/cover/photo-05.jpg") no-repeat 50% 0;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
@@ -46,7 +46,7 @@ http://www.codrops.com
 	min-height: 100vh;
 }
 .glitch__img02 {
-	background: transparent url("../img/cover/photo-01.jpg") no-repeat center top;
+	background: transparent url("/common/img/cover/photo-01.jpg") no-repeat center top;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
