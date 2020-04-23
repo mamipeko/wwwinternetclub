@@ -248,7 +248,7 @@ color: #666;
 padding-top: 5%;
 }
 .news dl dt:first-child {
-padding-top: 0;	
+padding-top: 0;
 }
 
 /* accounts
@@ -276,8 +276,8 @@ width: 100%;
 .accounts-suzuri {background: #EDECED;}
 .accounts-twitter {background: #1DA1F2;}
 .accounts-instagram {
-background: -moz-linear-gradient(top right, #545ACE, #EE299B); 
-background: -webkit-linear-gradient(top right, #545ACE, #EE299B); 
+background: -moz-linear-gradient(top right, #545ACE, #EE299B);
+background: -webkit-linear-gradient(top right, #545ACE, #EE299B);
 background: linear-gradient(to bottom left, #545ACE, #EE299B);
 }
 .accounts-youtube {background: #FF0000;}
@@ -288,4 +288,3 @@ background: linear-gradient(to bottom left, #545ACE, #EE299B);
 footer {color: #999; font-size: 80%;}
 @media screen and (min-width: 768px) {footer {padding: 5%;}}
 @media screen and (max-width: 767px) {footer {padding: 10% 0;}}
-
