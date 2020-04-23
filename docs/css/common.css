@@ -84,6 +84,8 @@ a:visited {color: #fff;}
 transition: all  0.3s ease;
 }
 a:hover {opacity: 0.6;}
+.accounts .accounts-main:hover,
+.accounts li:hover {opacity: 0.9;}
 }
 
 /* font
@@ -249,33 +251,27 @@ padding-top: 5%;
 padding-top: 0;	
 }
 
-
-
-
-
-
 /* accounts
 ================================================== */
-.mail {background: #F9E231;}
+.accounts-main {background: #F9E231;}
 .accounts-list {display: flex;}
 .accounts-list li {width: 25%;}
+.accounts-main span {
+width: 25%;
+margin: 0 auto;
+display: block;
+}
+.accounts-main img,
+.accounts-list li img {
+width: 100%;
+}
 @media screen and (min-width: 768px) {
-	.mail {padding: 6%;}
-	.mail img {width: 10%;}
-	.accounts-list li {padding: 6% 0;}
-	.accounts-list li img {
-	width: 35%;
-	margin: 0 auto;
-	}
+	.accounts-main img {padding: 26% 30%;}
+	.accounts-list li img {padding: 26% 30%;}
 }
 @media screen and (max-width: 767px) {
-	.mail {padding: 3%;}
-	.mail img {width: 20%;}
-	.accounts-list li {padding: 3% 0;}
-	.accounts-list li img {
-	width: 70%;
-	margin: 0 auto;
-	}
+	.accounts-main img {padding: 11%;}
+	.accounts-list li img {padding: 11% 15%;}
 }
 .accounts-suzuri {background: #EDECED;}
 .accounts-twitter {background: #1DA1F2;}
@@ -285,6 +281,7 @@ background: -webkit-linear-gradient(top right, #545ACE, #EE299B);
 background: linear-gradient(to bottom left, #545ACE, #EE299B);
 }
 .accounts-youtube {background: #FF0000;}
+.accounts-mail {background: #C0C0C0;}
 
 /* footer
 ================================================== */
