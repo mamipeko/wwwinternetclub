@@ -84,6 +84,8 @@ a:visited {color: #fff;}
 transition: all  0.3s ease;
 }
 a:hover {opacity: 0.6;}
+.accounts .mail:hover,
+.accounts li:hover {opacity: 0.9;}
 }
 
 /* font
@@ -249,32 +251,36 @@ padding-top: 5%;
 padding-top: 0;	
 }
 
-
-
-
-
-
 /* accounts
 ================================================== */
 .mail {background: #F9E231;}
 .accounts-list {display: flex;}
 .accounts-list li {width: 25%;}
+
+
+
 @media screen and (min-width: 768px) {
-	.mail {padding: 6%;}
-	.mail img {width: 10%;}
-	.accounts-list li {padding: 6% 0;}
-	.accounts-list li img {
-	width: 35%;
+	.mail span {
+	width: 20%;
 	margin: 0 auto;
+	display: block;
+	}
+	.mail img {
+	width: 100%;
+	margin: 0 auto;
+	padding: 25%;
+	}
+	.accounts-list li img {
+	width: 100%;
+	padding: 25% 30%;
 	}
 }
 @media screen and (max-width: 767px) {
 	.mail {padding: 3%;}
 	.mail img {width: 20%;}
-	.accounts-list li {padding: 3% 0;}
 	.accounts-list li img {
-	width: 70%;
-	margin: 0 auto;
+	width: 100%;
+	padding: 10% 15%;
 	}
 }
 .accounts-suzuri {background: #EDECED;}
