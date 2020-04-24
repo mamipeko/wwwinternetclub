@@ -47,7 +47,7 @@ http://www.codrops.com
     height: calc(var(--vh, 1vh) * 101);
 }
 .glitch__index-02 {
-	background: transparent url("/common/img/photo/index-01.jpg") no-repeat center top;
+	background: transparent url("/common/img/photo/index-02.jpg") no-repeat center top;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
