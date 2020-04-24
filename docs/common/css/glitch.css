@@ -73,6 +73,15 @@ http://www.codrops.com
     height: 101vh;
     height: calc(var(--vh, 1vh) * 101);
 }
+.glitch__hello-world {
+	background: transparent url("/common/img/photo/goods-hello-world.jpg") no-repeat center center;
+	background-color: var(--blend-color-1);
+	background-blend-mode: var(--blend-mode-1);
+	background-size: cover;
+	transform: translate3d(0,0,0);
+    height: 101vh;
+    height: calc(var(--vh, 1vh) * 101);
+}
 .glitch__img:nth-child(n+2) {
 	opacity: 0;
 }
