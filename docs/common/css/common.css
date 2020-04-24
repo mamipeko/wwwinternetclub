@@ -164,6 +164,13 @@ transform: translateY(-50%) translateX(-50%);
 color: #00F900;
 line-height: 3.5;
 }
+.button a {
+font-size: 80%;
+margin-top: 5%;
+padding: 0.5em 6em;
+display: inline-block;
+background: #444;
+}
 
 /* goods
 ================================================== */
