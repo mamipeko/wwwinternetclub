@@ -299,6 +299,8 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 }
+.pages .about p {margin-top: 5%;}
+.pages .about p:first-child {margin-top: 0;}
 .pages-goods-list li img {
 width: 100%;
 height: auto;
@@ -332,4 +334,15 @@ height: auto;
 .pages.logo-neon .order5,
 .pages.logo-neon .order7 {
 background: #FF00CA;
+}
+
+/* hello-world
+================================================== */
+.pages.hello-world .about {color: #00F900;}
+.pages.hello-world .pages-goods-list {background: #797979;}
+.pages.hello-world .order1,
+.pages.hello-world .order4,
+.pages.hello-world .order5,
+.pages.hello-world .order7 {
+background: #00F900;
 }
