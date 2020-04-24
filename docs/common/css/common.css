@@ -167,27 +167,29 @@ line-height: 3.5;
 
 /* goods
 ================================================== */
-.goods {
-background: #555;
-}
+.goods {background: #555;}
 .goods-list {
 display: flex;
-overflow: scroll;
-scroll-snap-type: x mandatory;
-}
-.goods-list li {
-scroll-snap-align: start;
-height: 84vh;
 font-size: 0;
-}
-.goods-list li img {
-height: 100%;
 }
 .goods-list li.not-found {background: #00B7FF;}
 .goods-list li.logo-neon {background: #FF00CA;}
-.goods-list li.sticker {background: #FFFF00;}
 .goods-list li.hello-world {background: #00F900;}
-@media screen and (max-width: 767px) {.goods-list li {height: 72vh;}}
+@media screen and (min-width: 768px) {
+.goods-list li {width: 33.3333%;}
+.goods-list li img {width: 100%;}
+}
+@media screen and (max-width: 767px) {
+	.goods-list {
+	overflow: scroll;
+	scroll-snap-type: x mandatory;
+	}
+	.goods-list li {
+	scroll-snap-align: start;
+	height: 72vh;
+	}
+	.goods-list li img {height: 100%;}
+}
 
 /* youtube
 ================================================== */
