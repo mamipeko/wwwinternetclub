@@ -55,6 +55,15 @@ http://www.codrops.com
     height: 101vh;
     height: calc(var(--vh, 1vh) * 101);
 }
+.glitch__about {
+	background: transparent url("/common/img/photo/about.jpg") no-repeat center top;
+	background-color: var(--blend-color-1);
+	background-blend-mode: var(--blend-mode-1);
+	background-size: cover;
+	transform: translate3d(0,0,0);
+    height: 101vh;
+    height: calc(var(--vh, 1vh) * 101);
+}
 .glitch__not-found {
 	background: transparent url("/common/img/photo/goods-not-found.jpg") no-repeat center center;
 	background-color: var(--blend-color-1);

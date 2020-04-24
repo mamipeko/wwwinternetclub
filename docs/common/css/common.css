@@ -117,8 +117,8 @@ position:relative;
 font-family: "kinakomochi";
 letter-spacing: 0.15em;
 }
-@media screen and (min-width: 768px) {.about,.members,.news dl {padding: 20vh 0;}}
-@media screen and (max-width: 767px) {.about,.members,.news dl {padding: 15vh 0;}}
+@media screen and (min-width: 768px) {.text,.members,.news dl {padding: 20vh 0;}}
+@media screen and (max-width: 767px) {.text,.members,.news dl {padding: 15vh 0;}}
 h2 {
 font-size: 250%;
 padding: 35px 0 30px 0;
@@ -158,9 +158,9 @@ transform: translateY(-50%) translateX(-50%);
 93% {opacity: 1;}
 }
 
-/* about
+/* text
 ================================================== */
-.about {
+.text {
 color: #00F900;
 line-height: 3.5;
 }
@@ -301,8 +301,8 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 }
-.pages .about p {margin-top: 5%;}
-.pages .about p:first-child {margin-top: 0;}
+.pages .text p {margin-top: 5%;}
+.pages .text p:first-child {margin-top: 0;}
 .pages-goods-list li img {
 width: 100%;
 height: auto;
@@ -325,7 +325,7 @@ height: auto;
 
 /* not-found
 ================================================== */
-.pages.not-found .about {color: #00B7FF;}
+.pages.not-found .text {color: #00B7FF;}
 .pages.not-found .pages-goods-list {background: #212121;}
 .pages.not-found .order1,
 .pages.not-found .order4,
@@ -334,7 +334,7 @@ height: auto;
 
 /* logo-neon
 ================================================== */
-.pages.logo-neon .about {color: #FF00CA;}
+.pages.logo-neon .text {color: #FF00CA;}
 .pages.logo-neon .pages-goods-list {background: #FFCDFF;}
 .pages.logo-neon .order1,
 .pages.logo-neon .order4,
@@ -343,7 +343,7 @@ height: auto;
 
 /* hello-world
 ================================================== */
-.pages.hello-world .about {color: #00F900;}
+.pages.hello-world .text {color: #00F900;}
 .pages.hello-world .pages-goods-list {background: #797979;}
 .pages.hello-world .order1,
 .pages.hello-world .order4 {background: #00F900;}
