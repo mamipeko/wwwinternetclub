@@ -314,8 +314,13 @@ height: auto;
 }
 @media screen and (max-width: 767px) {
 	.pages-goods-list {flex-direction: column;}
+	.order1 {order: 1;}
+	.order2 {order: 2;}
 	.order3 {order: 4;}
 	.order4 {order: 3;}
+	.order5 {order: 5;}
+	.order6 {order: 6;}
+	.order7 {order: 7;}
 }
 
 /* not-found
@@ -334,17 +339,11 @@ height: auto;
 .pages.logo-neon .order1,
 .pages.logo-neon .order4,
 .pages.logo-neon .order5,
-.pages.logo-neon .order7 {
-background: #FF00CA;
-}
+.pages.logo-neon .order7 {background: #FF00CA;}
 
 /* hello-world
 ================================================== */
 .pages.hello-world .about {color: #00F900;}
 .pages.hello-world .pages-goods-list {background: #797979;}
 .pages.hello-world .order1,
-.pages.hello-world .order4,
-.pages.hello-world .order5,
-.pages.hello-world .order7 {
-background: #00F900;
-}
+.pages.hello-world .order4 {background: #00F900;}
