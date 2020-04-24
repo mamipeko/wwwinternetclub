@@ -10,7 +10,7 @@ http://www.codrops.com
 	--gap-horizontal: 10px;
 	--gap-vertical: 5px;
 	--time-anim: 4s;
-	--delay-anim: 2s;
+	--delay-anim: 0.5s;
 	--blend-mode-1: none;
 	--blend-mode-2: none;
 	--blend-mode-3: none;
@@ -38,20 +38,31 @@ http://www.codrops.com
 	height: calc(100% + var(--gap-vertical) * 2);
 }
 .glitch__img01 {
-	background: transparent url("/common/img/cover/photo-05.jpg") no-repeat 50% 0;
+	background: transparent url("/common/img/photo/photo-01.jpg") no-repeat center center;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
 	transform: translate3d(0,0,0);
-	min-height: 100vh;
+    height: 101vh;
+    height: calc(var(--vh, 1vh) * 101);
 }
 .glitch__img02 {
-	background: transparent url("/common/img/cover/photo-01.jpg") no-repeat center top;
+	background: transparent url("/common/img/photo/photo-02.jpg") no-repeat center top;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
 	transform: translate3d(0,0,0);
-	min-height: 100vh;
+    height: 101vh;
+    height: calc(var(--vh, 1vh) * 101);
+}
+.glitch__img03 {
+	background: transparent url("/common/img/photo/photo-03.jpg") no-repeat center center;
+	background-color: var(--blend-color-1);
+	background-blend-mode: var(--blend-mode-1);
+	background-size: cover;
+	transform: translate3d(0,0,0);
+    height: 101vh;
+    height: calc(var(--vh, 1vh) * 101);
 }
 .glitch__img:nth-child(n+2) {
 	opacity: 0;
