@@ -223,16 +223,17 @@ display: flex;
 justify-content: center;
 flex-wrap: nowrap;
 }
-.members p {
-margin-top: 1%;
-}
+.members-list span {display: block;}
 @media screen and (min-width: 768px) {
 	.members-list {width: 70%;margin: 0 auto;}
-	.members-list img {width: 35%; border-radius: 50%;}
+	.members-list a:hover {display: block;}
+	.members-icon img {width: 35%; border-radius: 50%;}
+	.members-sns img {width: 10%;}
 }
 @media screen and (max-width: 767px) {
 	.members-list {width: 90%;margin: 0 auto;}
 	.members-list img {width: 70%; border-radius: 50%;}
+	.members-sns img {width: 25%;}
 }
 
 /* news
@@ -257,9 +258,8 @@ padding-top: 0;
 
 /* accounts
 ================================================== */
-.accounts-main {background: #F9E231;}
-.accounts-list {display: flex;}
-.accounts-list li {width: 25%;}
+.accounts-list {display: flex; justify-content: center;}
+.accounts-list li {width: 25%; margin: 0 auto;}
 .accounts-main span {
 width: 25%;
 margin: 0 auto;
@@ -270,12 +270,12 @@ display: block;
 width: 100%;
 }
 @media screen and (min-width: 768px) {
-	.accounts-main img {padding: 26% 30%;}
-	.accounts-list li img {padding: 26% 30%;}
+	.accounts-main img {padding: 28% 32%;}
+	.accounts-list li img {padding: 28% 32%;}
 }
 @media screen and (max-width: 767px) {
-	.accounts-main img {padding: 11%;}
-	.accounts-list li img {padding: 11% 15%;}
+	.accounts-main img {padding: 14% 17%;}
+	.accounts-list li img {padding: 14% 17%;}
 }
 .accounts-suzuri {background: #EDECED;}
 .accounts-twitter {background: #1DA1F2;}
