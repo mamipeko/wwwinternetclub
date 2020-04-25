@@ -23,3 +23,14 @@ preload('/common/img/logo/logo-01.png',
 		'/common/img/logo/logo-08.png',
 		'/common/img/logo/logo-09.png',
 		'/common/img/logo/logo.png');
+
+/*
+Licensed under the MIT license.
+http://opensource.org/licenses/mit-license.php
+Copyright © 2020 Michael
+https://codepen.io/michaelnarine/pen/RKpBLg
+================================================== */
+var pix = document.getElementsByClassName("pixel");
+for (var i = 0; i < pix.length; i++) {
+  pix[i].style.animationDelay = Math.ceil(Math.random()*5000)+"ms";
+}
