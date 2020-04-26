@@ -114,6 +114,18 @@ url("/common/fonts/pixelmplus.woff") format("woff");
 font-weight: normal;
 font-style: normal;
 }
+@font-face {
+font-family: "8bitmadness";
+src: url("/common/fonts/8bitmadness.ttf");
+src:
+url("/common/fonts/8bitmadness.ttf") format("truetype"),
+url("/common/fonts/8bitmadness.otf") format("opentype"),
+url("/common/fonts/8bitmadness.eot?#iefix") format("embedded-opentype"),
+url("/common/fonts/8bitmadness.woff2") format("woff2"),
+url("/common/fonts/8bitmadness.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
 
 /* pc sp
 ================================================== */
@@ -132,8 +144,11 @@ letter-spacing: 0.15em;
 @media screen and (min-width: 768px) {.text,.members,.news dl {padding: 20vh 0;}}
 @media screen and (max-width: 767px) {.text,.members,.news dl {padding: 15vh 0;}}
 h2 {
-font-size: 250%;
+font-family: "8bitmadness";
+font-size: 450%;
 padding: 35px 0 30px 0;
+line-height: 1.0;
+color: #fff;
 }
 .photo {
 height: 100vh;
