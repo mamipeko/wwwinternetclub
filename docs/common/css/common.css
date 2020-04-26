@@ -141,15 +141,17 @@ position:relative;
 font-family: "kinakomochi", "pixelmplus";
 letter-spacing: 0.15em;
 }
-@media screen and (min-width: 768px) {.text,.members,.news dl {padding: 20vh 0;}}
-@media screen and (max-width: 767px) {.text,.members,.news dl {padding: 15vh 0;}}
+@media screen and (min-width: 768px) {.text,.members,.news {padding: 20vh 0;}}
+@media screen and (max-width: 767px) {.text,.members,.news {padding: 15vh 0;}}
 h2 {
 font-family: "8bitmadness";
 font-size: 450%;
-padding: 35px 0 30px 0;
+padding: 4% 0;
 line-height: 1.0;
 color: #fff;
 }
+.about h2 {font-size: 300%;}
+.news h2 {color: #000;}
 .photo {
 height: 100vh;
 height: calc(var(--vh, 1vh) * 100);
@@ -268,7 +270,6 @@ background: #444;
 
 /* goods
 ================================================== */
-.goods {background: #555;}
 .goods-list {
 display: flex;
 font-size: 0;
@@ -297,17 +298,22 @@ font-size: 0;
 .youtube {
 background: #FF0000;
 }
+@media screen and (min-width: 768px) {.youtube {padding: 0 5% 5% 5%;}}
+@media screen and (max-width: 767px) {.youtube {padding: 0 5% 10% 5%;}}
 .youtube-wrapper {
 position: relative;
 padding-bottom: 56.25%;
-height: 0;
 }
 .youtube iframe {
 position: absolute;
 top: 0;
 right: 0;
+left: 0;
+bottom: 0;
 width: 100%;
 height: 100%;
+margin: auto;
+
 }
 
 /* members
@@ -317,7 +323,7 @@ color: #000;
 font-size: 90%;
 letter-spacing: 0.1em;
 line-height: 2.0;
-background: #76D6FF;
+background: #8783FF;
 }
 .members-list {
 display: flex;
@@ -326,9 +332,9 @@ flex-wrap: nowrap;
 }
 .members-list span {display: block;}
 .members-name {
-font-family: "pixelmplus";
-font-size: 130%;
-letter-spacing: 0.2em;
+font-family: "8bitmadness";
+font-size: 170%;
+letter-spacing: 0.1em;
 }
 @media screen and (min-width: 768px) {
 	.members-list {width: 70%;margin: 0 auto;}
@@ -346,17 +352,17 @@ letter-spacing: 0.2em;
 ================================================== */
 .news {
 color: #000;
-background: #FF8AD8;
+background: #FFF468;
 }
 .news dl {
 margin: 0 auto;
 line-height: 2.0;
-background: #FFD4FF;
 }
 .news dl dt {
-font-size: 85%;
+font-size: 140%;
 color: #666;
 padding-top: 5%;
+font-family: "8bitmadness";
 }
 .news dl dt:first-child {
 padding-top: 0;
@@ -395,7 +401,7 @@ background: linear-gradient(to bottom left, #545ACE, #EE299B);
 
 /* footer
 ================================================== */
-footer {color: #999; font-size: 80%;}
+footer {color: #999; font-size: 170%; font-family: "8bitmadness";}
 @media screen and (min-width: 768px) {footer {padding: 5%;}}
 @media screen and (max-width: 767px) {footer {padding: 10% 0;}}
 
