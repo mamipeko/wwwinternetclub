@@ -155,7 +155,8 @@ line-height: 0.8;
 color: #fff;
 }
 .news h2 {color: #000;}
-p:after {
+.text p:after,
+.news dl dd:after {
 content: "";
 padding: 0.2em 0.1em;
 vertical-align: middle;
