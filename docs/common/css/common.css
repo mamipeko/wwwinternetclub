@@ -161,7 +161,7 @@ vertical-align: middle;
 border-right: 0.4em solid;
 animation: blink-cursor 1s infinite;
 }
-/* .members p:after {margin-left: -0.6em;} */
+@media screen and (max-width: 767px) {.members.text p:after {margin-left: -0.5em;}}
 @keyframes blink-cursor {50% {opacity: 0;}}
 
 /* logo
