@@ -368,6 +368,21 @@ font-family: "8bitmadness";
 padding-top: 0;
 }
 
+/* share
+================================================== */
+.share {
+padding: 5vh 0 10vh 0;
+background: #55C7FF;
+}
+.share-list {
+display: flex;
+justify-content: center;
+flex-wrap: nowrap;
+}
+.share-list li:first-child {
+	margin-right: 20px;
+}
+
 /* accounts
 ================================================== */
 .accounts-list {display: flex; justify-content: center;}
