@@ -37,17 +37,8 @@ http://www.codrops.com
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
 }
-.glitch__index-01 {
-	background: transparent url("/common/img/photo/index-01.jpg") no-repeat center center;
-	background-color: var(--blend-color-1);
-	background-blend-mode: var(--blend-mode-1);
-	background-size: cover;
-	transform: translate3d(0,0,0);
-    height: 101vh;
-    height: calc(var(--vh, 1vh) * 101);
-}
-.glitch__index-02 {
-	background: transparent url("/common/img/photo/index-02.jpg") no-repeat center top;
+.glitch__index {
+	background: transparent url("/common/img/photo/index.jpg") no-repeat center top;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;

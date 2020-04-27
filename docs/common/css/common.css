@@ -150,44 +150,13 @@ padding: 4% 0;
 line-height: 1.0;
 color: #fff;
 }
-.about h2 {font-size: 300%;}
+.about h2 {font-size: 350%;}
 .news h2 {color: #000;}
 .photo {
 height: 100vh;
 height: calc(var(--vh, 1vh) * 100);
 overflow: hidden;
 }
-/* アニメGIF */
-.index-sample {
-background: transparent url("/common/img/photo/index-01.gif") no-repeat center center;
-background-size: cover;
-height: 100vh;
-height: calc(var(--vh, 1vh) * 100);
-}
-/* videoタグ */
-.video {
-width: 100%;
-height: 100vh;
-height: calc(var(--vh, 1vh) * 100);
-background: url(../img/kv-alternative.jpg) no-repeat center/cover;
-position: absolute;
-top: 0;
-left: 0;
-overflow: hidden;
-z-index: -1;
-}
-.video video {
-display: block;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
-}
-/* pixel */
 .pixel-wrapper {
 width: 100%;
 height: 100%;
