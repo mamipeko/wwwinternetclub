@@ -222,10 +222,13 @@ animation: blink-pixel 2s infinite;
 background: #5E5E5E;
 }
 @keyframes blink-pixel {50% {opacity: 0.5;}}
-.pixel-01 {background: #00B7FF;}
-.pixel-02 {background: #FFFF00;}
-.pixel-03 {background: #FF00CA;}
-.photo-small .pixel {background: #00F900;}
+.color-logo .color-logo-01 {background: #00B7FF;}
+.color-logo .color-logo-02 {background: #FFFF00;}
+.color-logo .color-logo-03 {background: #FF00CA;}
+.color-green .pixel {background: #00F900;}
+.color-yellow .pixel {background: #FFF468;}
+.color-red .pixel {background: #FF0000;}
+.color-purple .pixel {background: #8783FF;}
 @media screen and (min-width: 768px) {
 	.pixel-list {width: 200vh;}
 	.pixel {
