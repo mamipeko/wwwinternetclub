@@ -150,8 +150,17 @@ padding: 4% 0;
 line-height: 1.0;
 color: #fff;
 }
-.about h2 {font-size: 350%;}
+.about h2 {font-size: 380%;}
 .news h2 {color: #000;}
+p:after {
+	content: "";
+	padding: 0.2em;
+	vertical-align: middle;
+	border-right: 0.4em solid;
+	animation: blink-h2 1s infinite;
+}
+@keyframes blink-h2 {50% {opacity: 0;}}
+
 
 /* logo
 ================================================== */
