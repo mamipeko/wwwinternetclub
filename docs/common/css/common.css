@@ -152,49 +152,14 @@ color: #fff;
 }
 .about h2 {font-size: 350%;}
 .news h2 {color: #000;}
+
+/* logo
+================================================== */
 .photo {
 height: 100vh;
 height: calc(var(--vh, 1vh) * 100);
 overflow: hidden;
 }
-.pixel-wrapper {
-width: 100%;
-height: 100%;
-background: #000;;
-overflow: hidden;
-}
-.pixel-list {
-position: absolute;
-height: 100%;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-overflow: hidden;
-}
-.pixel {
-float: left;
-opacity: 0;
-animation: blink-pixel 2s infinite;
-background: #5E5E5E;
-}
-@keyframes blink-pixel {50% {opacity: 0.5;}}
-.pixel-01 {background: #00B7FF;}
-.pixel-02 {background: #FFFF00;}
-.pixel-03 {background: #FF00CA;}
-@media screen and (min-width: 768px) {.photo-small {height: 78vh; height: calc(var(--vh, 1vh) * 78);}}
-@media screen and (max-width: 767px) {.photo-small {height: 57vh; height: calc(var(--vh, 1vh) * 57);}}
-.photo-small .pixel {background: #00F900;}
-@media screen and (min-width: 768px) {
-	.pixel-list {width: 108%;}
-	.pixel {width: 12vw; padding-top: 20vh;}
-}
-@media screen and (max-width: 767px) {
-	.pixel-list {width: 100%;}
-	.pixel {width: 20vw; padding-top: 10vh;}
-}
-
-/* header
-================================================== */
 .logo img {
 position: absolute;
 top: 50%;
@@ -221,6 +186,52 @@ transform: translateY(-50%) translateX(-50%);
 83% {opacity: 1;}
 92% {opacity: 0.4;}
 93% {opacity: 1;}
+}
+
+/* pixel
+================================================== */
+.pixel-wrapper {
+width: 100%;
+height: 100%;
+background: #000;;
+overflow: hidden;
+}
+.pixel-list {
+position: absolute;
+height: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow: hidden;
+}
+.pixel {
+float: left;
+opacity: 0;
+animation: blink-pixel 2s infinite;
+background: #5E5E5E;
+}
+@keyframes blink-pixel {50% {opacity: 0.5;}}
+.pixel-01 {background: #00B7FF;}
+.pixel-02 {background: #FFFF00;}
+.pixel-03 {background: #FF00CA;}
+.photo-small .pixel {background: #00F900;}
+@media screen and (min-width: 768px) {
+	.pixel-list {width: 200vh;}
+	.pixel {
+		width: 20vh;
+		height: 20vh;
+		height: calc(var(--vh, 1vh) * 20);
+	}
+	.photo-small {height: 60vh; height: calc(var(--vh, 1vh) * 60);}
+}
+@media screen and (max-width: 767px) {
+	.pixel-list {width: 55vh;}
+	.pixel {
+		width: 11vh;
+		height: 12.6vh;
+		height: calc(var(--vh, 1vh) * 12.6);
+	}
+	.photo-small {height: 37.5vh; height: calc(var(--vh, 1vh) * 37.5);}
 }
 
 /* text
