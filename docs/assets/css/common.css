@@ -252,6 +252,7 @@ background: #5E5E5E;
 ================================================== */
 .about {
 color: #00F900;
+line-height: 3.5;
 }
 
 /* button
@@ -450,11 +451,7 @@ background: linear-gradient(to bottom left, #545ACE, #EE299B);
 
 /* text
 ================================================== */
-.text {
-line-height: 3.5;
-padding: 15vh 0 20vh 0;
-}
-
+.text {padding: 15vh 0 20vh 0;}
 @media screen and (min-width: 768px) {
 .text {
 background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
