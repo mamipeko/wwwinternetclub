@@ -183,7 +183,7 @@ transform: translateY(-50%) translateX(-50%);
 }
 @media screen and (min-width: 768px) {.logo img {width: 60%;}}
 @media screen and (max-width: 767px) {.logo img {width: 100%;}}
-@media screen and (max-width: 767px) {.pages .logo img {width: 70%;}}
+@media screen and (max-width: 767px) {.pages .logo img {width: 90%;}}
 .logo-01 {animation: blink-logo linear infinite 3s;}
 .logo-02 {animation: blink-logo linear infinite 3.5s;}
 .logo-03 {animation: blink-logo linear infinite 4s;}
@@ -240,6 +240,7 @@ background: #5E5E5E;
 		height: calc(var(--vh, 1vh) * 20);
 	}
 	.photo-small {height: 60vh; height: calc(var(--vh, 1vh) * 60);}
+	.photo-medium {height: 80vh; height: calc(var(--vh, 1vh) * 80);}
 }
 @media screen and (max-width: 767px) {
 	.pixel-list {width: 55vh;}
@@ -249,6 +250,7 @@ background: #5E5E5E;
 		height: calc(var(--vh, 1vh) * 12.6);
 	}
 	.photo-small {height: 37.5vh; height: calc(var(--vh, 1vh) * 37.5);}
+	.photo-medium {height: 50vh; height: calc(var(--vh, 1vh) * 50);}
 }
 
 /* about
