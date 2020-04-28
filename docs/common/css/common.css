@@ -254,12 +254,8 @@ background: #5E5E5E;
 color: #00F900;
 }
 
-/* text
+/* button
 ================================================== */
-.text {
-line-height: 3.5;
-padding: 15vh 0 20vh 0;
-}
 .button {
 display: block;
 margin: 0 auto;
@@ -451,6 +447,30 @@ background: linear-gradient(to bottom left, #545ACE, #EE299B);
 }
 .accounts-youtube {background: #FF0000;}
 .accounts-mail {background: #C0C0C0;}
+
+/* text
+================================================== */
+.text {
+line-height: 3.5;
+padding: 15vh 0 20vh 0;
+}
+
+@media screen and (min-width: 768px) {
+.text {
+background-image: url("/common/img/common/bg.svg"), url("/common/img/common/bg.svg");
+        background-position: left 10%, right 90%;
+        background-repeat: no-repeat, no-repeat;
+		background-size: 10% auto, 10% auto;
+}
+}
+@media screen and (max-width: 767px) {
+.text {
+background-image: url("/common/img/common/bg.svg"), url("/common/img/common/bg.svg");
+        background-position: left 5%, right 95%;
+        background-repeat: no-repeat, no-repeat;
+		background-size: 20% auto, 20% auto;
+}
+}
 
 /* footer
 ================================================== */
