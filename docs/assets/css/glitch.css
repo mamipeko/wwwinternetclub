@@ -38,7 +38,7 @@ http://www.codrops.com
 	height: calc(100% + var(--gap-vertical) * 2);
 }
 .glitch__index {
-	background: transparent url("/common/img/photo/index.jpg") no-repeat center top;
+	background: transparent url("/assets/img/photo/index.jpg") no-repeat center top;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
@@ -47,7 +47,7 @@ http://www.codrops.com
     height: calc(var(--vh, 1vh) * 101);
 }
 .glitch__about {
-	background: transparent url("/common/img/photo/about.jpg") no-repeat center top;
+	background: transparent url("/assets/img/photo/about.jpg") no-repeat center top;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
@@ -56,7 +56,7 @@ http://www.codrops.com
     height: calc(var(--vh, 1vh) * 101);
 }
 .glitch__not-found {
-	background: transparent url("/common/img/photo/goods-not-found.jpg") no-repeat center center;
+	background: transparent url("/assets/img/photo/goods-not-found.jpg") no-repeat center center;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
@@ -65,7 +65,7 @@ http://www.codrops.com
     height: calc(var(--vh, 1vh) * 101);
 }
 .glitch__logo-neon {
-	background: transparent url("/common/img/photo/goods-logo-neon.jpg") no-repeat center center;
+	background: transparent url("/assets/img/photo/goods-logo-neon.jpg") no-repeat center center;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
@@ -74,7 +74,7 @@ http://www.codrops.com
     height: calc(var(--vh, 1vh) * 101);
 }
 .glitch__hello-world {
-	background: transparent url("/common/img/photo/goods-hello-world.jpg") no-repeat center center;
+	background: transparent url("/assets/img/photo/goods-hello-world.jpg") no-repeat center center;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;

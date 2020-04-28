@@ -93,37 +93,37 @@ a:hover {opacity: 0.6;}
 ================================================== */
 @font-face {
 font-family: "kinakomochi";
-src: url("/common/fonts/kinakomochi.otf");
+src: url("/assets/fonts/kinakomochi.otf");
 src:
-url("/common/fonts/kinakomochi.otf") format("opentype"),
-url("/common/fonts/kinakomochi.ttf") format("truetype"),
-url("/common/fonts/kinakomochi.eot?#iefix") format("embedded-opentype"),
-url("/common/fonts/kinakomochi.woff2") format("woff2"),
-url("/common/fonts/kinakomochi.woff") format("woff");
+url("/assets/fonts/kinakomochi.otf") format("opentype"),
+url("/assets/fonts/kinakomochi.ttf") format("truetype"),
+url("/assets/fonts/kinakomochi.eot?#iefix") format("embedded-opentype"),
+url("/assets/fonts/kinakomochi.woff2") format("woff2"),
+url("/assets/fonts/kinakomochi.woff") format("woff");
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: "pixelmplus";
-src: url("/common/fonts/pixelmplus.ttf");
+src: url("/assets/fonts/pixelmplus.ttf");
 src:
-url("/common/fonts/pixelmplus.ttf") format("truetype"),
-url("/common/fonts/pixelmplus.otf") format("opentype"),
-url("/common/fonts/pixelmplus.eot?#iefix") format("embedded-opentype"),
-url("/common/fonts/pixelmplus.woff2") format("woff2"),
-url("/common/fonts/pixelmplus.woff") format("woff");
+url("/assets/fonts/pixelmplus.ttf") format("truetype"),
+url("/assets/fonts/pixelmplus.otf") format("opentype"),
+url("/assets/fonts/pixelmplus.eot?#iefix") format("embedded-opentype"),
+url("/assets/fonts/pixelmplus.woff2") format("woff2"),
+url("/assets/fonts/pixelmplus.woff") format("woff");
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: "8bitmadness";
-src: url("/common/fonts/8bitmadness.ttf");
+src: url("/assets/fonts/8bitmadness.ttf");
 src:
-url("/common/fonts/8bitmadness.ttf") format("truetype"),
-url("/common/fonts/8bitmadness.otf") format("opentype"),
-url("/common/fonts/8bitmadness.eot?#iefix") format("embedded-opentype"),
-url("/common/fonts/8bitmadness.woff2") format("woff2"),
-url("/common/fonts/8bitmadness.woff") format("woff");
+url("/assets/fonts/8bitmadness.ttf") format("truetype"),
+url("/assets/fonts/8bitmadness.otf") format("opentype"),
+url("/assets/fonts/8bitmadness.eot?#iefix") format("embedded-opentype"),
+url("/assets/fonts/8bitmadness.woff2") format("woff2"),
+url("/assets/fonts/8bitmadness.woff") format("woff");
 font-weight: normal;
 font-style: normal;
 }
@@ -457,7 +457,7 @@ padding: 15vh 0 20vh 0;
 
 @media screen and (min-width: 768px) {
 .text {
-background-image: url("/common/img/common/bg.svg"), url("/common/img/common/bg.svg");
+background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
         background-position: left 10%, right 90%;
         background-repeat: no-repeat, no-repeat;
 		background-size: 10% auto, 10% auto;
@@ -465,7 +465,7 @@ background-image: url("/common/img/common/bg.svg"), url("/common/img/common/bg.s
 }
 @media screen and (max-width: 767px) {
 .text {
-background-image: url("/common/img/common/bg.svg"), url("/common/img/common/bg.svg");
+background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
         background-position: left 5%, right 95%;
         background-repeat: no-repeat, no-repeat;
 		background-size: 20% auto, 20% auto;
