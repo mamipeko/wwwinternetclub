@@ -148,19 +148,23 @@ letter-spacing: 0.15em;
 h2 {
 font-family: "8bitmadness", "kinakomochi", "pixelmplus";
 font-size: 450%;
-margin-bottom: 5vh;
 padding-top: 5vh;
 line-height: 0.8;
 color: #fff;
 }
-.sub {
-font-size: 30%;
+.summary {
+font-size: 14px;
+color: #fff;
+line-height: 1.8;
+margin-top: 1vh;
+margin-bottom: 5vh;
 }
 .text h2 {padding-top: 0;}
 .balloon {font-size: 320%;}
-.balloon .speech:before {content:"\5C";}
-.balloon .speech:after {content:"\2f";}
-.news h2 {color: #000;}
+.balloon:before {content:"\5C";}
+.balloon:after {content:"\2f";}
+.news h2,
+.news .summary {color: #000;}
 @keyframes blink-cursor {50% {opacity: 0;}}
 .text p:after,
 .text dl dd:after {
@@ -425,7 +429,7 @@ vertical-align: middle;
 	.share {padding: 0 0 5vh 0;}
 	.share-list li {width: 125px;}
 }
-.contact p {
+.accounts-mail {
 margin: 0 auto;
 display: block;
 }
@@ -446,11 +450,11 @@ background: linear-gradient(to bottom left, #545ACE, #EE299B);
 .accounts-youtube {background: #FF0000;}
 @media screen and (min-width: 768px) {
 	.accounts-list li img {padding: 20% 32%;}
-	.contact p {width: 6.5%;}
+	.accounts-mail {width: 6.5%;}
 }
 @media screen and (max-width: 767px) {
 	.accounts-list li img {padding: 14% 17%;}
-	.contact p {width: 15%;}
+	.accounts-mail {width: 15%;}
 }
 
 /* text
