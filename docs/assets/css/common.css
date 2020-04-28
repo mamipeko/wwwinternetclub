@@ -146,17 +146,20 @@ font-family: "kinakomochi", "pixelmplus";
 letter-spacing: 0.15em;
 }
 h2 {
-font-family: "8bitmadness";
+font-family: "8bitmadness", "kinakomochi", "pixelmplus";
 font-size: 450%;
 margin-bottom: 5vh;
 padding-top: 5vh;
 line-height: 0.8;
 color: #fff;
 }
+.sub {
+font-size: 30%;
+}
 .text h2 {padding-top: 0;}
-.speak {font-size: 320%;}
-.speak:before {content:"\5C";}
-.speak:after {content:"\2f";}
+.balloon {font-size: 320%;}
+.balloon .speech:before {content:"\5C";}
+.balloon .speech:after {content:"\2f";}
 .news h2 {color: #000;}
 @keyframes blink-cursor {50% {opacity: 0;}}
 .text p:after,
@@ -391,11 +394,9 @@ font-family: "8bitmadness";
 padding-top: 0;
 }
 
-/* share
+/* address
 ================================================== */
-.share {
-background: #55C7FF;
-}
+.address {background: #55C7FF;}
 .share-list {
 display: flex;
 justify-content: center;
@@ -416,7 +417,7 @@ vertical-align: middle;
 }
 .share-list li:first-child {margin-right: 25px;}
 @media screen and (min-width: 768px) {
-	.share {padding: 5.5vh 0 10.5vh 0;}
+	.share {padding: 0vh 0 0vh 0;}
 	.share-list li {width: 140px;}
 	
 }
@@ -424,14 +425,16 @@ vertical-align: middle;
 	.share {padding: 0 0 5vh 0;}
 	.share-list li {width: 125px;}
 }
-
-/* address
-================================================== */
-.address {background: #55C7FF;}
-.contact p {margin: 0 auto; display: block;}
+.contact p {
+margin: 0 auto;
+display: block;
+}
 .contact img,
 .accounts-list li img {width: 100%;}
-.accounts-list {display: flex; justify-content: center;}
+.accounts-list {
+display: flex;
+justify-content: center;
+}
 .accounts-list li {width: 25%; margin: 0 auto;}
 .accounts-suzuri {background: #EDECED;}
 .accounts-twitter {background: #1DA1F2;}
@@ -441,14 +444,13 @@ background: -webkit-linear-gradient(top right, #545ACE, #EE299B);
 background: linear-gradient(to bottom left, #545ACE, #EE299B);
 }
 .accounts-youtube {background: #FF0000;}
-.contact h2 {margin-bottom: 1vh;}
 @media screen and (min-width: 768px) {
 	.accounts-list li img {padding: 20% 32%;}
-	.contact p {width: 10%;}
+	.contact p {width: 6.5%;}
 }
 @media screen and (max-width: 767px) {
 	.accounts-list li img {padding: 14% 17%;}
-	.contact p {width: 22%;}
+	.contact p {width: 15%;}
 }
 
 /* text
