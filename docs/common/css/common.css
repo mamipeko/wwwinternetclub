@@ -371,7 +371,6 @@ padding-top: 0;
 /* share
 ================================================== */
 .share {
-padding: 5vh 0 10vh 0;
 background: #55C7FF;
 }
 .share-list {
@@ -379,8 +378,28 @@ display: flex;
 justify-content: center;
 flex-wrap: nowrap;
 }
-.share-list li:first-child {
-	margin-right: 20px;
+.share-twitter a {background: #1DA1F2;}
+.share-facebook a {background: #1877F2;}
+.share-list li a {
+display: block;
+width: 100%;
+padding: 4px;
+border-radius: 5px;
+}
+.share-list img {
+width: 50px;
+vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+	.share {padding: 5.5vh 0 10.5vh 0;}
+	.share-list li {width: 140px;}
+	.share-list li:first-child {margin-right: 25px;}
+}
+@media screen and (max-width: 767px) {
+	.share {padding: 0 0 5vh 0;}
+	.share-list li {width: 135px;}
+	.share-list li:first-child {margin-right: 20px;}
 }
 
 /* accounts
