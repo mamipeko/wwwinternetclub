@@ -166,15 +166,14 @@ margin-bottom: 5vh;
 .news h2,
 .news .summary {color: #000;}
 @keyframes blink-cursor {50% {opacity: 0;}}
-.text p:after,
-.text dl dd:after {
+p:after,
+dl dd:after {
 content: "";
-padding: 0.2em 0.1em;
+padding: 0.2em;
 vertical-align: middle;
 border-right: 0.4em solid;
 animation: blink-cursor 1s infinite;
 }
-@media screen and (max-width: 767px) {.members.text p:after {margin-left: -0.5em;}}
 
 /* logo
 ================================================== */
@@ -465,17 +464,17 @@ padding: 20vh 0;
 @media screen and (min-width: 768px) {
 .text {
 background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
-        background-position: left 10%, right 90%;
-        background-repeat: no-repeat, no-repeat;
-		background-size: 10% auto, 10% auto;
+background-position: left 10%, right 90%;
+background-repeat: no-repeat, no-repeat;
+background-size: 10% auto, 10% auto;
 }
 }
 @media screen and (max-width: 767px) {
 .text {
 background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
-        background-position: left 5vh, right 95%;
-        background-repeat: no-repeat, no-repeat;
-		background-size: 20% auto, 20% auto;
+background-position: left 5vh, right 95%;
+background-repeat: no-repeat, no-repeat;
+background-size: 20% auto, 20% auto;
 }
 }
 
