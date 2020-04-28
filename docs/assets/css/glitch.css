@@ -64,8 +64,8 @@ http://www.codrops.com
     height: 101vh;
     height: calc(var(--vh, 1vh) * 101);
 }
-.glitch__logo-neon {
-	background: transparent url("/assets/img/photo/goods-logo-neon.jpg") no-repeat center center;
+.glitch__neon-logo {
+	background: transparent url("/assets/img/photo/goods-neon-logo.jpg") no-repeat center center;
 	background-color: var(--blend-color-1);
 	background-blend-mode: var(--blend-mode-1);
 	background-size: cover;
