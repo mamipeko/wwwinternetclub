@@ -95,9 +95,8 @@ a {
 text-decoration: none;
 outline: none;
 cursor: pointer;
+color: #fff;
 }
-a:link,
-a:visited {color: #fff;}
 @media screen and (min-width: 768px) {
 :hover {
 -moz-transition: all 0.5s;
@@ -169,7 +168,7 @@ letter-spacing: 0.15em;
 }
 h2 {
 font-family: "8bitmadness", "kinakomochi", "pixelmplus";
-font-size: 450%;
+font-size: 400%;
 padding-top: 5vh;
 line-height: 0.8;
 color: #fff;
@@ -197,6 +196,20 @@ border-right: 0.4em solid;
 animation: blink-cursor 1s infinite;
 }
 
+/* header
+================================================== */
+header {
+width: 100%;
+position: fixed;
+top: 5%;
+left: auto;
+right: auto;
+margin: 0 auto;
+z-index: 100;
+}
+@media screen and (min-width: 768px) {header img {width: 6%;}}
+@media screen and (max-width: 767px) {header img {width: 15%;}}
+
 /* logo
 ================================================== */
 .photo {
@@ -212,7 +225,7 @@ transform: translateY(-50%) translateX(-50%);
 -webkit-transform: translateY(-50%) translateX(-50%);
 }
 @media screen and (min-width: 768px) {
-	.logo img {width: 60%;}
+	.logo img {width: 50%;}
 	.logo.small img {width: 20%;}
 }
 @media screen and (max-width: 767px) {
@@ -282,7 +295,7 @@ background: #797979;
 		height: calc(var(--vh, 1vh) * 20);
 	}
 	.photo-small {height: 60vh; height: calc(var(--vh, 1vh) * 60);}
-	.photo-medium {height: 80vh; height: calc(var(--vh, 1vh) * 80);}
+	.photo-medium {height: 100vh; height: calc(var(--vh, 1vh) * 100);}
 }
 @media screen and (max-width: 767px) {
 	.pixel-list {width: 55vh;}
@@ -292,7 +305,7 @@ background: #797979;
 		height: calc(var(--vh, 1vh) * 12.6);
 	}
 	.photo-small {height: 37.5vh; height: calc(var(--vh, 1vh) * 37.5);}
-	.photo-medium {height: 50vh; height: calc(var(--vh, 1vh) * 50);}
+	.photo-medium {height: 75vh; height: calc(var(--vh, 1vh) * 75);}
 }
 
 /* about
