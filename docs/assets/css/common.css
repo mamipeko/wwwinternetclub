@@ -61,12 +61,12 @@ background: #000;
 /* selection
 ================================================== */
 @media screen and (min-width: 768px) {
-::selection		   					{background: #ccc;}
-::-moz-selection    				{background:#ccc;}
-header ::selection					{background: transparent!important;}
-header ::-moz-selection 			{background: transparent!important;}
+::selection		   					{background: transparent;}
+::-moz-selection    				{background: transparent;}
 .about ::selection					{background: #00C801;}
 .about ::-moz-selection 			{background: #00C801;}
+.goods ::selection					{background: #ccc;}
+.goods ::-moz-selection 			{background: #ccc;}
 .pages-not-found ::selection		{background: #0086BA;}
 .pages-not-found ::-moz-selection  	{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
@@ -83,8 +83,6 @@ header ::-moz-selection 			{background: transparent!important;}
 .news ::-moz-selection 				{background: #EFE460;}
 .address ::selection				{background: #55C7FF;}
 .address ::-moz-selection			{background: #55C7FF;}
-footer ::selection					{background: transparent!important;}
-footer ::-moz-selection 			{background: transparent!important;}
 }
 
 /* a
