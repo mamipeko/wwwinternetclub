@@ -189,9 +189,15 @@ left: 50%;
 transform: translateY(-50%) translateX(-50%);
 -webkit-transform: translateY(-50%) translateX(-50%);
 }
-@media screen and (min-width: 768px) {.logo img {width: 60%;}}
-@media screen and (max-width: 767px) {.logo img {width: 100%;}}
-@media screen and (max-width: 767px) {.pages .logo img {width: 90%;}}
+@media screen and (min-width: 768px) {
+	.logo img {width: 60%;}
+	.logo.small img {width: 20%;}
+}
+@media screen and (max-width: 767px) {
+	.logo img {width: 100%;}
+	.pages .logo img {width: 90%;}
+	.pages .logo.small img {width: 30%;}
+}
 .logo-01 {animation: blink-logo linear infinite 3s;}
 .logo-02 {animation: blink-logo linear infinite 3.5s;}
 .logo-03 {animation: blink-logo linear infinite 4s;}
@@ -544,3 +550,13 @@ height: auto;
 .pages-hello-world .pages-goods-list {background: #797979;}
 .pages-hello-world .order1,
 .pages-hello-world .order4 {background: #00F900;}
+
+/* pages-mail
+================================================== */
+.pages-mail .text {color: #fff;}
+.mail-address {
+	letter-spacing: -0.1em;
+	color: #fff;
+	padding: 10px;
+	background: #FF0000;
+}
