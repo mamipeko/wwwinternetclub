@@ -523,7 +523,9 @@ height: auto;
 	.order4 {order: 3;}
 	.order5 {order: 5;}
 	.order6 {order: 6;}
-	.order7 {order: 7;}
+	.order7 {order: 8;}
+	.order8 {order: 7;}
+	.order9 {order: 9;}
 }
 
 /* pages-not-found
@@ -533,7 +535,8 @@ height: auto;
 .pages-not-found .order1,
 .pages-not-found .order4,
 .pages-not-found .order5,
-.pages-not-found .order7 {background: #00B7FF;}
+.pages-not-found .order8,
+.pages-not-found .order9 {background: #00B7FF;}
 
 /* neon-logo
 ================================================== */
