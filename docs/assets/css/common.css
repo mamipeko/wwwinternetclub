@@ -56,9 +56,7 @@ text-align: center;
 word-break: break-all;
 background: #000;
 }
-@media screen and (max-width: 767px) {
-body {font-size: 90%;}
-}
+@media screen and (max-width: 767px) {body {font-size: 90%;}}
 
 /* selection
 ================================================== */
@@ -105,9 +103,9 @@ color: #fff;
 -ms-transition: all 0.5s;
 transition: all 0.5s;
 }
-a:hover {opacity: 0.6;}
+a:hover 			{opacity: 0.6;}
 .contact:hover,
-.accounts li:hover {opacity: 0.9;}
+.accounts li:hover 	{opacity: 0.9;}
 }
 
 /* font
@@ -156,9 +154,7 @@ font-style: normal;
 
 /* common
 ================================================== */
-.wrapper {
-overflow: hidden;
-}
+.wrapper {overflow: hidden;}
 section,
 header,
 footer {
@@ -180,12 +176,12 @@ line-height: 1.8;
 margin-top: 1vh;
 margin-bottom: 5vh;
 }
-.text h2 {padding-top: 0;}
-.balloon {font-size: 320%;}
+.text h2 		{padding-top: 0;}
+.balloon 		{font-size: 320%;}
 .balloon:before {content:"\5C";}
-.balloon:after {content:"\2f";}
+.balloon:after 	{content:"\2f";}
 .news h2,
-.news .summary {color: #000;}
+.news .summary 	{color: #000;}
 @keyframes blink-cursor {50% {opacity: 0;}}
 p:after,
 dl dd:after {
@@ -271,22 +267,22 @@ overflow: hidden;
 .pixel {
 float: left;
 opacity: 0;
-animation: blink-pixel 2s infinite;
-background: #797979;
+background: #424242;
 }
 @keyframes blink-pixel {50% {opacity: 0.5;}}
-.color-blue,.color-blue .pixel {background: #00B7FF;}
-.color-magenta,.color-magenta .pixel {background: #FF00CA;}
-.color-yellow,.color-yellow .pixel {background: #FFFF00;}
-.color-green,.color-green .pixel {background: #00F900;}
-.color-red,.color-red .pixel {background: #FF0000;}
-.color-purple,.color-purple .pixel {background: #8783FF;}
-.color-blue .pixel-wrapper {background: #002332;}
-.color-magenta .pixel-wrapper {background: #22001B;}
-.color-yellow .pixel-wrapper {background: #AFAF00;}
-.color-green .pixel-wrapper {background: #002F00;}
-.color-red .pixel-wrapper {background: #6A0000;}
-.color-purple .pixel-wrapper {background: #232243;}
+.pixel-animation 						{animation: blink-pixel 5s infinite;}
+.color-blue,.color-blue .pixel 			{background: #00B7FF;}
+.color-magenta,.color-magenta .pixel 	{background: #FF00CA;}
+.color-yellow,.color-yellow .pixel 		{background: #FFF468;}
+.color-green,.color-green .pixel 		{background: #00F900;}
+.color-red,.color-red .pixel 			{background: #FF0000;}
+.color-purple,.color-purple .pixel 		{background: #8783FF;}
+.color-blue .pixel-wrapper 				{background: #002332;}
+.color-magenta .pixel-wrapper 			{background: #22001B;}
+.color-yellow .pixel-wrapper 			{background: #757602;}
+.color-green .pixel-wrapper 			{background: #002F00;}
+.color-red .pixel-wrapper 				{background: #6A0000;}
+.color-purple .pixel-wrapper 			{background: #232243;}
 @media screen and (min-width: 768px) {
 	.pixel-list {width: 200vh;}
 	.pixel {
