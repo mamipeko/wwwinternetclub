@@ -63,10 +63,10 @@ background: #000;
 @media screen and (min-width: 768px) {
 ::selection		   					{background: transparent;}
 ::-moz-selection    				{background: transparent;}
+header ::selection		   			{background: transparent!important;}
+header ::-moz-selection    			{background: transparent!important;}
 .about ::selection					{background: #00C801;}
 .about ::-moz-selection 			{background: #00C801;}
-.goods ::selection					{background: #ccc;}
-.goods ::-moz-selection 			{background: #ccc;}
 .pages-not-found ::selection		{background: #0086BA;}
 .pages-not-found ::-moz-selection  	{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
@@ -75,6 +75,8 @@ background: #000;
 .pages-neon-logo ::-moz-selection 	{background: #B2008D;}
 .pages-mail ::selection				{background: #BE0000;}
 .pages-mail ::-moz-selection 		{background: #BE0000;}
+.goods ::selection					{background: #ccc;}
+.goods ::-moz-selection 			{background: #ccc;}
 .youtube ::selection				{background: #BE0000;}
 .youtube ::-moz-selection 			{background: #BE0000;}
 .members ::selection				{background: #9598FF;}
@@ -83,6 +85,8 @@ background: #000;
 .news ::-moz-selection 				{background: #EFE460;}
 .address ::selection				{background: #55C7FF;}
 .address ::-moz-selection			{background: #55C7FF;}
+footer ::selection		   			{background: transparent!important;}
+footer ::-moz-selection    			{background: transparent!important;}
 }
 
 /* a
