@@ -189,7 +189,7 @@ letter-spacing: 0.15em;
 @keyframes title-animation-color {
 76% {text-shadow: 0 0 0 transparent;}
 77% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
-78% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.1);}
+78% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.08);}
 79% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
 83% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
 84% {text-shadow: 0 0 0 transparent;}
