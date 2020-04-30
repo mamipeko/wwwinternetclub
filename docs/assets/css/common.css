@@ -164,7 +164,7 @@ position:relative;
 font-family: "kinakomochi", "pixelmplus";
 letter-spacing: 0.15em;
 }
-h2 {
+.title {
 font-family: "8bitmadness", "kinakomochi", "pixelmplus";
 font-size: 400%;
 padding-top: 5vh;
@@ -178,11 +178,11 @@ line-height: 1.8;
 margin-top: 1vh;
 margin-bottom: 5vh;
 }
-.text h2 		{padding-top: 0;}
+.text .title 		{padding-top: 0;}
 .balloon 		{font-size: 320%;}
 .balloon:before {content:"\5C";}
 .balloon:after 	{content:"\2f";}
-.news h2,
+.news .title,
 .news .summary 	{color: #000;}
 @keyframes blink-cursor {50% {opacity: 0;}}
 p:after,
@@ -216,7 +216,8 @@ height: 100vh;
 height: calc(var(--vh, 1vh) * 100);
 overflow: hidden;
 }
-.logo img {
+.logo img,
+.logo .logo-title {
 position: absolute;
 top: 50%;
 left: 50%;
