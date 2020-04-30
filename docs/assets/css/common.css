@@ -62,21 +62,35 @@ background: #000;
 /* cursor
 ================================================== */
 @media screen and (min-width: 768px) {
+	@keyframes cursor-animation {
+	0%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+	10%{ border-radius: 53% 47% 33% 67% / 60% 30% 70% 40%; }
+	20%{ border-radius: 71% 29% 38% 62% / 72% 48% 52% 28%; transform: scale(2.0) }
+	30%{ border-radius: 41% 59% 45% 55% / 33% 56% 44% 67%; }
+	40%{ border-radius: 55% 45% 67% 33% / 77% 48% 52% 23%; }
+	50%{ border-radius: 44% 56% 22% 78% / 31% 74% 26% 69%; }
+	60%{ border-radius: 46% 54% 48% 52% / 61% 59% 41% 39%; transform: scale(0.5)}
+	70%{ border-radius: 44% 56% 60% 40% / 63% 36% 64% 37%; }
+	80%{ border-radius: 20% 80% 45% 55% / 31% 79% 21% 69%; }
+	90%{ border-radius: 66% 34% 57% 43% / 49% 51% 49% 51%; }
+	100%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+	}
 	.cursor {
 	pointer-events: none;
 	touch-action: none;
 	position: fixed;
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 	display: block;
-	left: -15px;
-	top: -15px;
+	left: -20px;
+	top: -20px;
 	mix-blend-mode: difference;
 	z-index: 1;
 	}
 	.cursor__inner {
 	background: #fff;
 	border-radius: 50%;
+	animation: cursor-animation 5s linear infinite;
 	}
 }
 
