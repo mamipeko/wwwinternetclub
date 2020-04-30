@@ -173,75 +173,41 @@ font-weight: normal;
 font-style: normal;
 }
 
-/* pc sp
-================================================== */
-@media screen and (min-width: 768px) {.sp {display: none;}}
-@media screen and (max-width: 767px) {.pc {display: none;}}
-
 /* common
 ================================================== */
 .wrapper {overflow: hidden;}
 section,
 header,
 footer {
-position:relative;
+position: relative;
 font-family: "kinakomochi", "pixelmplus";
 letter-spacing: 0.15em;
 }
 
 /* title
 ================================================== */
-@keyframes title-animation-color01 {
-0%  {color: #fff;}
-15% {text-shadow: 0.05em 0 #FF2600, -0.05em 0.05em #00FDFF;}
-20% {text-shadow: 0 0 0 transparent;}
-26% {text-shadow: -0.05em 0 #FF2600, 0.05em 0 #00FDFF;}
-30% {text-shadow: 0 0 0 transparent;}
-35% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-50% {text-shadow: 0 0 0 transparent;}
-100% {text-shadow: 0 0 0 transparent;}
-}
-@keyframes title-animation-color02 {
-0%  {color: #fff;}
-15% {text-shadow: 0.05em 0 #00FDFF, -0.05em 0.05em #fff;}
-20% {text-shadow: 0 0 0 transparent;}
-26% {text-shadow: -0.05em 0 #00FDFF, 0.05em 0 #fff;}
-30% {text-shadow: 0 0 0 transparent;}
-35% {text-shadow: -0.1em 0 #00FDFF, 0.1em 0 #fff;}
-50% {text-shadow: 0 0 0 transparent;}
-100% {text-shadow: 0 0 0 transparent;}
-}
-@keyframes title-animation-color03 {
-0%  {color: #fff;}
-15% {text-shadow: 0.05em 0 #00FDFF, -0.05em 0.05em #FFFB00;}
-20% {text-shadow: 0 0 0 transparent;}
-26% {text-shadow: -0.05em 0 #00FDFF, 0.05em 0 #FFFB00;}
-30% {text-shadow: 0 0 0 transparent;}
-35% {text-shadow: -0.1em 0 #00FDFF, 0.1em 0 #FFFB00;}
-50% {text-shadow: 0 0 0 transparent;}
-100% {text-shadow: 0 0 0 transparent;}
-}
-@keyframes title-animation-color04 {
-0%  {color: #000;}
-15% {text-shadow: 0.05em 0 #00FDFF, -0.05em 0.05em #FF2600;}
-20% {text-shadow: 0 0 0 transparent;}
-26% {text-shadow: -0.05em 0 #00FDFF, 0.05em 0 #FF2600;}
-30% {text-shadow: 0 0 0 transparent;}
-35% {text-shadow: -0.1em 0 #00FDFF, 0.1em 0 #FF2600;}
-50% {text-shadow: 0 0 0 transparent;}
-100% {text-shadow: 0 0 0 transparent;}
+@keyframes title-animation-color {
+76% {text-shadow: 0 0 0 transparent;}
+77% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
+78% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.08);}
+79% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
+83% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+84% {text-shadow: 0 0 0 transparent;}
+86% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+87% {text-shadow: 0 0 0 transparent;}
+88% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
+89% {text-shadow: 0 0 0 transparent;}
+90% {text-shadow: -0.1em 0 #D935FB, 0.1em 0 #00F900;}
 }
 .title {
+position: relative;
 font-family: "8bitmadness", "kinakomochi", "pixelmplus";
 font-size: 400%;
 padding-top: 5vh;
 line-height: 0.8;
 color: #fff;
 }
-.title:not(.balloon) {animation: title-animation-color01 linear 1s infinite;}
-.youtube .title {animation: title-animation-color02 linear 1s infinite;}
-.members .title {animation: title-animation-color03 linear 1s infinite;}
-.news .title {animation: title-animation-color04 linear 1s infinite;}
+.title:not(.balloon) {animation: title-animation-color linear 3s infinite;}
 .summary {
 font-size: 14px;
 color: #fff;
@@ -311,15 +277,6 @@ transform: translateY(-50%) translateX(-50%);
 	.pages .logo img {width: 90%;}
 	.pages .logo.small img {width: 30%;}
 }
-.logo-01 {animation: blink-logo linear infinite 3s;}
-.logo-02 {animation: blink-logo linear infinite 3.5s;}
-.logo-03 {animation: blink-logo linear infinite 4s;}
-.logo-04 {animation: blink-logo linear infinite 4.5s;}
-.logo-05 {animation: blink-logo linear infinite 5s;}
-.logo-06 {animation: blink-logo linear infinite 6.5s;}
-.logo-07 {animation: blink-logo linear infinite 7s;}
-.logo-08 {animation: blink-logo linear infinite 7.5s;}
-.logo-09 {animation: blink-logo linear infinite 4s;}
 @keyframes blink-logo {
 78%{opacity: 1;}
 79%{opacity: 0.4;}
@@ -329,6 +286,16 @@ transform: translateY(-50%) translateX(-50%);
 92% {opacity: 0.4;}
 93% {opacity: 1;}
 }
+.logo-01 {animation: blink-logo linear infinite 3s;}
+.logo-02 {animation: blink-logo linear infinite 3.5s;}
+.logo-03 {animation: blink-logo linear infinite 4s;}
+.logo-04 {animation: blink-logo linear infinite 4.5s;}
+.logo-05 {animation: blink-logo linear infinite 5s;}
+.logo-06 {animation: blink-logo linear infinite 6.5s;}
+.logo-07 {animation: blink-logo linear infinite 7s;}
+.logo-08 {animation: blink-logo linear infinite 7.5s;}
+.logo-09 {animation: blink-logo linear infinite 4s;}
+
 
 /* pixel
 ================================================== */
