@@ -54,9 +54,31 @@ color: #fff;
 font-size: 16px;
 text-align: center;
 word-break: break-all;
+cursor: none;
 background: #000;
 }
 @media screen and (max-width: 767px) {body {font-size: 90%;}}
+
+/* cursor
+================================================== */
+@media screen and (min-width: 768px) {
+	.cursor {
+	pointer-events: none;
+	touch-action: none;
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	display: block;
+	left: -15px;
+	top: -15px;
+	mix-blend-mode: difference;
+	z-index: 1;
+	}
+	.cursor__inner {
+	background: #fff;
+	border-radius: 50%;
+	}
+}
 
 /* selection
 ================================================== */
