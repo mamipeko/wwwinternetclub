@@ -188,6 +188,49 @@ position:relative;
 font-family: "kinakomochi", "pixelmplus";
 letter-spacing: 0.15em;
 }
+
+/* title
+================================================== */
+@keyframes title-animation-color01 {
+0%  {color: #fff;}
+15% {text-shadow: 0.05em 0 #FF2600, -0.05em 0.05em #00FDFF;}
+20% {text-shadow: 0 0 0 transparent;}
+26% {text-shadow: -0.05em 0 #FF2600, 0.05em 0 #00FDFF;}
+30% {text-shadow: 0 0 0 transparent;}
+35% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+50% {text-shadow: 0 0 0 transparent;}
+100% {text-shadow: 0 0 0 transparent;}
+}
+@keyframes title-animation-color02 {
+0%  {color: #fff;}
+15% {text-shadow: 0.05em 0 #00FDFF, -0.05em 0.05em #fff;}
+20% {text-shadow: 0 0 0 transparent;}
+26% {text-shadow: -0.05em 0 #00FDFF, 0.05em 0 #fff;}
+30% {text-shadow: 0 0 0 transparent;}
+35% {text-shadow: -0.1em 0 #00FDFF, 0.1em 0 #fff;}
+50% {text-shadow: 0 0 0 transparent;}
+100% {text-shadow: 0 0 0 transparent;}
+}
+@keyframes title-animation-color03 {
+0%  {color: #fff;}
+15% {text-shadow: 0.05em 0 #00FDFF, -0.05em 0.05em #FFFB00;}
+20% {text-shadow: 0 0 0 transparent;}
+26% {text-shadow: -0.05em 0 #00FDFF, 0.05em 0 #FFFB00;}
+30% {text-shadow: 0 0 0 transparent;}
+35% {text-shadow: -0.1em 0 #00FDFF, 0.1em 0 #FFFB00;}
+50% {text-shadow: 0 0 0 transparent;}
+100% {text-shadow: 0 0 0 transparent;}
+}
+@keyframes title-animation-color04 {
+0%  {color: #000;}
+15% {text-shadow: 0.05em 0 #00FDFF, -0.05em 0.05em #FF2600;}
+20% {text-shadow: 0 0 0 transparent;}
+26% {text-shadow: -0.05em 0 #00FDFF, 0.05em 0 #FF2600;}
+30% {text-shadow: 0 0 0 transparent;}
+35% {text-shadow: -0.1em 0 #00FDFF, 0.1em 0 #FF2600;}
+50% {text-shadow: 0 0 0 transparent;}
+100% {text-shadow: 0 0 0 transparent;}
+}
 .title {
 font-family: "8bitmadness", "kinakomochi", "pixelmplus";
 font-size: 400%;
@@ -195,6 +238,10 @@ padding-top: 5vh;
 line-height: 0.8;
 color: #fff;
 }
+.title:not(.balloon) {animation: title-animation-color01 linear 1s infinite;}
+.youtube .title {animation: title-animation-color02 linear 1s infinite;}
+.members .title {animation: title-animation-color03 linear 1s infinite;}
+.news .title {animation: title-animation-color04 linear 1s infinite;}
 .summary {
 font-size: 14px;
 color: #fff;
@@ -204,7 +251,7 @@ margin-bottom: 5vh;
 }
 .logo-title .summary 		{margin-bottom: 0;}
 .text .title:first-child 	{padding-top: 0;}
-.balloon 		{font-size: 320%;}
+.balloon 		{font-size: 300%;}
 .balloon:before {content:"\5C";}
 .balloon:after 	{content:"\2f";}
 .news .title,
