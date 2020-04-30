@@ -214,8 +214,8 @@ line-height: 1.8;
 margin-top: 1vh;
 margin-bottom: 5vh;
 }
-.logo-title .summary {margin-bottom: 0;}
-.text .title 	{padding-top: 0;}
+.logo-title .summary 		{margin-bottom: 0;}
+.text .title:first-child 	{padding-top: 0;}
 .balloon 		{font-size: 320%;}
 .balloon:before {content:"\5C";}
 .balloon:after 	{content:"\2f";}
@@ -581,6 +581,7 @@ justify-content: center;
 flex-wrap: wrap;
 }
 .pages .text p {margin-top: 5vh;}
+.pages .text .summary {margin-top: 1vh;}
 .pages .text p:first-child {margin-top: 0;}
 .pages-goods-list li img {
 width: 100%;
