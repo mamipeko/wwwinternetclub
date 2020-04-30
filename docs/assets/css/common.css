@@ -214,6 +214,7 @@ line-height: 1.8;
 margin-top: 1vh;
 margin-bottom: 5vh;
 }
+.logo-title .summary {margin-bottom: 0;}
 .text .title 	{padding-top: 0;}
 .balloon 		{font-size: 320%;}
 .balloon:before {content:"\5C";}
