@@ -133,18 +133,6 @@ outline: none;
 cursor: pointer;
 color: #fff;
 }
-@media screen and (min-width: 768px) {
-:hover {
--moz-transition: all 0.5s;
--webkit-transition: all 0.5s;
--o-transition: all 0.5s;
--ms-transition: all 0.5s;
-transition: all 0.5s;
-}
-a:hover 			{opacity: 0.6;}
-.contact:hover,
-.accounts li:hover 	{opacity: 0.9;}
-}
 
 /* font
 ================================================== */
@@ -457,7 +445,6 @@ letter-spacing: 0.1em;
 }
 @media screen and (min-width: 768px) {
 	.members-list {width: 70%;margin: 0 auto;}
-	.members-list a:hover {display: block;}
 	.members-icon img {width: 35%; border-radius: 50%;}
 	.members-sns img {width: 9%;}
 }
