@@ -164,7 +164,7 @@ position:relative;
 font-family: "kinakomochi", "pixelmplus";
 letter-spacing: 0.15em;
 }
-h2 {
+.title {
 font-family: "8bitmadness", "kinakomochi", "pixelmplus";
 font-size: 400%;
 padding-top: 5vh;
@@ -178,11 +178,11 @@ line-height: 1.8;
 margin-top: 1vh;
 margin-bottom: 5vh;
 }
-.text h2 		{padding-top: 0;}
+.text .title 		{padding-top: 0;}
 .balloon 		{font-size: 320%;}
 .balloon:before {content:"\5C";}
 .balloon:after 	{content:"\2f";}
-.news h2,
+.news .title,
 .news .summary 	{color: #000;}
 @keyframes blink-cursor {50% {opacity: 0;}}
 p:after,
@@ -199,15 +199,20 @@ animation: blink-cursor 1s infinite;
 header {
 width: 100%;
 position: fixed;
-top: 6%;
 left: auto;
 right: auto;
 margin: 0 auto;
 mix-blend-mode: difference;
 z-index: 100;
 }
-@media screen and (min-width: 768px) {header img {width: 15%;}}
-@media screen and (max-width: 767px) {header img {width: 50%;}}
+@media screen and (min-width: 768px) {
+	header {top: 6%;}
+	header img {width: 15%;}
+}
+@media screen and (max-width: 767px) {
+	header {top: 5%;}
+	header img {width: 50%;}
+}
 
 /* logo
 ================================================== */
@@ -216,7 +221,8 @@ height: 100vh;
 height: calc(var(--vh, 1vh) * 100);
 overflow: hidden;
 }
-.logo img {
+.logo img,
+.logo-title {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -229,6 +235,7 @@ transform: translateY(-50%) translateX(-50%);
 }
 @media screen and (max-width: 767px) {
 	.logo img {width: 100%;}
+	.logo-title {width: 100%;}
 	.pages .logo img {width: 90%;}
 	.pages .logo.small img {width: 30%;}
 }
