@@ -178,7 +178,7 @@ line-height: 1.8;
 margin-top: 1vh;
 margin-bottom: 5vh;
 }
-.text .title 		{padding-top: 0;}
+.text .title 	{padding-top: 0;}
 .balloon 		{font-size: 320%;}
 .balloon:before {content:"\5C";}
 .balloon:after 	{content:"\2f";}
