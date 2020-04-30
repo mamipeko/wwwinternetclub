@@ -199,15 +199,15 @@ animation: blink-cursor 1s infinite;
 header {
 width: 100%;
 position: fixed;
-top: 5%;
+top: 6%;
 left: auto;
 right: auto;
 margin: 0 auto;
 mix-blend-mode: difference;
 z-index: 100;
 }
-@media screen and (min-width: 768px) {header img {width: 6%;}}
-@media screen and (max-width: 767px) {header img {width: 15%;}}
+@media screen and (min-width: 768px) {header img {width: 15%;}}
+@media screen and (max-width: 767px) {header img {width: 50%;}}
 
 /* logo
 ================================================== */
