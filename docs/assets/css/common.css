@@ -373,6 +373,16 @@ background: #424242;
 	.photo-small {height: 37.5vh; height: calc(var(--vh, 1vh) * 37.5);}
 	.photo-medium {height: 75vh; height: calc(var(--vh, 1vh) * 75);}
 }
+@media screen and (max-width: 320px) {
+	.pixel-list {width: 63.5vh;}
+	.pixel {
+		width: 12.7vh;
+		height: 12.7vh;
+		height: calc(var(--vh, 1vh) * 12.7);
+	}
+	.photo-small {height: 38.1vh; height: calc(var(--vh, 1vh) * 38.1);}
+	.photo-medium {height: 76.2vh; height: calc(var(--vh, 1vh) * 76.2);}
+}
 
 /* about
 ================================================== */
