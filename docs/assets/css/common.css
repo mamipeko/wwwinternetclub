@@ -635,7 +635,8 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 }
-.pages .text p {margin-top: 5vh;}
+.pages .text p,
+.pages .text div {margin-top: 5vh;}
 .pages .text .summary {margin-top: 1vh;}
 .pages .text p:first-child {margin-top: 0;}
 .pages-goods-list li img {
