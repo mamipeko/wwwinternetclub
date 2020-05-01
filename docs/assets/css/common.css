@@ -184,6 +184,26 @@ font-family: "kinakomochi", "pixelmplus";
 letter-spacing: 0.15em;
 }
 
+/* text-animation
+================================================== */
+@keyframes text-animation {
+77% {text-shadow: 0 0 0 transparent;}
+78% {text-shadow: 0.2em -0.2em #FF2600, -0.2em 0.2em #00FDFF;}
+79% {text-shadow: 0 0 0 transparent;}
+83% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+84% {text-shadow: 0 0 0 transparent;}
+86% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+87% {text-shadow: 0 0 0 transparent;}
+88% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
+89% {text-shadow: 0 0 0 transparent;}
+90% {text-shadow: -0.2em -0.2em #D935FB, 0.2em 0.2em #00F900;}
+}
+.text p		{animation: text-animation 4.5s infinite;}
+.text p.summary,
+.summary	{animation: text-animation 3.5s infinite;}
+.text dl	{animation: text-animation 4.0s infinite;}
+.button		{animation: text-animation 3.8s infinite;}
+
 /* title
 ================================================== */
 @keyframes title-animation {
@@ -201,13 +221,14 @@ letter-spacing: 0.15em;
 }
 .title {
 position: relative;
+display: block;
 font-family: "8bitmadness", "kinakomochi", "pixelmplus";
 font-size: 400%;
 padding-top: 5vh;
 line-height: 0.8;
 color: #fff;
 }
-.title:not(.balloon) {animation: title-animation linear 3s infinite;}
+.title:not(.balloon) {animation: title-animation linear 3.5s infinite;}
 .summary {
 font-size: 14px;
 color: #fff;
@@ -215,7 +236,7 @@ line-height: 1.8;
 margin-top: 1vh;
 margin-bottom: 5vh;
 }
-.logo-title .summary 		{margin-bottom: 0;}
+/* .logo-title .summary 		{margin-bottom: 0;} */
 .text .title:first-child 	{padding-top: 0;}
 .balloon 		{font-size: 300%;}
 .balloon:before {content:"\5C";}
@@ -362,19 +383,6 @@ line-height: 3.5;
 
 /* button
 ================================================== */
-@keyframes button-animation {
-76% {text-shadow: 0 0 0 transparent;}
-77% {text-shadow: 0 0 0 transparent;}
-78% {text-shadow: 0.2em -0.2em #FF2600, -0.2em 0.2em #00FDFF;}
-79% {text-shadow: 0 0 0 transparent;}
-83% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-84% {text-shadow: 0 0 0 transparent;}
-86% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-87% {text-shadow: 0 0 0 transparent;}
-88% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
-89% {text-shadow: 0 0 0 transparent;}
-90% {text-shadow: -0.2em -0.2em #D935FB, 0.2em 0.2em #00F900;}
-}
 .button {
 display: block;
 margin: 0 auto;
@@ -383,7 +391,6 @@ font-size: 14px;
 margin-top: 5vh;
 line-height: 3.5;
 background-color: rgba(0,0,0,0.4);
-animation: button-animation 3.5s infinite;
 }
 .button a {
 display: block;
