@@ -374,9 +374,9 @@ background: #424242;
 	.photo-medium {height: 75vh; height: calc(var(--vh, 1vh) * 75);}
 }
 @media screen and (max-width: 320px) {
-	.pixel-list {width: 63.5vh;}
+	.pixel-list {width: 67.8vh;}
 	.pixel {
-		width: 12.7vh;
+		width: 11.3vh;
 		height: 12.7vh;
 		height: calc(var(--vh, 1vh) * 12.7);
 	}
