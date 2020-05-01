@@ -396,14 +396,17 @@ background: rgba(0,0,0,0.4);
 }
 .button:before {content: "💬"; font-size: 120%; margin-right: 0.2em;}
 .button:after {content: ">";}
-.goods .button {
+.goods-list .button,
+.pages-goods-list .button {
 position: absolute;
-bottom: 7vh;
+bottom: 10vh;
 left: 50%;
 margin-left: -110px;
 }
-.goods .button:before {content: "👕"; font-size: 120%; margin-right: 0.2em;}
-.goods .button:after {content: ">";}
+.goods-list .button:before,
+.pages-goods-list .button:before {content: "👕"; font-size: 120%; margin-right: 0.2em;}
+.goods-list .button:after,
+.pages-goods-list .button:after {content: ">";}
 @media screen and (min-width: 768px) {
 	:hover,
 	.goods .button	{
@@ -419,10 +422,14 @@ margin-left: -110px;
 	background: rgba(0,249,0,0.5);
 	}
 	.goods li.not-found:hover .button,
-	.goods.pages-not-found li:hover .button {background: rgba(0,183,255,0.5);}
+	.goods.pages-not-found li:hover .button,
+	.goods.pages-not-found .button-home:hover {background: rgba(0,183,255,0.5);}
 	.goods li.neon-logo:hover .button,
-	.goods.pages-neon-logo li:hover .button {background: rgba(255,0,202,0.5);}
+	.goods.pages-neon-logo li:hover .button,
+	.goods.pages-neon-logo .button-home:hover {background: rgba(255,0,202,0.5);}
 }
+.button-home:before {content: "<🏠"; font-size: 120%;}
+.button-home:after {content: "";}
 
 /* goods
 ================================================== */
