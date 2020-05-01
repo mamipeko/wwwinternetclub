@@ -4,11 +4,11 @@ http://opensource.org/licenses/mit-license.php
 Copyright (c) 2020 Michael
 https://codepen.io/michaelnarine/pen/RKpBLg
 ================================================== */
-var pix = document.getElementsByClassName("pixel");
-for (var i = 0; i < pix.length; i++) {
-	pix[i].style.animationDelay = Math.ceil(Math.random() * 5000) + "ms";
-}
-$(".pixel").addClass("pixel-animation");
+// var pix = document.getElementsByClassName("pixel");
+// for (var i = 0; i < pix.length; i++) {
+// 	pix[i].style.animationDelay = Math.ceil(Math.random() * 5000) + "ms";
+// }
+// $(".pixel").addClass("pixel-animation");
 
 /* Full Screen
 ================================================== */
@@ -36,16 +36,16 @@ http://opensource.org/licenses/mit-license.php
 Copyright (c) 2020 Murtaza
 https://codepen.io/murtazamzk/pen/zYGBeva
 ================================================== */
-const root = document.querySelector('html');
-const cursor = document.createElement('span');
-cursor.classList.add('cursor');
-root.appendChild(cursor);
-const cursorInner = document.createElement('span');
-cursorInner.classList.add('cursor', 'cursor__inner');
-cursor.appendChild(cursorInner);
-root.addEventListener('mousemove', e => {
-	setPosition(cursor, e);
-});
-function setPosition(element, e) {
-	element.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
-}
+// const root = document.querySelector('html');
+// const cursor = document.createElement('span');
+// cursor.classList.add('cursor');
+// root.appendChild(cursor);
+// const cursorInner = document.createElement('span');
+// cursorInner.classList.add('cursor', 'cursor__inner');
+// cursor.appendChild(cursorInner);
+// root.addEventListener('mousemove', e => {
+// 	setPosition(cursor, e);
+// });
+// function setPosition(element, e) {
+// 	element.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+// }
