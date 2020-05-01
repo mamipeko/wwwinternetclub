@@ -186,7 +186,7 @@ letter-spacing: 0.15em;
 
 /* title
 ================================================== */
-@keyframes title-animation-color {
+@keyframes title-animation {
 76% {text-shadow: 0 0 0 transparent;}
 77% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
 78% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.08);}
@@ -207,7 +207,7 @@ padding-top: 5vh;
 line-height: 0.8;
 color: #fff;
 }
-.title:not(.balloon) {animation: title-animation-color linear 3s infinite;}
+.title:not(.balloon) {animation: title-animation linear 3s infinite;}
 .summary {
 font-size: 14px;
 color: #fff;
@@ -362,19 +362,35 @@ line-height: 3.5;
 
 /* button
 ================================================== */
+@keyframes button-animation {
+76% {text-shadow: 0 0 0 transparent;}
+77% {text-shadow: 0 0 0 transparent;}
+78% {text-shadow: 0.2em -0.2em #FF2600, -0.2em 0.2em #00FDFF;}
+79% {text-shadow: 0 0 0 transparent;}
+83% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+84% {text-shadow: 0 0 0 transparent;}
+86% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+87% {text-shadow: 0 0 0 transparent;}
+88% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
+89% {text-shadow: 0 0 0 transparent;}
+90% {text-shadow: -0.2em -0.2em #D935FB, 0.2em 0.2em #00F900;}
+}
 .button {
 display: block;
 margin: 0 auto;
-width: 240px;
+width: 220px;
 font-size: 14px;
 margin-top: 5vh;
+line-height: 3.5;
+background-color: rgba(0,0,0,0.4);
+animation: button-animation 3.5s infinite;
 }
 .button a {
 display: block;
-background: #444;
-line-height: 4.0;
-border-radius: 5px;
+border: 3px solid #fff;
+border-radius: 50px;
 }
+.button a:before {content: "💬"; font-size: 120%; margin-right: 0.2em;}
 .button a:after {content: ">";}
 
 /* goods
@@ -406,13 +422,13 @@ position: relative;
 }
 .goods .button {
 position: absolute;
-bottom: 5vh;
+bottom: 7vh;
 left: 50%;
-margin-left: -120px;
-line-height: 4.0;
-background: #444;
-border-radius: 5px;
+margin-left: -110px;
+border: 3px solid #fff;
+border-radius: 50px;
 }
+.goods .button:before {content: "👕"; font-size: 120%; margin-right: 0.2em;}
 .goods .button:after {content: ">";}
 
 /* youtube
