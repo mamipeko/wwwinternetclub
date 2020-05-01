@@ -65,11 +65,11 @@ background: #000;
 	@keyframes cursor-animation {
 	0%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 	10%{ border-radius: 53% 47% 33% 67% / 60% 30% 70% 40%; }
-	20%{ border-radius: 71% 29% 38% 62% / 72% 48% 52% 28%; transform: scale(3.0)}
+	20%{ border-radius: 71% 29% 38% 62% / 72% 48% 52% 28%; transform: scale(3.0);}
 	30%{ border-radius: 41% 59% 45% 55% / 33% 56% 44% 67%;}
 	40%{ border-radius: 55% 45% 67% 33% / 77% 48% 52% 23%; }
 	50%{ border-radius: 44% 56% 22% 78% / 31% 74% 26% 69%; }
-	60%{ border-radius: 46% 54% 48% 52% / 61% 59% 41% 39%; transform: scale(0.5)}
+	60%{ border-radius: 46% 54% 48% 52% / 61% 59% 41% 39%; transform: scale(0.5);}
 	70%{ border-radius: 44% 56% 60% 40% / 63% 36% 64% 37%; }
 	80%{ border-radius: 20% 80% 45% 55% / 31% 79% 21% 69%; }
 	90%{ border-radius: 66% 34% 57% 43% / 49% 51% 49% 51%; }
@@ -390,15 +390,39 @@ width: 220px;
 font-size: 14px;
 margin-top: 5vh;
 line-height: 3.5;
-background-color: rgba(0,0,0,0.4);
-}
-.button a {
-display: block;
 border: 3px solid #fff;
 border-radius: 50px;
+background: rgba(0,0,0,0.4);
 }
-.button a:before {content: "💬"; font-size: 120%; margin-right: 0.2em;}
-.button a:after {content: ">";}
+.button:before {content: "💬"; font-size: 120%; margin-right: 0.2em;}
+.button:after {content: ">";}
+.goods .button {
+position: absolute;
+bottom: 7vh;
+left: 50%;
+margin-left: -110px;
+}
+.goods .button:before {content: "👕"; font-size: 120%; margin-right: 0.2em;}
+.goods .button:after {content: ">";}
+@media screen and (min-width: 768px) {
+	:hover,
+	.goods .button	{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all  0.5s ease;
+	}
+	.button:hover,
+	.goods li:hover .button {
+	transform: scale(1.2);
+	transition-duration: 0.8s;
+	background: rgba(0,249,0,0.5);
+	}
+	.goods li.not-found:hover .button,
+	.goods.pages-not-found li:hover .button {background: rgba(0,183,255,0.5);}
+	.goods li.neon-logo:hover .button,
+	.goods.pages-neon-logo li:hover .button {background: rgba(255,0,202,0.5);}
+}
 
 /* goods
 ================================================== */
@@ -427,16 +451,6 @@ position: relative;
 	}
 	.goods-list li img {height: 100%;}
 }
-.goods .button {
-position: absolute;
-bottom: 7vh;
-left: 50%;
-margin-left: -110px;
-border: 3px solid #fff;
-border-radius: 50px;
-}
-.goods .button:before {content: "👕"; font-size: 120%; margin-right: 0.2em;}
-.goods .button:after {content: ">";}
 
 /* youtube
 ================================================== */
