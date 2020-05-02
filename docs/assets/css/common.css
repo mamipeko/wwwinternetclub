@@ -187,17 +187,17 @@ letter-spacing: 0.15em;
 /* text-animation
 ================================================== */
 @keyframes text-animation {
-24% {text-shadow: 0 0 0 transparent;}
-25% {text-shadow: 0.2em -0.2em #FF2600, -0.2em 0.2em #00FDFF;}
-26% {text-shadow: 0 0 0 transparent;}
-27% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-28% {text-shadow: 0 0 0 transparent;}
-29% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-30% {text-shadow: 0 0 0 transparent;}
-31% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
-32% {text-shadow: 0 0 0 transparent;}
-33% {text-shadow: -0.2em -0.2em #D935FB, 0.2em 0.2em #00F900;}
-34% {text-shadow: 0 0 0 transparent;}
+44% {text-shadow: 0 0 0 transparent;}
+45% {text-shadow: 0.2em -0.2em #FF2600, -0.2em 0.2em #00FDFF;}
+46% {text-shadow: 0 0 0 transparent;}
+47% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+48% {text-shadow: 0 0 0 transparent;}
+49% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+50% {text-shadow: 0 0 0 transparent;}
+51% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
+52% {text-shadow: 0 0 0 transparent;}
+53% {text-shadow: -0.2em -0.2em #D935FB, 0.2em 0.2em #00F900;}
+54% {text-shadow: 0 0 0 transparent;}
 }
 .text p		{animation: text-animation 4.5s infinite;}
 .text p.summary,
@@ -208,18 +208,18 @@ letter-spacing: 0.15em;
 /* title
 ================================================== */
 @keyframes title-animation {
-23% {text-shadow: 0 0 0 transparent;}
-24% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
-25% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.08);}
-26% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
-27% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-28% {text-shadow: 0 0 0 transparent;}
-29% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-30% {text-shadow: 0 0 0 transparent;}
-31% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
-32% {text-shadow: 0 0 0 transparent;}
-33% {text-shadow: -0.1em 0 #D935FB, 0.1em 0 #00F900;}
-34% {text-shadow: 0 0 0 transparent;}
+43% {text-shadow: 0 0 0 transparent;}
+44% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
+45% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.08);}
+46% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
+47% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+48% {text-shadow: 0 0 0 transparent;}
+49% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+50% {text-shadow: 0 0 0 transparent;}
+51% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
+52% {text-shadow: 0 0 0 transparent;}
+53% {text-shadow: -0.1em 0 #D935FB, 0.1em 0 #00F900;}
+54% {text-shadow: 0 0 0 transparent;}
 }
 .title {
 position: relative;
