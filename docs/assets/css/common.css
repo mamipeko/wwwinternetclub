@@ -723,9 +723,6 @@ height: auto;
 	.pages-goods-list li {width: 50%;}
 	li.max {width: 100%;}
 	li.max img {width: 50%;}
-}
-@media screen and (max-width: 767px) {
-	.pages-goods-list {flex-direction: column;}
 	.order1 {order: 1;}
 	.order2 {order: 2;}
 	.order3 {order: 4;}
@@ -789,27 +786,19 @@ z-index: 1;
 ================================================== */
 .pages-not-found .text {color: #00B7FF;}
 .pages-not-found .pages-goods-list {background: #212121;}
-.pages-not-found .order1,
-.pages-not-found .order4,
-.pages-not-found .order5,
-.pages-not-found .order8,
-.pages-not-found .order9 {background: #00B7FF;}
+.pages-not-found li:nth-last-child(odd) {background: #00B7FF;}
 
 /* hello-world
 ================================================== */
 .pages-hello-world .text {color: #00F900;}
 .pages-hello-world .pages-goods-list {background: #797979;}
-.pages-hello-world .order1,
-.pages-hello-world .order4 {background: #00F900;}
+.pages-hello-world li:nth-last-child(odd) {background: #00F900;}
 
 /* neon-logo
 ================================================== */
 .pages-neon-logo .text {color: #FF00CA;}
 .pages-neon-logo .pages-goods-list {background: #FFCDFF;}
-.pages-neon-logo .order1,
-.pages-neon-logo .order4,
-.pages-neon-logo .order5,
-.pages-neon-logo .order7 {background: #FF00CA;}
+.pages-neon-logo li:nth-last-child(odd) {background: #FF00CA;}
 
 /* pages-mail
 ================================================== */
