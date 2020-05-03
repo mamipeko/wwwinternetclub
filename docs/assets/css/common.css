@@ -786,19 +786,19 @@ z-index: 1;
 ================================================== */
 .pages-not-found .text {color: #00B7FF;}
 .pages-not-found .pages-goods-list {background: #212121;}
-.pages-not-found li:nth-last-child(odd) {background: #00B7FF;}
+.pages-not-found .pages-goods-list li:nth-last-child(odd) {background: #00B7FF;}
 
 /* hello-world
 ================================================== */
 .pages-hello-world .text {color: #00F900;}
 .pages-hello-world .pages-goods-list {background: #797979;}
-.pages-hello-world li:nth-last-child(odd) {background: #00F900;}
+.pages-hello-world .pages-goods-list li:nth-last-child(odd) {background: #00F900;}
 
 /* neon-logo
 ================================================== */
 .pages-neon-logo .text {color: #FF00CA;}
 .pages-neon-logo .pages-goods-list {background: #FFCDFF;}
-.pages-neon-logo li:nth-last-child(odd) {background: #FF00CA;}
+.pages-neon-logo .pages-goods-list li:nth-last-child(odd) {background: #FF00CA;}
 
 /* pages-mail
 ================================================== */
