@@ -1,8 +1,8 @@
-$(".pixel").each(function () {
-	$(this)
-		.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms");
-});
-$(".pixel-list").addClass("pixel-animation");
+// $(".pixel").each(function () {
+// 	$(this)
+// 		.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms");
+// });
+// $(".pixel-list").addClass("pixel-animation");
 
 $("html").css("--vh", (window.innerHeight * 0.01) + "px");
 
@@ -27,7 +27,7 @@ $("<span/>")
 $("body")
 	.on("mousemove", _.throttle(function (event) {
 		setCursorPosition(event);
-	}, 10));
+	}, 50));
 
 $(window).on("scroll", _.throttle(function () {
 	$('.mask').each(function () {
