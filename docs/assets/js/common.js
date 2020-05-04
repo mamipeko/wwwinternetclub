@@ -31,6 +31,10 @@ $("body")
 
 $(window).on("scroll", function () {
 	$('.mask').each(function () {
+		if ($(this).hasClass("is-play")) {
+			return;
+		}
+
 		var wh = $(window).height();
 		if ($(window).scrollTop() > $(this).offset().top - wh + (wh / 4)) {
 			$(this).addClass("is-play");
