@@ -4,11 +4,6 @@ $(".pixel").each(function () {
 });
 $(".pixel-list").addClass("pixel-animation");
 
-setInterval(function () {
-	$(".pixel-list").toggleClass("pixel-animation");
-}, 5000);
-
-
 $("html").css("--vh", (window.innerHeight * 0.01) + "px");
 
 AOS.init({
