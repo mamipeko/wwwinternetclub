@@ -408,19 +408,21 @@ float: left;
 opacity: 0;
 background: #424242;
 }
-@keyframes blink-pixel {50% {opacity: 0.5;}}
+@keyframes blink-pixel {50% {opacity: 0.6;}}
 .pixel-animation 						{animation: blink-pixel 5s infinite;}
 .color-blue,.color-blue .pixel 			{background: #00B7FF;}
-.color-magenta,.color-magenta .pixel 	{background: #FF00CA;}
-.color-yellow,.color-yellow .pixel 		{background: #FFF468;}
-.color-green,.color-green .pixel 		{background: #00F900;}
-.color-red,.color-red .pixel 			{background: #FF0000;}
-.color-purple,.color-purple .pixel 		{background: #8783FF;}
 .color-blue .pixel-wrapper 				{background: #002332;}
+.color-aqua,.color-aqua .pixel 			{background: #2D8CFF;}
+.color-aqua .pixel-wrapper 				{background: #15457F;}
+.color-magenta,.color-magenta .pixel 	{background: #FF00CA;}
 .color-magenta .pixel-wrapper 			{background: #22001B;}
+.color-yellow,.color-yellow .pixel 		{background: #FFF468;}
 .color-yellow .pixel-wrapper 			{background: #757602;}
+.color-green,.color-green .pixel 		{background: #00F900;}
 .color-green .pixel-wrapper 			{background: #002F00;}
+.color-red,.color-red .pixel 			{background: #FF0000;}
 .color-red .pixel-wrapper 				{background: #6A0000;}
+.color-purple,.color-purple .pixel 		{background: #8783FF;}
 .color-purple .pixel-wrapper 			{background: #232243;}
 @media screen and (min-width: 768px) {
 	.pixel-list {width: 200vh;}
