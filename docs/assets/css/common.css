@@ -550,8 +550,8 @@ position: relative;
 /* youtube
 ================================================== */
 .youtube {background: #FF0000;}
-@media screen and (min-width: 768px) {.youtube {padding: 0 5% 5% 5%;}}
-@media screen and (max-width: 767px) {.youtube {padding: 0 5% 10% 5%;}}
+@media screen and (min-width: 768px) {.area {padding: 0 5% 5% 5%;}}
+@media screen and (max-width: 767px) {.area {padding: 0 5% 10% 5%;}}
 .youtube-wrapper {
 position: relative;
 padding-bottom: 56.25%;
@@ -685,20 +685,51 @@ background: linear-gradient(to bottom left, #545ACE, #EE299B);
 ================================================== */
 .text {padding: 20vh 0;}
 @media screen and (min-width: 768px) {
-.text {
-background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
-background-position: left 100px, right bottom 100px;
-background-repeat: no-repeat, no-repeat;
-background-size: 10% auto, 10% auto;
-}
+	.about.text {
+	background-image: url("/assets/img/common/bg-top.svg"), url("/assets/img/common/bg-bottom.svg");
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% auto, 100% auto;
+	}
+	.pages .about.text {
+	background-image: url("/assets/img/common/bg.svg");
+	background-position: left top;
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	}
+	.members.text {
+	background-image: url("/assets/img/common/bg-top-members.svg"), url("/assets/img/common/bg-bottom-members.svg");
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% auto, 100% auto;
+	}
+	.news.text {
+	background-image: url("/assets/img/common/bg-top.svg"), url("/assets/img/common/bg-bottom-news.svg");
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% auto, 100% auto;
+	}
 }
 @media screen and (max-width: 767px) {
-.text {
-background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
-background-position: left 40px, right bottom 40px;
-background-repeat: no-repeat, no-repeat;
-background-size: 20% auto, 20% auto;
-}
+	.about.text,
+	.news.text {
+	background-image: url("/assets/img/common/bg-top-sp.svg"), url("/assets/img/common/bg-bottom-sp.svg");
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% auto, 100% auto;
+	}
+	.pages .about.text {
+	background-image: url("/assets/img/common/bg-sp.svg");
+	background-position: left top;
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	}
+	.members.text {
+	background-image: url("/assets/img/common/bg-top-sp-members.svg"), url("/assets/img/common/bg-bottom-sp-members.svg");
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% auto, 100% auto;
+	}
 }
 
 /* footer
