@@ -1,8 +1,13 @@
 $(".pixel").each(function () {
 	$(this)
-		.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms")
-		.addClass("pixel-animation");
+		.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms");
 });
+$(".pixel-list").addClass("pixel-animation");
+
+setInterval(function () {
+	$(".pixel-list").toggleClass("pixel-animation");
+}, 5000);
+
 
 $("html").css("--vh", (window.innerHeight * 0.01) + "px");
 
@@ -16,7 +21,7 @@ AOS.init({
 });
 
 function setCursorPosition(event) {
-	$(".cursor").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);
+	$(".cursor:not(.cursor-inner)").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);
 }
 
 $("<span/>")
@@ -25,19 +30,19 @@ $("<span/>")
 	.appendTo($("body"));
 
 $("body")
-	.on("mousemove", function (event) {
+	.on("mousemove", _.throttle(function (event) {
 		setCursorPosition(event);
-	});
+	}, 10));
 
-$(window).on("scroll", function () {
+$(window).on("scroll", _.throttle(function () {
 	$('.mask').each(function () {
 		if ($(this).hasClass("is-play")) {
 			return;
 		}
 
 		var wh = $(window).height();
-		if ($(window).scrollTop() > $(this).offset().top - wh + (wh / 4)) {
+		if ($(window).scrollTop() > $(this).offset().top - wh + 100) {
 			$(this).addClass("is-play");
 		}
 	});
-});
+}, 400));
