@@ -697,6 +697,11 @@ background: linear-gradient(to bottom left, #545ACE, #EE299B);
 	background-repeat: repeat-y;
 	background-size: 100% auto;
 	}
+	.about-wrapper {
+		display: inline-block;
+		padding: 6%;
+		border: 7px solid #fff;	
+	}
 	.members.text {
 	background-image: url("/assets/img/common/bg-top-members.svg"), url("/assets/img/common/bg-bottom-members.svg");
 	background-position: left top, right bottom;
