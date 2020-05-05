@@ -261,7 +261,7 @@ z-index: 100;
 
 /* logo
 ================================================== */
-.photo {
+.hero {
 height: 100vh;
 height: calc(var(--vh, 1vh) * 100);
 overflow: hidden;
@@ -305,7 +305,7 @@ transform: translateY(-50%) translateX(-50%);
 
 /* pixel
 ================================================== */
-.pixel-wrapper {
+.pixels {
 width: 100%;
 height: 100%;
 background: #000;;
@@ -324,22 +324,22 @@ float: left;
 opacity: 0;
 background: #424242;
 }
-@keyframes pixel-animation 				{50% {opacity: 0.6;}}
-.animationable-active .pixel     		{animation: pixel-animation 5s 2;}
-.color-blue .pixel 						{background: #00B7FF;}
-.color-blue .pixel-wrapper 				{background: #002332;}
-.color-aqua .pixel 						{background: #2D8CFF;}
-.color-aqua .pixel-wrapper 				{background: #15457F;}
-.color-magenta .pixel 					{background: #FF00CA;}
-.color-magenta .pixel-wrapper 			{background: #22001B;}
-.color-yellow .pixel 					{background: #FFF468;}
-.color-yellow .pixel-wrapper 			{background: #757602;}
-.color-green .pixel 					{background: #00F900;}
-.color-green .pixel-wrapper 			{background: #002F00;}
-.color-red .pixel 						{background: #FF0000;}
-.color-red .pixel-wrapper 				{background: #6A0000;}
-.color-purple .pixel 					{background: #8783FF;}
-.color-purple .pixel-wrapper 			{background: #232243;}
+@keyframes pixel-animation 			{50% {opacity: 0.6;}}
+.animationable-active .pixel     	{animation: pixel-animation 5s 2;}
+.color-blue .pixel 					{background: #00B7FF;}
+.color-blue .pixels 				{background: #002332;}
+.color-aqua .pixel 					{background: #2D8CFF;}
+.color-aqua .pixels 				{background: #15457F;}
+.color-magenta .pixel 				{background: #FF00CA;}
+.color-magenta .pixels 				{background: #22001B;}
+.color-yellow .pixel 				{background: #FFF468;}
+.color-yellow .pixels 				{background: #757602;}
+.color-green .pixel 				{background: #00F900;}
+.color-green .pixels 				{background: #002F00;}
+.color-red .pixel 					{background: #FF0000;}
+.color-red .pixels 					{background: #6A0000;}
+.color-purple .pixel 				{background: #8783FF;}
+.color-purple .pixels 				{background: #232243;}
 @media screen and (min-width: 768px) {
 	.pixel-list {width: 200vh;}
 	.pixel {
@@ -347,8 +347,7 @@ background: #424242;
 		height: 20vh;
 		height: calc(var(--vh, 1vh) * 20);
 	}
-	.photo-small {height: 60vh; height: calc(var(--vh, 1vh) * 60);}
-	.photo-medium {height: 100vh; height: calc(var(--vh, 1vh) * 100);}
+	.pixel-wrapper {height: 60vh; height: calc(var(--vh, 1vh) * 60);}
 }
 @media screen and (max-width: 767px) {
 	.pixel-list {width: 55vh;}
@@ -357,8 +356,8 @@ background: #424242;
 		height: 12.6vh;
 		height: calc(var(--vh, 1vh) * 12.6);
 	}
-	.photo-small {height: 37.5vh; height: calc(var(--vh, 1vh) * 37.5);}
-	.photo-medium {height: 75vh; height: calc(var(--vh, 1vh) * 75);}
+	.pixel-wrapper 	{height: 37.5vh; height: calc(var(--vh, 1vh) * 37.5);}
+	.pages .hero 	{height: 75vh; height: calc(var(--vh, 1vh) * 75);}
 }
 @media screen and (max-width: 320px) {
 	.pixel-list {width: 67.8vh;}
@@ -367,8 +366,8 @@ background: #424242;
 		height: 12.7vh;
 		height: calc(var(--vh, 1vh) * 12.7);
 	}
-	.photo-small {height: 38.1vh; height: calc(var(--vh, 1vh) * 38.1);}
-	.photo-medium {height: 76.2vh; height: calc(var(--vh, 1vh) * 76.2);}
+	.pixel-wrapper	{height: 38.1vh; height: calc(var(--vh, 1vh) * 38.1);}
+	.pages .hero 	{height: 76.2vh; height: calc(var(--vh, 1vh) * 76.2);}
 }
 
 /* button
