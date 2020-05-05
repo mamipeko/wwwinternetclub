@@ -38,13 +38,7 @@ border-spacing: 0;
 ================================================== */
 *,
 *:before,
-*:after {
-box-sizing: border-box;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
--ms-box-sizing: border-box;
--o-box-sizing: border-box;
-}
+*:after {box-sizing: border-box;}
 
 /* body
 ================================================== */
@@ -95,9 +89,6 @@ background: #000;
 	}
 	.cursor-active {
 	opacity: 1;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
 	transition: all  1s ease;
 	animation: cursor-animation 5s linear 3;
 	}
@@ -107,31 +98,18 @@ background: #000;
 ================================================== */
 @media screen and (min-width: 768px) {
 ::selection		   					{background: transparent;}
-::-moz-selection    				{background: transparent;}
 header ::selection		   			{background: transparent!important;}
-header ::-moz-selection    			{background: transparent!important;}
 .about ::selection					{background: #00C801;}
-.about ::-moz-selection 			{background: #00C801;}
 .pages-not-found ::selection		{background: #0086BA;}
-.pages-not-found ::-moz-selection  	{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
-.pages-hello-world ::-moz-selection {background: #00C801;}
 .pages-neon-logo ::selection		{background: #B2008D;}
-.pages-neon-logo ::-moz-selection 	{background: #B2008D;}
 .pages-mail ::selection				{background: #BE0000;}
-.pages-mail ::-moz-selection 		{background: #BE0000;}
 .goods ::selection					{background: #ccc;}
-.goods ::-moz-selection 			{background: #ccc;}
 .youtube ::selection				{background: #BE0000;}
-.youtube ::-moz-selection 			{background: #BE0000;}
 .members ::selection				{background: #9598FF;}
-.members ::-moz-selection 			{background: #9598FF;}
 .news ::selection					{background: #EFE460;}
-.news ::-moz-selection 				{background: #EFE460;}
 .address ::selection				{background: #55C7FF;}
-.address ::-moz-selection			{background: #55C7FF;}
 footer ::selection		   			{background: transparent!important;}
-footer ::-moz-selection    			{background: transparent!important;}
 }
 
 /* a
@@ -221,9 +199,9 @@ animation: blink-animation 1.2s 5;
 @keyframes text-animation {
 43% {text-shadow: 0 0 0 transparent;}
 44% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
-45% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.08);}
+45% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.2);}
 46% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
-47% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
+47% {text-shadow: -0.2em 0 #FF2600, 0.2em 0 #00FDFF;}
 48% {text-shadow: 0 0 0 transparent;}
 49% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
 50% {text-shadow: 0 0 0 transparent;}
@@ -405,17 +383,9 @@ margin-left: -100px;
 .goods-list .button:after,
 .pages-goods-list .button:after {content: ">";}
 @media screen and (min-width: 768px) {
-	:hover,
-	.goods .button	{
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all  0.5s ease;
-	}
 	.button:hover,
 	.goods li:hover .button {
-	transform: scale(1.2);
-	transition-duration: 0.8s;
+	transition: all  0.5s ease;
 	background: rgba(0,249,0,0.5);
 	}
 	.goods li.not-found:hover .button,
@@ -511,7 +481,7 @@ letter-spacing: 0.1em;
 /* zoom
 ================================================== */
 .zoom {background: #2D8CFF;}
-.zoom img {width:90%;}
+.zoom img {width:100%;}
 
 /* news
 ================================================== */
@@ -576,11 +546,7 @@ justify-content: center;
 .accounts-list li {width: 25%; margin: 0 auto;}
 .accounts-suzuri {background: #EDECED;}
 .accounts-twitter {background: #1DA1F2;}
-.accounts-instagram {
-background: -moz-linear-gradient(top right, #545ACE, #EE299B);
-background: -webkit-linear-gradient(top right, #545ACE, #EE299B);
-background: linear-gradient(to bottom left, #545ACE, #EE299B);
-}
+.accounts-instagram {background: linear-gradient(to bottom left, #545ACE, #EE299B);}
 .accounts-youtube {background: #FF0000;}
 @media screen and (min-width: 768px) {
 	.accounts-list li img {padding: 20% 32%;}
