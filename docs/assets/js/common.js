@@ -46,6 +46,21 @@ $(window).on("load scroll", _.throttle(function () {
 	});
 }, 400));
 
+/* summary
+================================================== */
+$(window).on("load scroll", _.throttle(function () {
+	$(".summary").each(function () {
+		if ($(this).offset().top < $(window).innerHeight() + $(window).scrollTop() &&
+			$(this).offset().top + $(this).height() > $(window).scrollTop()) {
+			$(this).addClass("summary-active");
+		}
+		else {
+			$(this).removeClass("summary-active");
+		}
+	});
+}, 400));
+
+
 
 // function setCursorPosition(event) {
 // 	$(".cursor:not(.cursor-inner)").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);
