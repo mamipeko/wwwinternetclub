@@ -197,12 +197,12 @@ font-size: 14px;
 color: #fff;
 line-height: 1.8;
 }
-.logo-title .summary {margin-bottom: 0;}
-.balloon 		{font-size: 300%;}
-.balloon:before {content:"\5C";}
-.balloon:after 	{content:"\2f";}
+.logo-title .summary 	{margin-bottom: 0;}
+.balloon.title 			{font-size: 300%;}
+.balloon:before 		{content:"\5C";}
+.balloon:after 			{content:"\2f";}
 .news .title,
-.news .summary 	{color: #000;}
+.news .summary 			{color: #000;}
 @keyframes blink-animation {50% {opacity: 0;}}
 .animationable-active.summary:after {
 content: "";
@@ -371,13 +371,6 @@ background: #424242;
 	.photo-medium {height: 76.2vh; height: calc(var(--vh, 1vh) * 76.2);}
 }
 
-/* about
-================================================== */
-.about p {
-color: #00F900;
-line-height: 3.5;
-}
-
 /* button
 ================================================== */
 .button {
@@ -466,8 +459,6 @@ position: relative;
 /* youtube
 ================================================== */
 .youtube {background: #FF0000;}
-@media screen and (min-width: 768px) {.youtube {padding: 0 5% 5% 5%;}}
-@media screen and (max-width: 767px) {.youtube {padding: 0 5% 10% 5%;}}
 .youtube-wrapper {
 position: relative;
 padding-bottom: 56.25%;
@@ -597,26 +588,6 @@ background: linear-gradient(to bottom left, #545ACE, #EE299B);
 	.accounts-mail {width: 15%;}
 }
 
-/* text
-================================================== */
-.text {padding: 20vh 0;}
-@media screen and (min-width: 768px) {
-.text {
-background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
-background-position: left 100px, right bottom 100px;
-background-repeat: no-repeat, no-repeat;
-background-size: 10% auto, 10% auto;
-}
-}
-@media screen and (max-width: 767px) {
-.text {
-background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
-background-position: left 40px, right bottom 40px;
-background-repeat: no-repeat, no-repeat;
-background-size: 20% auto, 20% auto;
-}
-}
-
 /* footer
 ================================================== */
 footer {color: #999; font-size: 90%;}
@@ -701,25 +672,25 @@ z-index: 1;
 
 /* pages-not-found
 ================================================== */
-.pages-not-found .about p {color: #00B7FF;}
+.pages-not-found .text {color: #00B7FF;}
 .pages-not-found .pages-goods-list {background: #212121;}
 .pages-not-found .pages-goods-list li:nth-last-child(odd) {background: #00B7FF;}
 
 /* hello-world
 ================================================== */
-.pages-hello-world .about p {color: #00F900;}
+.pages-hello-world .text {color: #00F900;}
 .pages-hello-world .pages-goods-list {background: #797979;}
 .pages-hello-world .pages-goods-list li:nth-last-child(odd) {background: #00F900;}
 
 /* neon-logo
 ================================================== */
-.pages-neon-logo .about p {color: #FF00CA;}
+.pages-neon-logo .text {color: #FF00CA;}
 .pages-neon-logo .pages-goods-list {background: #FFCDFF;}
 .pages-neon-logo .pages-goods-list li:nth-last-child(odd) {background: #FF00CA;}
 
 /* pages-mail
 ================================================== */
-.pages-mail .about p {color: #fff;}
+.pages-mail .text {color: #fff;}
 .mail-address {
 display: inline-block;
 letter-spacing: -0.05em;
@@ -728,21 +699,39 @@ padding: 10px;
 background: #FF0000;
 }
 
+/* area01
+================================================== */
+.text {
+color: #00F900;
+line-height: 3.5;
+}
+@media screen and (min-width: 768px) {
+	.area01 {
+	background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
+	background-position: left 100px, right bottom 100px;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 10% auto, 10% auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.area01 {
+	background-image: url("/assets/img/common/bg.svg"), url("/assets/img/common/bg.svg");
+	background-position: left 40px, right bottom 40px;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 20% auto, 20% auto;
+	}
+}
+
 /* margin
 ================================================== */
-.title,
-.pages .text .title,
-p,
+.pages .area01 .title,
+.text,
 .button,
-.news dl dt {margin-top: 5vh;}
-.summary {
-margin-top: 1vh;
-margin-bottom: 5vh;
-}
-.mail-address {margin-top: 2vh;}
-.text .title,
-.logo-title .title {margin-top: 0;} 
-.address .title {
-margin-top: 0;
-padding-top: 5vh;
-}
+.news-list dt {margin-top: 5vh;}
+.area01 {padding: 20vh 0;}
+.area02 {padding-top: 5vh;}
+@media screen and (min-width: 768px) {.area03 {padding: 5vh;}}
+@media screen and (max-width: 767px) {.area03 {padding: 5vh 2vh;}}
+.summary {margin-top: 1vh; margin-bottom: 5vh;}
+.address .title {padding-top: 5vh;}
+.mail-address {margin-top: 3vh;}
