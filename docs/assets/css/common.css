@@ -184,27 +184,6 @@ font-family: "kinakomochi", "pixelmplus";
 letter-spacing: 0.15em;
 }
 
-/* text-animation
-================================================== */
-/* @keyframes text-animation {
-44% {text-shadow: 0 0 0 transparent;}
-45% {text-shadow: 0.2em -0.2em #FF2600, -0.2em 0.2em #00FDFF;}
-46% {text-shadow: 0 0 0 transparent;}
-47% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-48% {text-shadow: 0 0 0 transparent;}
-49% {text-shadow: -0.1em 0 #FF2600, 0.1em 0 #00FDFF;}
-50% {text-shadow: 0 0 0 transparent;}
-51% {text-shadow: -0.2em 0 #FFFB00, 0.2em 0 #0716FF;}
-52% {text-shadow: 0 0 0 transparent;}
-53% {text-shadow: -0.2em -0.2em #D935FB, 0.2em 0.2em #00F900;}
-54% {text-shadow: 0 0 0 transparent;}
-} */
-/* .text p		{animation: text-animation 4.5s infinite;}
-.text p.summary,
-.summary	{animation: text-animation 3.5s infinite;}
-.text dl	{animation: text-animation 4.0s infinite;} */
-/* .button		{animation: text-animation 5s infinite;} */
-
 /* 
 ================================================== */
 .summary {
