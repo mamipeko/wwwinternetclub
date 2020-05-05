@@ -204,7 +204,7 @@ line-height: 1.8;
 .news .title,
 .news .summary 	{color: #000;}
 @keyframes blink-animation {50% {opacity: 0;}}
-.summary-active:after {
+.animationable-active.summary:after {
 content: "";
 padding: 0.2em;
 vertical-align: middle;
@@ -236,8 +236,8 @@ font-size: 400%;
 line-height: 0.8;
 color: #fff;
 }
-.title-active.title:not(.balloon) 	{animation: text-animation linear 3.5s 3;}
-.button-active.button				{animation: text-animation 4s 3;}
+.animationable-active.title:not(.balloon) 	{animation: text-animation linear 3.5s 3;}
+.animationable-active.button				{animation: text-animation 4s 3;}
 
 /* header
 ================================================== */
@@ -325,7 +325,7 @@ opacity: 0;
 background: #424242;
 }
 @keyframes pixel-animation 				{50% {opacity: 0.6;}}
-.pixel-active .pixel     				{animation: pixel-animation 5s infinite;}
+.animationable-active .pixel     		{animation: pixel-animation 5s 2;}
 .color-blue .pixel 						{background: #00B7FF;}
 .color-blue .pixel-wrapper 				{background: #002332;}
 .color-aqua .pixel 						{background: #2D8CFF;}
