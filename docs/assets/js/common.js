@@ -60,27 +60,32 @@ $(window).on("load scroll", _.throttle(function () {
 	});
 }, 400));
 
+/* cursor
+================================================== */
+function setCursorPosition(event) {
+	$(".cursor-wrapper").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);
+}
+
+$("<span/>")
+	.addClass("cursor-wrapper")
+	.append($("<span/>").addClass("cursor"))
+	.appendTo($("body"));
+
+$("body")
+	.on("mousemove", _.throttle(function (event) {
+		setCursorPosition(event);
+	}, 50));
+
+$(window).on("load scroll", _.throttle(function () {
+	if ($(window).scrollTop() > $(window).innerHeight()) {
+		$(".cursor").addClass("cursor-active");
+	}
+}, 20));
 
 
-// function setCursorPosition(event) {
-// 	$(".cursor:not(.cursor-inner)").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);
-// }
-
-// $("<span/>")
-// 	.addClass("cursor")
-// 	.append($("<span/>").addClass("cursor").addClass("cursor-inner"))
-// 	.appendTo($("body"));
-
-// $("body")
-// 	.on("mousemove", _.throttle(function (event) {
-// 		setCursorPosition(event);
-// 	}, 50));
 
 
-
-
-
-// $("html").css("--vh", (window.innerHeight * 0.01) + "px");
+$("html").css("--vh", (window.innerHeight * 0.01) + "px");
 
 AOS.init({
 	offset: 100,

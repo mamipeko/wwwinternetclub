@@ -75,6 +75,7 @@ background: #000;
 	90%{ border-radius: 66% 34% 57% 43% / 49% 51% 49% 51%; }
 	100%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 	}
+	.cursor-wrapper,
 	.cursor {
 	pointer-events: none;
 	touch-action: none;
@@ -87,9 +88,13 @@ background: #000;
 	mix-blend-mode: difference;
 	z-index: 1;
 	}
-	.cursor-inner {
+	.cursor {
+	opacity: 0;
 	background: #fff;
 	border-radius: 71% 29% 38% 62% / 72% 48% 52% 28%; transform: scale(3.0);
+	}
+	.cursor-active {
+	opacity: 1;
 	animation: cursor-animation 5s linear 3;
 	}
 }
