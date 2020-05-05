@@ -32,6 +32,20 @@ $(window).on("load scroll", _.throttle(function () {
 	});
 }, 400));
 
+/* button
+================================================== */
+$(window).on("load scroll", _.throttle(function () {
+	$(".button").each(function () {
+		if ($(this).offset().top < $(window).innerHeight() + $(window).scrollTop() &&
+			$(this).offset().top + $(this).height() > $(window).scrollTop()) {
+			$(this).addClass("button-active");
+		}
+		else {
+			$(this).removeClass("button-active");
+		}
+	});
+}, 400));
+
 
 // function setCursorPosition(event) {
 // 	$(".cursor:not(.cursor-inner)").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);

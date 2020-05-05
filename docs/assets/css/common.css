@@ -230,7 +230,7 @@ animation: blink-cursor 1s infinite;
 
 /* title
 ================================================== */
-@keyframes title-animation {
+@keyframes text-animation {
 43% {text-shadow: 0 0 0 transparent;}
 44% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
 45% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.08);}
@@ -252,7 +252,8 @@ font-size: 400%;
 line-height: 0.8;
 color: #fff;
 }
-.title-active.title:not(.balloon) {animation: title-animation linear 3.5s 3;}
+.title-active.title:not(.balloon) 	{animation: text-animation linear 3.5s 3;}
+.button-active.button				{animation: text-animation 4s 3;}
 
 /* header
 ================================================== */
