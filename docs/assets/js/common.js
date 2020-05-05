@@ -1,3 +1,5 @@
+/* pixel
+================================================== */
 $(".pixel").each(function () {
 	$(this).css("animationDelay", Math.ceil(Math.random() * 5000) + "ms");
 });
@@ -16,9 +18,19 @@ $(window).on("load scroll", _.throttle(function () {
 	});
 }, 400));
 
-
-
-
+/* title
+================================================== */
+$(window).on("load scroll", _.throttle(function () {
+	$(".title").each(function () {
+		if ($(this).offset().top < $(window).innerHeight() + $(window).scrollTop() &&
+			$(this).offset().top + $(this).height() > $(window).scrollTop()) {
+			$(this).addClass("title-active");
+		}
+		else {
+			$(this).removeClass("title-active");
+		}
+	});
+}, 400));
 
 
 

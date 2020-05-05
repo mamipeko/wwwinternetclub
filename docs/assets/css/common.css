@@ -207,7 +207,7 @@ letter-spacing: 0.15em;
 
 /* title
 ================================================== */
-/* @keyframes title-animation {
+@keyframes title-animation {
 43% {text-shadow: 0 0 0 transparent;}
 44% {text-shadow: 0 0 0 transparent; transform: scale(1.0);}
 45% {text-shadow: 0.1em -0.15em #FF2600, -0.1em 0.15em #00FDFF; transform: scale(1.08);}
@@ -220,7 +220,7 @@ letter-spacing: 0.15em;
 52% {text-shadow: 0 0 0 transparent;}
 53% {text-shadow: -0.1em 0 #D935FB, 0.1em 0 #00F900;}
 54% {text-shadow: 0 0 0 transparent;}
-} */
+}
 .title {
 position: relative;
 display: block;
@@ -229,7 +229,7 @@ font-size: 400%;
 line-height: 0.8;
 color: #fff;
 }
-.title:not(.balloon) {animation: title-animation linear 3.5s infinite;}
+.title-active:not(.balloon) {animation: title-animation linear 3.5s 3;}
 .summary {
 display: block;
 font-size: 14px;
@@ -251,9 +251,9 @@ border-right: 0.4em solid;
 animation: blink-cursor 1s infinite;
 } */
 
-/* 
+/* mask
 ================================================== */
-.mask-wrapper {
+/* .mask-wrapper {
 display: inline-block;
 height: auto;
 margin: 0 auto;
@@ -317,7 +317,7 @@ to {transform: translateX(100%);}
 @keyframes mask-02 {
 from {transform: translateX(0);}
 to {transform: translateX(100%);}
-}
+} */
 
 /* header
 ================================================== */
