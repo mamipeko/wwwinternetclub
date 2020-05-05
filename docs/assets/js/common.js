@@ -1,12 +1,11 @@
-/* pixel
-================================================== */
 $(".pixel").each(function () {
 	$(this).css("animationDelay", Math.ceil(Math.random() * 5000) + "ms");
 });
 $(".pixel-list").addClass("pixel-animation");
 
-
 $(window).on("load scroll", _.throttle(function () {
+	/* pixel
+	================================================== */
 	$(".photo").each(function () {
 		if ($(this).offset().top < $(window).innerHeight() + $(window).scrollTop() &&
 			$(this).offset().top + $(this).height() > $(window).scrollTop()) {
@@ -16,11 +15,9 @@ $(window).on("load scroll", _.throttle(function () {
 			$(this).removeClass("pixel-active");
 		}
 	});
-}, 400));
 
-/* title
-================================================== */
-$(window).on("load scroll", _.throttle(function () {
+	/* title
+	================================================== */
 	$(".title").each(function () {
 		if ($(this).offset().top < $(window).innerHeight() + $(window).scrollTop() &&
 			$(this).offset().top + $(this).height() > $(window).scrollTop()) {
@@ -30,11 +27,10 @@ $(window).on("load scroll", _.throttle(function () {
 			$(this).removeClass("title-active");
 		}
 	});
-}, 400));
 
-/* button
-================================================== */
-$(window).on("load scroll", _.throttle(function () {
+	/* button
+	================================================== */
+
 	$(".button").each(function () {
 		if ($(this).offset().top < $(window).innerHeight() + $(window).scrollTop() &&
 			$(this).offset().top + $(this).height() > $(window).scrollTop()) {
@@ -44,11 +40,9 @@ $(window).on("load scroll", _.throttle(function () {
 			$(this).removeClass("button-active");
 		}
 	});
-}, 400));
 
-/* summary
-================================================== */
-$(window).on("load scroll", _.throttle(function () {
+	/* summary
+	================================================== */
 	$(".summary").each(function () {
 		if ($(this).offset().top < $(window).innerHeight() + $(window).scrollTop() &&
 			$(this).offset().top + $(this).height() > $(window).scrollTop()) {
@@ -58,7 +52,9 @@ $(window).on("load scroll", _.throttle(function () {
 			$(this).removeClass("summary-active");
 		}
 	});
+
 }, 400));
+
 
 /* cursor
 ================================================== */
@@ -82,11 +78,12 @@ $(window).on("load scroll", _.throttle(function () {
 	}
 }, 20));
 
-
-
-
+/* full screen
+================================================== */
 $("html").css("--vh", (window.innerHeight * 0.01) + "px");
 
+/* AOS
+================================================== */
 AOS.init({
 	offset: 100,
 	delay: 100,
