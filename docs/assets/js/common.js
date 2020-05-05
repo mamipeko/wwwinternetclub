@@ -3,7 +3,28 @@ $(".pixel").each(function () {
 });
 $(".pixel-list").addClass("pixel-animation");
 
+var windowHeight;
+
+$(window).on("load resize", function () {
+	windowHeight = $(window).innerHeight();
+});
+
 $(window).on("load scroll", _.throttle(function () {
+	var scrollTop = $(window).scrollTop();
+
+	$(".animationable").each(function () {
+		var thisOffsetTop = $(this).offset().top;
+		var thisHeight = $(this).height();
+
+		if (thisOffsetTop < windowHeight + scrollTop &&
+			thisOffsetTop + thisHeight > scrollTop) {
+			$(this).addClass("animationable-active");
+		}
+		else {
+			$(this).removeClass("animationable-active");
+		}
+	});
+
 	/* pixel
 	================================================== */
 	$(".photo").each(function () {
