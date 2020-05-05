@@ -33,7 +33,6 @@ $(window).on("load scroll", _.throttle(function () {
 }, 400));
 
 
-
 // function setCursorPosition(event) {
 // 	$(".cursor:not(.cursor-inner)").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);
 // }
@@ -48,18 +47,6 @@ $(window).on("load scroll", _.throttle(function () {
 // 		setCursorPosition(event);
 // 	}, 50));
 
-// $(window).on("scroll", _.throttle(function () {
-// 	$('.mask').each(function () {
-// 		if ($(this).hasClass("is-play")) {
-// 			return;
-// 		}
-
-// 		var wh = $(window).height();
-// 		if ($(window).scrollTop() > $(this).offset().top - wh + 100) {
-// 			$(this).addClass("is-play");
-// 		}
-// 	});
-// }, 400));
 
 
 

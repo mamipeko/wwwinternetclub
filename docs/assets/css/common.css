@@ -205,6 +205,29 @@ letter-spacing: 0.15em;
 .text dl	{animation: text-animation 4.0s infinite;} */
 /* .button		{animation: text-animation 5s infinite;} */
 
+/* 
+================================================== */
+.summary {
+display: block;
+font-size: 14px;
+color: #fff;
+line-height: 1.8;
+}
+.logo-title .summary {margin-bottom: 0;}
+.balloon 		{font-size: 300%;}
+.balloon:before {content:"\5C";}
+.balloon:after 	{content:"\2f";}
+.news .title,
+.news .summary 	{color: #000;}
+/* @keyframes blink-cursor {50% {opacity: 0;}}
+.summary:after {
+content: "";
+padding: 0.2em;
+vertical-align: middle;
+border-right: 0.4em solid;
+animation: blink-cursor 1s infinite;
+} */
+
 /* title
 ================================================== */
 @keyframes title-animation {
@@ -229,95 +252,7 @@ font-size: 400%;
 line-height: 0.8;
 color: #fff;
 }
-.title-active:not(.balloon) {animation: title-animation linear 3.5s 3;}
-.summary {
-display: block;
-font-size: 14px;
-color: #fff;
-line-height: 1.8;
-}
-.logo-title .summary {margin-bottom: 0;}
-.balloon 		{font-size: 300%;}
-.balloon:before {content:"\5C";}
-.balloon:after 	{content:"\2f";}
-.news .title,
-.news .summary 	{color: #000;}
-/* @keyframes blink-cursor {50% {opacity: 0;}}
-.summary:after {
-content: "";
-padding: 0.2em;
-vertical-align: middle;
-border-right: 0.4em solid;
-animation: blink-cursor 1s infinite;
-} */
-
-/* mask
-================================================== */
-/* .mask-wrapper {
-display: inline-block;
-height: auto;
-margin: 0 auto;
-overflow: hidden;
-}
-.mask-box {
-overflow: hidden;
-}
-.mask {
-width: inherit;
-height: inherit;
-background: transparent;
-opacity: 0;
-}
-.is-play {
-animation-name: mask-play;
-animation-duration: .2s;
-animation-fill-mode: forwards;
-animation-timing-function: cubic-bezier(.8,0,.5,1);
-position: relative;
-opacity: 1;
-}
-.is-play:before {
-animation-name: mask-01;
-animation-duration: 0.15s;
-animation-delay: 0.15s;
-animation-fill-mode: forwards;
-animation-timing-function: cubic-bezier(.8,0,.5,1);
-content: "";
-position: absolute;
-top: 10px;
-left: 10px;
-z-index: 1;
-width: 100%;
-height: 100%;
-background-image: linear-gradient( 109.6deg,  rgba(7,22,255,1) 11.2%, rgba(255,251,0,1) 91.1% );
-}
-.is-play:after {
-animation-name: mask-02;
-animation-duration: 0.1s;
-animation-delay: 0.1s;
-animation-fill-mode: forwards;
-animation-timing-function: cubic-bezier(.8,0,.5,1);
-content: "";
-position: absolute;
-top: 0;
-left: 5px;
-z-index: 2;
-width: 100%;
-height: 100%;
-background-image: linear-gradient( 109.6deg,  rgba(0,249,0,1) 11.2%, rgba(255,38,0,1) 91.1% );
-}
-@keyframes mask-play {
-from {transform: translateX(-100%);}
-to {transform: translateX(0);}
-}
-@keyframes mask-01 {
-from {transform: translateX(0);}
-to {transform: translateX(100%);}
-}
-@keyframes mask-02 {
-from {transform: translateX(0);}
-to {transform: translateX(100%);}
-} */
+.title-active.title:not(.balloon) {animation: title-animation linear 3.5s 3;}
 
 /* header
 ================================================== */
