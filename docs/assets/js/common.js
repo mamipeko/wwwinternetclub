@@ -1,12 +1,12 @@
-var pixelList = $(".pixel-list");
-
-for (var i = 0; i < 45; i++) {
-	pixelList.append(
-		$("<li/>")
-			.addClass("pixel")
-			.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms")
-	);
-}
+$(".pixel-list").each(function () {
+	for (var i = 0; i < 45; i++) {
+		$(this).append(
+			$("<li/>")
+				.addClass("pixel")
+				.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms")
+		);
+	}
+});
 
 var windowHeight;
 
