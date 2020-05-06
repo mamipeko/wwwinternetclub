@@ -1,6 +1,12 @@
-$(".pixel").each(function () {
-	$(this).css("animationDelay", Math.ceil(Math.random() * 5000) + "ms");
-});
+var pixelList = $(".pixel-list");
+
+for (var i = 0; i < 45; i++) {
+	pixelList.append(
+		$("<li/>")
+			.addClass("pixel")
+			.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms")
+	);
+}
 
 var windowHeight;
 
@@ -40,6 +46,7 @@ $("body")
 	.on("mousemove", _.throttle(function (event) {
 		$(".cursor-wrapper").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);
 	}, 50));
+
 
 $("html").css("--vh", (window.innerHeight * 0.01) + "px");
 
