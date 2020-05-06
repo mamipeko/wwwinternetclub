@@ -314,7 +314,6 @@ transform: translateY(-50%) translateX(-50%);
 .pixels {
 width: 100%;
 height: 100%;
-background: #000;;
 overflow: hidden;
 }
 .pixel-list {
@@ -330,22 +329,22 @@ float: left;
 opacity: 0;
 background: #424242;
 }
-@keyframes pixel-animation 			{50% {opacity: 0.6;}}
-.animationable-active .pixel     	{animation: pixel-animation 5s 2;}
-.color-blue .pixel 					{background: #00B7FF;}
-.color-blue .pixels 				{background: #002332;}
-.color-aqua .pixel 					{background: #2D8CFF;}
-.color-aqua .pixels 				{background: #15457F;}
-.color-magenta .pixel 				{background: #FF00CA;}
-.color-magenta .pixels 				{background: #22001B;}
-.color-yellow .pixel 				{background: #FFF468;}
-.color-yellow .pixels 				{background: #757602;}
-.color-green .pixel 				{background: #00F900;}
-.color-green .pixels 				{background: #002F00;}
-.color-red .pixel 					{background: #FF0000;}
-.color-red .pixels 					{background: #6A0000;}
-.color-purple .pixel 				{background: #8783FF;}
-.color-purple .pixels 				{background: #232243;}
+@keyframes pixel-animation 		{50% {opacity: 0.6;}}
+.animationable-active .pixel    {animation: pixel-animation 5s 2;}
+.color-blue .pixel 				{background: #00B7FF;}
+.color-blue .pixel-list 		{background: #0087BD;}
+.color-aqua .pixel 				{background: #2D8CFF;}
+.color-aqua .pixel-list 		{background: #1C5EAD;}
+.color-magenta .pixel 			{background: #FF00CA;}
+.color-magenta .pixel-list 		{background: #22001B;}
+.color-yellow .pixel 			{background: #FFF468;}
+.color-yellow .pixel-list 		{background: #C9A832;}
+.color-green .pixel 			{background: #00F900;}
+.color-green .pixel-list 		{background: #018602;}
+.color-red .pixel 				{background: #FF0000;}
+.color-red .pixel-list 			{background: #AB0000;}
+.color-purple .pixel 			{background: #8783FF;}
+.color-purple .pixel-list 		{background: #5B59B2;}
 @media screen and (min-width: 768px) {
 	.pixel-list {width: 200vh;}
 	.pixel {
