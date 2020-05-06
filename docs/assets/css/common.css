@@ -332,11 +332,11 @@ background: #424242;
 @keyframes pixel-animation 		{50% {opacity: 0.6;}}
 .animationable-active .pixel    {animation: pixel-animation 5s 2;}
 .color-blue .pixel 				{background: #00B7FF;}
-.color-blue .pixel-list 		{background: #0087BD;}
+.color-blue .pixel-list 		{background: #00222F;}
 .color-aqua .pixel 				{background: #2D8CFF;}
 .color-aqua .pixel-list 		{background: #1C5EAD;}
 .color-magenta .pixel 			{background: #FF00CA;}
-.color-magenta .pixel-list 		{background: #22001B;}
+.color-magenta .pixel-list 		{background: #1B001E;}
 .color-yellow .pixel 			{background: #FFF468;}
 .color-yellow .pixel-list 		{background: #C9A832;}
 .color-green .pixel 			{background: #00F900;}
