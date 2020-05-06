@@ -304,15 +304,10 @@ transform: translateY(-50%) translateX(-50%);
 42% {opacity: 0.4;}
 43% {opacity: 1;}
 }
-.logo-01 {animation: logo-animation linear 2 3s;}
-.logo-02 {animation: logo-animation linear 2 3.5s;}
-.logo-03 {animation: logo-animation linear 2 4s;}
-.logo-04 {animation: logo-animation linear 2 4.5s;}
-.logo-05 {animation: logo-animation linear 2 5s;}
-.logo-06 {animation: logo-animation linear 2 6.5s;}
-.logo-07 {animation: logo-animation linear 2 7s;}
-.logo-08 {animation: logo-animation linear 2 7.5s;}
-.logo-09 {animation: logo-animation linear 2 4s;}
+.logo-n 	{animation: logo-animation linear 3 3.5s;}
+.logo-r 	{animation: logo-animation linear 3 5.1s;}
+.logo-e 	{animation: logo-animation linear 2 7.4s;}
+.logo-club 	{animation: logo-animation linear 2 8.2s;} */
 
 /* pixel
 ================================================== */
