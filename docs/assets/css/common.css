@@ -248,20 +248,49 @@ height: 100vh;
 height: calc(var(--vh, 1vh) * 100);
 overflow: hidden;
 }
+.arrow {
+position: absolute;
+bottom: 4.5vh;
+left: 50%;
+height: auto;
+}
+@media screen and (min-width: 768px) {
+	.visual {
+	background-image: url("/assets/img/bg/visual-pc-left.svg"), url("/assets/img/bg/visual-pc-right.svg");
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	background-size: contain, contain;
+	}
+	.arrow {
+	margin-left: -1.8vh;
+	width: 3.6vh;
+	}
+}
+@media screen and (max-width: 767px) {
+	.visual {
+	background-image: url("/assets/img/bg/visual-sp-left.svg"), url("/assets/img/bg/visual-sp-right.svg");
+	background-position: left top, right top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: auto 100%, auto 100%;
+	}
+	.arrow {
+	margin-left: -4%;
+	width: 8%;
+	}
+}
 .logo img,
 .logo-title {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translateY(-50%) translateX(-50%);
--webkit-transform: translateY(-50%) translateX(-50%);
 }
 @media screen and (min-width: 768px) {
-	.logo img {width: 55%;}
+	.logo img {width: 80vh;}
 	.logo.small img {width: 20%;}
 }
 @media screen and (max-width: 767px) {
-	.logo img {width: 100%;}
+	.logo img {width: 90%;}
 	.logo-title {width: 100%;}
 	.pages .logo img {width: 90%;}
 	.pages .logo.small img {width: 30%;}
