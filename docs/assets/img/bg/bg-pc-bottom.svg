@@ -22,8 +22,14 @@
         <circle cx="738.131" cy="716.209" r="4.561" style="fill:rgb(158,159,159);"/>
         <circle cx="722.804" cy="731.223" r="4.561" style="fill:rgb(158,159,159);"/>
         <circle cx="738.131" cy="731.223" r="4.561" style="fill:rgb(158,159,159);"/>
-        <rect x="259.803" y="640.78" width="19" height="19" style="fill:rgb(158,159,159);"/>
-        <rect x="278.803" y="621.78" width="19" height="19" style="fill:rgb(158,159,159);"/>
-        <rect x="297.803" y="640.78" width="19" height="19" style="fill:rgb(158,159,159);"/>
+        <g transform="matrix(1,0,0,1,-30,30)">
+            <rect x="259.803" y="640.78" width="19" height="19" style="fill:rgb(158,159,159);"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-30,30)">
+            <rect x="278.803" y="621.78" width="19" height="19" style="fill:rgb(158,159,159);"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-30,30)">
+            <rect x="297.803" y="640.78" width="19" height="19" style="fill:rgb(158,159,159);"/>
+        </g>
     </g>
 </svg>

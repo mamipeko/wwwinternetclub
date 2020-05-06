@@ -736,9 +736,13 @@ line-height: 3.5;
 	background-size: 100% auto;
 	}
 	.about-wrapper {
-		display: inline-block;
-		padding: 6% 5%;
-		border: 7px solid #fff;	
+	display: inline-block;
+	clear: both;
+	padding: 6%;
+	background-image: url("/assets/img/bg/about-wrapper-bottom.svg"), url("/assets/img/bg/about-wrapper-top.svg");
+	background-position: center bottom, center top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% auto, 100% auto;
 	}
 	.members.area01 {
 	background-image: url("/assets/img/bg/bg-pc-top-members.svg"), url("/assets/img/bg/bg-pc-bottom-members.svg");
