@@ -329,7 +329,7 @@ position: relative;
 	.pixels 				{height: 25vw;}
 	.pixels li 				{width: 12.5%;}
 	.pages .hero,
-	.pages .hero .pixels	{height: 50vw;}
+	.pages .hero .pixels	{height: 62.5vw;}
 }
 @media screen and (max-width: 767px) {
 	.pixels 				{height: 40vw;}
