@@ -436,6 +436,9 @@ margin-left: -100px;
 	.goods li.neon-logo:hover .button,
 	.goods.pages-neon-logo li:hover .button,
 	.goods.pages-neon-logo .button-home:hover {background: rgba(255,0,202,0.5);}
+
+	.members .button:hover,
+	.pages-members .button-home:hover {background: rgba(180,180,255,0.5);}
 	.zoom .button:hover {background: rgba(137,201,255,0.5);}
 }
 .zoom .button {letter-spacing: -0.05em;}
@@ -493,15 +496,15 @@ margin: auto;
 ================================================== */
 .members {
 color: #000;
-font-size: 90%;
-letter-spacing: 0.1em;
-line-height: 2.0;
 background: #8783FF;
 }
 .members-list {
 display: flex;
 justify-content: center;
 flex-wrap: nowrap;
+font-size: 90%;
+letter-spacing: 0.1em;
+line-height: 2.0;
 }
 .members-list span {display: block;}
 .members-name {
@@ -519,6 +522,7 @@ letter-spacing: 0.1em;
 	.members-list img {width: 70%; border-radius: 50%;}
 	.members-sns img {width: 25%;}
 }
+.pages-members .text {color: #A1A1FF;}
 
 /* zoom
 ================================================== */
