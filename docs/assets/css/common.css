@@ -531,6 +531,10 @@ letter-spacing: 0.1em;
 color: #000;
 background: #FFF468;
 }
+.news a {
+color: #000;
+text-decoration: underline;
+}
 .news dl {
 margin: 0 auto;
 line-height: 2.0;
@@ -543,6 +547,7 @@ font-family: "8bitmadness";
 .news dl dt:first-child {
 padding-top: 0;
 }
+.english {letter-spacing: -0.2em;}
 
 /* address
 ================================================== */
@@ -796,8 +801,8 @@ line-height: 3.5;
 ================================================== */
 .pages .area01 .title,
 .text,
-.button,
-.news-list dt {margin-top: 5vh;}
+.button {margin-top: 5vh;}
+ .news-list dt {margin-top: 2vh;}
 .area01 {padding: 20vh 0;}
 .area02 {padding-top: 5vh;}
 @media screen and (min-width: 768px) {.area03 {padding: 5vh;}}
