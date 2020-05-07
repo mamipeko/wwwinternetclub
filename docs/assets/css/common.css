@@ -360,20 +360,22 @@ display: inline-block;
 @keyframes pixel-animation 		{50% {opacity: 0.7;}}
 .pixel							{opacity: 0;}
 .animationable-active .pixel    {animation: pixel-animation 5s 2;}
-.color-blue .pixel 				{background: #00B7FF;}
-.color-blue .pixels 			{background: #00222F;}
-.color-aqua .pixel 				{background: #2D8CFF;}
-.color-aqua .pixels 			{background: #1C5EAD;}
-.color-magenta .pixel 			{background: #FF00CA;}
-.color-magenta .pixels 			{background: #1B001E;}
-.color-yellow .pixel 			{background: #FFF468;}
-.color-yellow .pixels 			{background: #C9A832;}
 .color-green .pixel 			{background: #00F900;}
 .color-green .pixels 			{background: #014401;}
+.color-gray .pixel 				{background: #5E5E5E;}
+.color-gray .pixels 			{background: #212121;}
 .color-red .pixel 				{background: #FF0000;}
 .color-red .pixels 				{background: #AB0000;}
 .color-purple .pixel 			{background: #8783FF;}
 .color-purple .pixels 			{background: #5B59B2;}
+.color-aqua .pixel 				{background: #2D8CFF;}
+.color-aqua .pixels 			{background: #1C5EAD;}
+.color-yellow .pixel 			{background: #FFF468;}
+.color-yellow .pixels 			{background: #C9A832;}
+.color-blue .pixel 				{background: #00B7FF;}
+.color-blue .pixels 			{background: #00222F;}
+.color-magenta .pixel 			{background: #FF00CA;}
+.color-magenta .pixels 			{background: #1B001E;}
 
 /* button
 ================================================== */
