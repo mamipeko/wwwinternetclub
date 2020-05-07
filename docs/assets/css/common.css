@@ -57,17 +57,17 @@ background: #000;
 ================================================== */
 @media screen and (min-width: 768px) {
 	@keyframes cursor-animation {
-	0%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-	10%{ border-radius: 53% 47% 33% 67% / 60% 30% 70% 40%; }
+	0%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;}
+	10%{ border-radius: 53% 47% 33% 67% / 60% 30% 70% 40%;}
 	20%{ border-radius: 71% 29% 38% 62% / 72% 48% 52% 28%; transform: scale(3.0);}
 	30%{ border-radius: 41% 59% 45% 55% / 33% 56% 44% 67%;}
-	40%{ border-radius: 55% 45% 67% 33% / 77% 48% 52% 23%; }
-	50%{ border-radius: 44% 56% 22% 78% / 31% 74% 26% 69%; }
+	40%{ border-radius: 55% 45% 67% 33% / 77% 48% 52% 23%;}
+	50%{ border-radius: 44% 56% 22% 78% / 31% 74% 26% 69%;}
 	60%{ border-radius: 46% 54% 48% 52% / 61% 59% 41% 39%; transform: scale(0.5);}
-	70%{ border-radius: 44% 56% 60% 40% / 63% 36% 64% 37%; }
-	80%{ border-radius: 20% 80% 45% 55% / 31% 79% 21% 69%; }
-	90%{ border-radius: 66% 34% 57% 43% / 49% 51% 49% 51%; }
-	100%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+	70%{ border-radius: 44% 56% 60% 40% / 63% 36% 64% 37%;}
+	80%{ border-radius: 20% 80% 45% 55% / 31% 79% 21% 69%;}
+	90%{ border-radius: 66% 34% 57% 43% / 49% 51% 49% 51%;}
+	100%{ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;}
 	}
 	.cursor-wrapper,
 	.cursor {
@@ -311,69 +311,69 @@ transform: translateY(-50%) translateX(-50%);
 
 /* pixel
 ================================================== */
-.pixels {
+.pixel-list {
 width: 100%;
 height: 100%;
+}
+.pixels {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 overflow: hidden;
 }
-.pixel-list {
-position: absolute;
-height: 100%;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-overflow: hidden;
+.pixels li {
+position: relative;
 }
-.pixel {
-float: left;
-opacity: 0;
-background: #424242;
-}
-@keyframes pixel-animation 		{50% {opacity: 0.6;}}
-.animationable-active .pixel    {animation: pixel-animation 5s 2;}
-.color-blue .pixel 				{background: #00B7FF;}
-.color-blue .pixel-list 		{background: #00222F;}
-.color-aqua .pixel 				{background: #2D8CFF;}
-.color-aqua .pixel-list 		{background: #1C5EAD;}
-.color-magenta .pixel 			{background: #FF00CA;}
-.color-magenta .pixel-list 		{background: #1B001E;}
-.color-yellow .pixel 			{background: #FFF468;}
-.color-yellow .pixel-list 		{background: #C9A832;}
-.color-green .pixel 			{background: #00F900;}
-.color-green .pixel-list 		{background: #014401;}
-.color-red .pixel 				{background: #FF0000;}
-.color-red .pixel-list 			{background: #AB0000;}
-.color-purple .pixel 			{background: #8783FF;}
-.color-purple .pixel-list 		{background: #5B59B2;}
 @media screen and (min-width: 768px) {
-	.pixel-list {width: 200vh;}
-	.pixel {
-		width: 20vh;
-		height: 20vh;
-		height: calc(var(--vh, 1vh) * 20);
-	}
-	.pixel-wrapper {height: 60vh; height: calc(var(--vh, 1vh) * 60);}
+	.pixels 				{height: 25vw;}
+	.pixels li 				{width: 12.5%;}
+	.pages .hero,
+	.pages .hero .pixels	{height: 62.5vw;}
 }
 @media screen and (max-width: 767px) {
-	.pixel-list {width: 55vh;}
-	.pixel {
-		width: 11vh;
-		height: 12.6vh;
-		height: calc(var(--vh, 1vh) * 12.6);
-	}
-	.pixel-wrapper 	{height: 37.5vh; height: calc(var(--vh, 1vh) * 37.5);}
-	.pages .hero 	{height: 75vh; height: calc(var(--vh, 1vh) * 75);}
+	.pixels 				{height: 33.3333vw;}
+	.pixels li 				{width: 16.6666%;}
+	.pages .hero,
+	.pages .hero .pixels	{height: 133.3333vw;}
 }
-@media screen and (max-width: 320px) {
-	.pixel-list {width: 67.8vh;}
-	.pixel {
-		width: 11.3vh;
-		height: 12.7vh;
-		height: calc(var(--vh, 1vh) * 12.7);
-	}
-	.pixel-wrapper	{height: 38.1vh; height: calc(var(--vh, 1vh) * 38.1);}
-	.pages .hero 	{height: 76.2vh; height: calc(var(--vh, 1vh) * 76.2);}
+.pixels li:before {
+content: "";
+display: block;
+padding-top: 100%;
 }
+.pixels li span {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+text-align: center;
+}
+.pixels li span:before {
+content: "";
+height: 100%;
+vertical-align: middle;
+width: 0;
+display: inline-block;
+}
+@keyframes pixel-animation 		{50% {opacity: 0.7;}}
+.pixel							{opacity: 0;}
+.animationable-active .pixel    {animation: pixel-animation 5s 2;}
+.color-blue .pixel 				{background: #00B7FF;}
+.color-blue .pixels 			{background: #00222F;}
+.color-aqua .pixel 				{background: #2D8CFF;}
+.color-aqua .pixels 			{background: #1C5EAD;}
+.color-magenta .pixel 			{background: #FF00CA;}
+.color-magenta .pixels 			{background: #1B001E;}
+.color-yellow .pixel 			{background: #FFF468;}
+.color-yellow .pixels 			{background: #C9A832;}
+.color-green .pixel 			{background: #00F900;}
+.color-green .pixels 			{background: #014401;}
+.color-red .pixel 				{background: #FF0000;}
+.color-red .pixels 				{background: #AB0000;}
+.color-purple .pixel 			{background: #8783FF;}
+.color-purple .pixels 			{background: #5B59B2;}
 
 /* button
 ================================================== */
