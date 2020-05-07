@@ -329,13 +329,13 @@ position: relative;
 	.pixels 				{height: 25vw;}
 	.pixels li 				{width: 12.5%;}
 	.pages .hero,
-	.pages .hero .pixels	{height: 62.5vw;}
+	.pages .hero .pixels	{height: 50vw;}
 }
 @media screen and (max-width: 767px) {
-	.pixels 				{height: 33.3333vw;}
-	.pixels li 				{width: 16.6666%;}
+	.pixels 				{height: 40vw;}
+	.pixels li 				{width: 20%;}
 	.pages .hero,
-	.pages .hero .pixels	{height: 133.3333vw;}
+	.pages .hero .pixels	{height: 140vw;}
 }
 .pixels li:before {
 content: "";
@@ -358,25 +358,41 @@ vertical-align: middle;
 width: 0;
 display: inline-block;
 }
-@keyframes pixel-animation 		{50% {opacity: 0.7;}}
+@keyframes pixel-animation 		{50% {opacity: 0.8;}}
 .pixel							{opacity: 0;}
 .animationable-active .pixel    {animation: pixel-animation 5s 2;}
-.color-green .pixel 			{background: #00F900;}
-.color-green .pixels 			{background: #014401;}
-.color-gray .pixel 				{background: #5E5E5E;}
-.color-gray .pixels 			{background: #212121;}
-.color-red .pixel 				{background: #FF0000;}
-.color-red .pixels 				{background: #AB0000;}
-.color-purple .pixel 			{background: #8783FF;}
-.color-purple .pixels 			{background: #5B59B2;}
-.color-aqua .pixel 				{background: #2D8CFF;}
-.color-aqua .pixels 			{background: #1C5EAD;}
-.color-yellow .pixel 			{background: #FFF468;}
-.color-yellow .pixels 			{background: #C9A832;}
-.color-blue .pixel 				{background: #00B7FF;}
-.color-blue .pixels 			{background: #00222F;}
-.color-magenta .pixel 			{background: #FF00CA;}
-.color-magenta .pixels 			{background: #1B001E;}
+.pixels li:nth-child(2),
+.pixels li:nth-child(4),
+.pixels li:nth-child(6),
+.pixels li:nth-child(8),
+.pixels li:nth-child(9),
+.pixels li:nth-child(11),
+.pixels li:nth-child(13),
+.pixels li:nth-child(15),
+.pixels li:nth-child(18),
+.pixels li:nth-child(20),
+.pixels li:nth-child(22),
+.pixels li:nth-child(24),
+.pixels li:nth-child(25),
+.pixels li:nth-child(27),
+.pixels li:nth-child(29),
+.pixels li:nth-child(31),
+.pixels li:nth-child(34),
+.pixels li:nth-child(36),
+.pixels li:nth-child(38),
+.pixels li:nth-child(40)	{background: #000; opacity: 0.15;}
+.color-green .pixel 		{background: #00F900;}
+.color-green .pixels 		{background: #013C01;}
+.color-gray .pixel 			{background: #929292;}
+.color-gray .pixels 		{background: #242525;}
+.color-red .pixel 			{background: #FF0000;}
+.color-red .pixels 			{background: #C70000;}
+.color-purple .pixel 		{background: #8783FF;}
+.color-purple .pixels 		{background: #6764C8;}
+.color-aqua .pixel 			{background: #2D8CFF;}
+.color-aqua .pixels 		{background: #216DC9;}
+.color-yellow .pixel 		{background: #FFF468;}
+.color-yellow .pixels 		{background: #E6DA4D;}
 
 /* button
 ================================================== */
