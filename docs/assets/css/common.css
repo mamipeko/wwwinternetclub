@@ -97,19 +97,21 @@ background: #000;
 /* selection
 ================================================== */
 @media screen and (min-width: 768px) {
-::selection		   					{background: transparent;}
-header ::selection		   			{background: transparent!important;}
+header ::selection,
+footer ::selection,
+.hero ::selection					{background: transparent!important;}
 .about ::selection					{background: #00C801;}
+.goods ::selection					{background: #ccc;}
+.members ::selection				{background: #A795FF;}
+.zoom ::selection					{background: #257CE4;}
+.news ::selection					{background: #EFE460;}
 .pages-not-found ::selection		{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
 .pages-neon-logo ::selection		{background: #B2008D;}
+.pages-members ::selection			{background: #B4B3FF;}
 .pages-mail ::selection				{background: #BE0000;}
-.goods ::selection					{background: #ccc;}
 .youtube ::selection				{background: #BE0000;}
-.members ::selection				{background: #9598FF;}
-.news ::selection					{background: #EFE460;}
 .address ::selection				{background: #55C7FF;}
-footer ::selection		   			{background: transparent!important;}
 }
 
 /* a
