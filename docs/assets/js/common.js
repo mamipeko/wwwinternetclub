@@ -44,7 +44,7 @@ $(window).on("load scroll", _.throttle(function () {
 }, 400));
 
 $(window).on("load scroll", _.throttle(function () {
-	if ($(window).scrollTop() > $(window).innerHeight()) {
+	if ($(window).scrollTop() > $(window).innerHeight() / 2) {
 		$(".cursor").addClass("cursor-active");
 	}
 }, 20));
