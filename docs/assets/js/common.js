@@ -1,9 +1,21 @@
-$(".pixel-list").each(function () {
-	for (var i = 0; i < 45; i++) {
+$(".pages .pixels").each(function () {
+	for (var i = 0; i < 40; i++) {
 		$(this).append(
 			$("<li/>")
-				.addClass("pixel")
-				.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms")
+				.append($("<span/>")
+					.addClass("pixel")
+					.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms"))
+		);
+	}
+});
+
+$(".pixels").each(function () {
+	for (var i = 0; i < 16; i++) {
+		$(this).append(
+			$("<li/>")
+				.append($("<span/>")
+					.addClass("pixel")
+					.css("animationDelay", Math.ceil(Math.random() * 5000) + "ms"))
 		);
 	}
 });
