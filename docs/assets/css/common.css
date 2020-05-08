@@ -407,7 +407,6 @@ line-height: 3.5;
 letter-spacing: 0.1em;
 border: 3px solid #fff;
 border-radius: 50px;
-background: rgba(0,0,0,0.4);
 }
 .button:before {content: "💬"; font-size: 120%; margin-right: 0.2em;}
 .button:after {content: ">";}
@@ -418,6 +417,10 @@ bottom: 10vh;
 left: 50%;
 margin-left: -100px;
 }
+.button 			{background: rgba(50,50,50,0.4);}
+.members .button,
+.zoom .button 		{background: rgba(0,0,0,0.2);}
+.mail .button		{background: rgba(21,155,255,0.5);}
 @media screen and (max-width: 767px) {
 .goods-list .button,
 .pages-goods-list .button {bottom: 4.5vh;}
@@ -438,15 +441,17 @@ margin-left: -100px;
 	.goods li.neon-logo:hover .button,
 	.goods.pages-neon-logo li:hover .button,
 	.goods.pages-neon-logo .button-home:hover {background: rgba(255,0,202,0.5);}
-
 	.members .button:hover,
 	.pages-members .button-home:hover {background: rgba(180,180,255,0.5);}
 	.zoom .button:hover {background: rgba(137,201,255,0.5);}
+	.mail .button:hover,
+	.pages-mail .button-home:hover {background: rgba(255,0,0,0.5);}
 }
 .zoom .button {letter-spacing: -0.05em;}
 .zoom .button:before {content: "🖼";}
 .button-home:before {content: "<🏠"; font-size: 120%;}
 .button-home:after {content: "";}
+.mail .button:before {content: "💌";}
 
 /* goods
 ================================================== */
@@ -586,11 +591,6 @@ vertical-align: middle;
 	.share {padding: 0 0 5vh 0;}
 	.share-list li {width: 125px;}
 }
-.accounts-mail {
-margin: 0 auto;
-display: block;
-}
-.contact img,
 .accounts-list li img {width: 100%;}
 .accounts-list {
 display: flex;
@@ -601,14 +601,8 @@ justify-content: center;
 .accounts-twitter {background: #1DA1F2;}
 .accounts-instagram {background: linear-gradient(to bottom left, #545ACE, #EE299B);}
 .accounts-youtube {background: #FF0000;}
-@media screen and (min-width: 768px) {
-	.accounts-list li img {padding: 20% 32%;}
-	.accounts-mail {width: 6.5%;}
-}
-@media screen and (max-width: 767px) {
-	.accounts-list li img {padding: 14% 17%;}
-	.accounts-mail {width: 15%;}
-}
+@media screen and (min-width: 768px) {.accounts-list li img {padding: 20% 32%;}}
+@media screen and (max-width: 767px) {.accounts-list li img {padding: 14% 17%;}}
 
 /* footer
 ================================================== */
