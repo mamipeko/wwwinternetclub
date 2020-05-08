@@ -221,7 +221,8 @@ line-height: 0.8;
 color: #fff;
 }
 .animationable-active.title:not(.balloon) 	{animation: text-animation linear 3.5s 3;}
-.animationable-active.button				{animation: text-animation 4s 3;}
+.animationable-active.button a,
+.goods .animationable-active.button span	{animation: text-animation 4s 3;}
 
 /* header
 ================================================== */
@@ -398,60 +399,57 @@ display: inline-block;
 
 /* button
 ================================================== */
-.button {
+.button a,
+.goods .button span {
 display: block;
 margin: 0 auto;
 width: 200px;
+color: #fff;
 font-size: 14px;
 line-height: 3.5;
 letter-spacing: 0.1em;
 border: 3px solid #fff;
 border-radius: 50px;
 }
-.button:before {content: "💬"; font-size: 120%; margin-right: 0.2em;}
-.button:after {content: ">";}
-.goods-list .button,
-.pages-goods-list .button {
+.goods .button span {
 position: absolute;
 bottom: 10vh;
 left: 50%;
 margin-left: -100px;
 }
-.button 			{background: rgba(50,50,50,0.4);}
-.members .button,
-.zoom .button 		{background: rgba(0,0,0,0.2);}
-.mail .button		{background: rgba(21,155,255,0.5);}
-@media screen and (max-width: 767px) {
-.goods-list .button,
-.pages-goods-list .button {bottom: 4.5vh;}
-}
-.goods-list .button:before,
-.pages-goods-list .button:before {content: "👕";}
-.goods-list .button:after,
-.pages-goods-list .button:after {content: ">";}
+.button a:before			{content: "💬"; font-size: 120%; margin-right: 0.2em;}
+.button span:before			{content: "👕"; font-size: 120%; margin-right: 0.2em;}
+.button a:after,
+.button span:after			{content: ">";}
+.zoom .button a				{letter-spacing: -0.05em;}
+.zoom .button a:before		{content: "🖼";}
+.button-home a:before		{content: "<🏠";}
+.button-home a:after		{content: "";}
+.mail .button a:before		{content: "💌";}
+
+.button a,
+.button span 				{background: rgba(50,50,50,0.4);}
+.members .button a,
+.zoom .button a 			{background: rgba(0,0,0,0.2);}
+.mail .button a				{background: rgba(21,155,255,0.5);}
 @media screen and (min-width: 768px) {
-	.button:hover,
-	.goods li:hover .button {
+	.button a:hover,
+	li:hover .button span {
 	transition: all  0.5s ease;
 	background: rgba(0,249,0,0.5);
 	}
-	.goods li.not-found:hover .button,
-	.goods.pages-not-found li:hover .button,
-	.goods.pages-not-found .button-home:hover {background: rgba(0,183,255,0.5);}
-	.goods li.neon-logo:hover .button,
-	.goods.pages-neon-logo li:hover .button,
-	.goods.pages-neon-logo .button-home:hover {background: rgba(255,0,202,0.5);}
-	.members .button:hover,
-	.pages-members .button-home:hover {background: rgba(180,180,255,0.5);}
-	.zoom .button:hover {background: rgba(137,201,255,0.5);}
-	.mail .button:hover,
-	.pages-mail .button-home:hover {background: rgba(255,0,0,0.5);}
+	li.not-found:hover .button span,
+	.pages-not-found li:hover .button span,
+	.pages-not-found .button-home a:hover {background: rgba(0,183,255,0.5);}
+	li.neon-logo:hover .button span,
+	.pages-neon-logo li:hover .button span,
+	.pages-neon-logo .button-home a:hover {background: rgba(255,0,202,0.5);}
+	.members .button a:hover,
+	.zoom .button a:hover,
+	.mail .button a:hover				{background: rgba(255,255,255,0.2);}
+	.pages-members .button-home a:hover {background: rgba(180,180,255,0.5);}
+	.pages-mail .button-home a:hover 	{background: rgba(255,0,0,0.5);}
 }
-.zoom .button {letter-spacing: -0.05em;}
-.zoom .button:before {content: "🖼";}
-.button-home:before {content: "<🏠"; font-size: 120%;}
-.button-home:after {content: "";}
-.mail .button:before {content: "💌";}
 
 /* goods
 ================================================== */
@@ -774,8 +772,7 @@ line-height: 3.5;
 /* margin
 ================================================== */
 .pages .area01 .title,
-.text,
-.button {margin-top: 5vh;}
+.text {margin-top: 5vh;}
  .news-list dt {margin-top: 2vh;}
 .area01 {padding: 20vh 0;}
 .area02 {padding-top: 5vh;}
