@@ -407,7 +407,6 @@ line-height: 3.5;
 letter-spacing: 0.1em;
 border: 3px solid #fff;
 border-radius: 50px;
-background: rgba(0,0,0,0.4);
 }
 .button:before {content: "💬"; font-size: 120%; margin-right: 0.2em;}
 .button:after {content: ">";}
@@ -418,6 +417,10 @@ bottom: 10vh;
 left: 50%;
 margin-left: -100px;
 }
+.button 			{background: rgba(50,50,50,0.4);}
+.members .button,
+.zoom .button 		{background: rgba(0,0,0,0.2);}
+.mail .button		{background: rgba(21,155,255,0.5);}
 @media screen and (max-width: 767px) {
 .goods-list .button,
 .pages-goods-list .button {bottom: 4.5vh;}
@@ -427,7 +430,6 @@ margin-left: -100px;
 .goods-list .button:after,
 .pages-goods-list .button:after {content: ">";}
 @media screen and (min-width: 768px) {
-	.button {background: rgba(94,94,94,0.3);}
 	.button:hover,
 	.goods li:hover .button {
 	transition: all  0.5s ease;
@@ -442,7 +444,6 @@ margin-left: -100px;
 	.members .button:hover,
 	.pages-members .button-home:hover {background: rgba(180,180,255,0.5);}
 	.zoom .button:hover {background: rgba(137,201,255,0.5);}
-	.mail .button		{background: rgba(0,0,0,0.15);}
 	.mail .button:hover,
 	.pages-mail .button-home:hover {background: rgba(255,0,0,0.5);}
 }
