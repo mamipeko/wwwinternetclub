@@ -63,10 +63,7 @@ $("body")
 $("html").css("--vh", (window.innerHeight * 0.01) + "px");
 
 AOS.init({
-	offset: 100,
+	offset: 200,
 	delay: 100,
-	duration: 900,
-	once: false,
-	mirror: false,
-	anchorPlacement: "top-bottom",
+	duration: 600,
 });
