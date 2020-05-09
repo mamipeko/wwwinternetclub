@@ -452,18 +452,16 @@ li.neon-logo:hover .button span,
 ================================================== */
 .goods-list {
 display: flex;
-vertical-align: middle;
 }
 .goods-list li {
 position: relative;
 }
-.goods-list li.not-found {background: #00B7FF;}
-.goods-list li.neon-logo {background: #FF00CA;}
-.goods-list li.hello-world {background: #00F900;}
+.goods-list li.not-found    {background: #00B7FF;}
+.goods-list li.neon-logo    {background: #FF00CA;}
+.goods-list li.hello-world  {background: #00F900;}
 @media screen and (min-width: 768px) {
-.goods-list li {width: 33.3333%;
-align-items: center;}
-.goods-list li img {width: 100%;}
+.goods-list li      {width: 33.3333%;}
+.goods-list li img  {width: 100%; padding-top: 5vh;}
 }
 @media screen and (max-width: 767px) {
 .goods-list {
