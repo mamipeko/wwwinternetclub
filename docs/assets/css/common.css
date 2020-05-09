@@ -528,7 +528,8 @@ letter-spacing: 0.1em;
 /* zoom
 ================================================== */
 .zoom {background: #2D8CFF;}
-.zoom img {width:100%;}
+@media screen and (min-width: 768px) {.zoom img {width: 80%;}}
+@media screen and (max-width: 767px) {.zoom img {width: 100%;}}
 
 /* news
 ================================================== */
