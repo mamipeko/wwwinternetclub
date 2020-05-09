@@ -50,9 +50,6 @@ $("body")
 		$(".cursor-wrapper").css("transform", `translate3d(${event.clientX}px, ${event.clientY}px, 0)`);
 	}, 50));
 
-
-$("html").css("--vh", (window.innerHeight * 0.01) + "px");
-
 AOS.init({
 	offset: 200,
 	delay: 100,

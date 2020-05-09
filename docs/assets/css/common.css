@@ -246,11 +246,9 @@ header img {width: 50%;}
 
 /* logo
 ================================================== */
-.hero {
-height: 100vh;
-height: calc(var(--vh, 1vh) * 100);
-overflow: hidden;
-}
+@media screen and (min-width: 768px) {.hero {height: 100vh;}}
+@media screen and (min-width: 768px) and (max-width: 1024px) {.hero {height: 132vw;}}
+@media screen and (max-width: 767px) {.hero {height: 170vw;}}
 .arrow {
 position: absolute;
 bottom: 4.5vh;
