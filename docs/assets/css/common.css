@@ -586,15 +586,8 @@ width: 50px;
 vertical-align: middle;
 }
 .share-list li:first-child {margin-right: 25px;}
-@media screen and (min-width: 768px) {
-.share {padding: 0vh 0 0vh 0;}
-.share-list li {width: 140px;}
-
-}
-@media screen and (max-width: 767px) {
-.share {padding: 0 0 5vh 0;}
-.share-list li {width: 125px;}
-}
+@media screen and (min-width: 768px) {.share-list li {width: 140px;}}
+@media screen and (max-width: 767px) {.share-list li {width: 125px;}}
 .accounts-list li img {width: 100%;}
 .accounts-list {
 display: flex;
@@ -781,8 +774,10 @@ background-size: 100% auto, 100% auto;
 .news-list dt {margin-top: 2vh;}
 .area01 {padding: 20vh 0;}
 .area02 {padding-top: 5vh;}
+.summary {margin-top: 1vh; margin-bottom: 5vh;}
+.mail-address {margin-top: 3vh;}
+.address .title {padding-top: 6vh;}
+.address .summary {margin-bottom: 2vh;}
+.address .text {margin-top: 0;}
 @media screen and (min-width: 768px) {.area03 {padding: 5vh;}}
 @media screen and (max-width: 767px) {.area03 {padding: 5vh 2vh;}}
-.summary {margin-top: 1vh; margin-bottom: 5vh;}
-.address .title {padding-top: 5vh;}
-.mail-address {margin-top: 3vh;}
