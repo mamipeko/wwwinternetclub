@@ -467,6 +467,7 @@ position: relative;
 .goods-list {
 overflow: auto;
 scroll-snap-type: x proximity;
+font-size: 0;
 }
 .goods-list li {
 scroll-snap-align: start;
