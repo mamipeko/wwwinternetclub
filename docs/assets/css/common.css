@@ -286,7 +286,7 @@ left: 50%;
 transform: translateY(-50%) translateX(-50%);
 }
 @media screen and (min-width: 768px) {
-.logo img {width: 80vh;}
+.logo img {width: 76vh;}
 .logo.small img {width: 20%;}
 }
 @media screen and (max-width: 767px) {
