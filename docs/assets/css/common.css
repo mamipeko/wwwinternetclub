@@ -564,6 +564,10 @@ font-size: 140%;
 color: #666;
 font-family: "8bitmadness";
 }
+.news dl dt .date {
+font-size: 60%;
+font-family: "kinakomochi";
+}
 .news dl dt:first-child {
 padding-top: 0;
 }
