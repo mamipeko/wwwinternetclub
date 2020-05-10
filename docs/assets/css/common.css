@@ -451,6 +451,7 @@ li.neon-logo:hover .button span,
 .zoom .button a:hover,
 .mail .button a:hover				{background: rgba(255,255,255,0.2);}
 .pages-members .button-home a:hover {background: rgba(180,180,255,0.5);}
+.pages-youtube .button-home a:hover,
 .pages-mail .button-home a:hover 	{background: rgba(255,0,0,0.5);}
 }
 
@@ -709,6 +710,11 @@ z-index: 1;
 .pages-neon-logo .text {color: #FF00CA;}
 .pages-neon-logo .pages-goods-list {background: #FFCDFF;}
 .pages-neon-logo .pages-goods-list li:nth-last-child(odd) {background: #FF00CA;}
+
+
+/* pages-youtube
+================================================== */
+.pages-youtube .text {color: #fff;}
 
 /* pages-mail
 ================================================== */
