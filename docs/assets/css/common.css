@@ -711,7 +711,6 @@ z-index: 1;
 .pages-mail .text {color: #fff;}
 .mail-address {
 display: inline-block;
-letter-spacing: -0.05em;
 color: #fff;
 padding: 10px;
 background: #FF0000;
@@ -774,7 +773,8 @@ background-size: 100% auto, 100% auto;
 
 /* margin
 ================================================== */
-.pages .area01 .title,
+.pages .area01 .title {margin-top: 15vh;}
+.pages .area01 .title:first-child {margin-top: 0;}
 .text {margin-top: 5vh;}
 .news-list dt {margin-top: 2vh;}
 .area01 {padding: 20vh 0;}
