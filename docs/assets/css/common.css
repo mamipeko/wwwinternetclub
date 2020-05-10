@@ -102,6 +102,7 @@ animation: cursor-animation 5s linear 3;
 @media screen and (min-width: 768px) {
 header ::selection,
 footer ::selection,
+.visual ::selection,
 .hero ::selection					{background: transparent!important;}
 .about ::selection					{background: #00C801;}
 .goods ::selection					{background: #ccc;}
@@ -246,9 +247,9 @@ header img {width: 50%;}
 
 /* logo
 ================================================== */
-@media screen and (min-width: 768px) {.hero {height: 100vh;}}
-@media screen and (min-width: 768px) and (max-width: 1024px) {.hero {height: 132vw;}}
-@media screen and (max-width: 767px) {.hero {height: 170vw;}}
+@media screen and (min-width: 768px) {.visual {height: 100vh;}}
+@media screen and (min-width: 768px) and (max-width: 1024px) {.visual {height: 132vw;}}
+@media screen and (max-width: 767px) {.visual {height: 170vw;}}
 .arrow {
 position: absolute;
 bottom: 4.5vh;
@@ -274,7 +275,7 @@ transform: translateY(-50%) translateX(-50%);
     width: 3.6vh;
     }
     .logo img {width: 76vh;}
-    .logo.small img {width: 20%;}
+    .logo.small img {width: 17%;}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .visual {
