@@ -447,6 +447,7 @@ li.not-found:hover .button span,
 li.neon-logo:hover .button span,
 .pages-neon-logo li:hover .button span,
 .pages-neon-logo .button-home a:hover {background: rgba(255,0,202,0.5);}
+.youtube .button a:hover,
 .members .button a:hover,
 .zoom .button a:hover,
 .mail .button a:hover				{background: rgba(255,255,255,0.2);}
