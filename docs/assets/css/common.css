@@ -574,7 +574,7 @@ font-family: "kinakomochi";
 .news dl dt:first-child {
 padding-top: 0;
 }
-.english {letter-spacing: -0.2em;}
+.english {letter-spacing: -0.2em; margin-right: 0.2em;}
 
 /* address
 ================================================== */
