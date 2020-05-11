@@ -15,7 +15,9 @@ https://www.instagram.com/wwwinternetclub/
 ## 📶 YouTube
 https://www.youtube.com/channel/UCyTLqjMd_hS569XIWSBXeow
 
-## 👤 Member
+## 👤 Members
 - https://twitter.com/mamipeko/
 - https://twitter.com/kamiko_/
+
+## 👤 Special thanks
 - https://twitter.com/june29/
