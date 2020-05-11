@@ -19,5 +19,5 @@ https://www.youtube.com/channel/UCyTLqjMd_hS569XIWSBXeow
 - https://twitter.com/mamipeko/
 - https://twitter.com/kamiko_/
 
-## 👤 Special thanks
+## 👤 Special Thanks
 - https://twitter.com/june29/
