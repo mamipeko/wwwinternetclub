@@ -421,6 +421,11 @@ bottom: 10vh;
 left: 50%;
 margin-left: -100px;
 }
+@media screen and (max-width: 320px) {
+.button a,
+.goods .button span {width: 180px; line-height: 3.2;}
+.goods .button span {margin-left: -90px;}
+}
 .button a:before			{content: "💬"; font-size: 120%; margin-right: 0.2em;}
 .button span:before			{content: "👕"; font-size: 120%; margin-right: 0.2em;}
 .button a:after,
