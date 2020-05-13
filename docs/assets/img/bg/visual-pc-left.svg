@@ -3,10 +3,12 @@
 <svg width="100%" height="100%" viewBox="0 0 450 750" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:bevel;stroke-miterlimit:10;">
     <g transform="matrix(1,0,0,1,-1192.41,0.1875)">
         <g>
-            <g opacity="0.6">
-                <path d="M1415.01,630.92L1387.77,597.636L1403.59,553.166L1430.83,586.451L1415.01,630.92Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:5px;"/>
-                <path d="M1472.97,577.856L1430.83,586.451L1415.01,630.92L1457.15,622.325L1472.97,577.856Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:5px;"/>
-                <path d="M1445.74,544.571L1403.6,553.166L1430.83,586.451L1472.97,577.856L1445.74,544.571Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:5px;"/>
+            <g transform="matrix(1,0,0,1,0,70)">
+                <g opacity="0.6">
+                    <path d="M1415.01,630.92L1387.77,597.636L1403.59,553.166L1430.83,586.451L1415.01,630.92Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:5px;"/>
+                    <path d="M1472.97,577.856L1430.83,586.451L1415.01,630.92L1457.15,622.325L1472.97,577.856Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:5px;"/>
+                    <path d="M1445.74,544.571L1403.6,553.166L1430.83,586.451L1472.97,577.856L1445.74,544.571Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:5px;"/>
+                </g>
             </g>
             <g opacity="0.6">
                 <path d="M1157.88,354.72C1178.32,350.892 1182.44,372.885 1202.89,369.057C1223.33,365.229 1219.21,343.235 1239.66,339.407C1260.11,335.579 1264.22,357.572 1284.67,353.744C1305.12,349.915 1301,327.922 1321.45,324.093C1341.9,320.264 1346.01,342.258 1366.46,338.429" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:6px;stroke-linejoin:miter;"/>
