@@ -430,7 +430,7 @@ margin-left: -100px;
 .button span:before			{content: "👕"; font-size: 120%; margin-right: 0.2em;}
 .button a:after,
 .button span:after			{content: ">";}
-.wallpapers .button a:before		{content: "🖼";}
+.button-wallpapers a:before	{content: "🖼";}
 .button-home a:before		{content: "<🏠";}
 .button-home a:after		{content: "";}
 .mail .button a:before		{content: "💌";}
@@ -551,7 +551,7 @@ letter-spacing: 0.1em;
 /* wallpapers
 ================================================== */
 .wallpapers {background: #2D8CFF;}
-.button a.button-wallpapers {letter-spacing: -0.06em;}
+.button-wallpapers a {letter-spacing: -0.06em;}
 .wallpapers .text {line-height: 1;}
 
 /* news
