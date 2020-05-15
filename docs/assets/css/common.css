@@ -552,6 +552,7 @@ letter-spacing: 0.1em;
 ================================================== */
 .wallpapers {background: #2D8CFF;}
 .button a.button-wallpapers {letter-spacing: -0.06em;}
+.wallpapers .text {line-height: 1;}
 
 /* news
 ================================================== */
