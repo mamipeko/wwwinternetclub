@@ -551,7 +551,7 @@ letter-spacing: 0.1em;
 /* wallpapers
 ================================================== */
 .wallpapers {background: #2D8CFF;}
-.pages-wallpapers .button a {letter-spacing: -0.05em;}
+.button a.button-wallpapers {letter-spacing: -0.06em;}
 
 /* news
 ================================================== */
