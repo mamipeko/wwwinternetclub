@@ -118,14 +118,14 @@ footer ::selection,
 .about ::selection					{background: #00C801;}
 .goods ::selection					{background: #ccc;}
 .members ::selection				{background: #A795FF;}
-.wallpapers ::selection					{background: #257CE4;}
+.wallpapers ::selection				{background: #257CE4;}
 .news ::selection					{background: #EFE460;}
 .pages-not-found ::selection		{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
 .pages-neon-logo ::selection		{background: #B2008D;}
 .pages-members ::selection			{background: #B4B3FF;}
 .pages-mail ::selection				{background: #BE0000;}
-.videos ::selection				{background: #BE0000;}
+.videos ::selection				    {background: #BE0000;}
 .address ::selection				{background: #55C7FF;}
 }
 
@@ -638,8 +638,19 @@ margin-top: 4vh;
 }
 }
 hr {
-    margin: 5vh 0;
-    border-top: 2px solid #ccc;
+margin: 5vh 0;
+border-top: 2px solid #ccc;
+}
+.link {
+margin-top: 5vh;
+padding: 5vh 2vh;
+line-height: 2.0;
+background: #f7f8f8;
+}
+.link:before	{
+content: "🔗";
+font-size: 120%;
+margin-right: 0.2em;
 }
 
 /* address
