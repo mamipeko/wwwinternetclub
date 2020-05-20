@@ -563,16 +563,20 @@ letter-spacing: 0.1em;
 /* news
 ================================================== */
 .news {
-color: #000;
 background: #FFF468;
+}
+article {
+color: #000;
+text-align: left;
+background: #fff;
+}
+article .text {
+color: #000;
+line-height: 2.5;
 }
 .news a {
 color: #000;
 text-decoration: underline;
-}
-.news dl {
-margin: 0 auto;
-line-height: 2.0;
 }
 .date {
 font-size: 140%;
@@ -586,19 +590,37 @@ font-family: "kinakomochi";
 .news dl dt:first-child {
 padding-top: 0;
 }
-.english {letter-spacing: -0.2em; margin-right: 0.2em;}
-.news-list img {
-width: 30%;
+.news-list {
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+align-items: top;
+line-height: 1.5;
 }
-
-/* article
-================================================== */
-.news article {
-background: #fff;
+.news-list dt {
+margin-top: 1.5vh;
+text-align: center;
 }
-.news article .text {
-    color: #000;
-    line-height: 2.5;
+.news-list dd {
+margin-top: 2vh;
+}
+@media screen and (min-width: 768px) {
+    .news article {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5vh;
+    }
+    .news-list {width: 80%;}
+    .news-list dt {width: 25%;}
+    .news-list dd {width: 75%;}
+}
+@media screen and (max-width: 767px) {
+    .news article {padding: 5vh 3vh;}
+    .news-list dt {width: 30%; line-height: 1.0;}
+    .news-list dd {width: 70%;}
+}
+.news-about {
+text-align: center;
 }
 .icon-img {
 border-radius: 50%;
@@ -606,43 +628,34 @@ width: 40px;
 margin: 0 0.3em 0.3em 0.3em;
 vertical-align: bottom;
 }
-.news article iframe {
-    margin: 5vh 0;
+article iframe {
+margin: 5vh 0;
 }
-.news article dl {
-text-align: left;
+.talking {
+line-height: 2.5;
 }
-.news article dl dt {
+.talking dt {
 letter-spacing: -0.2em;
 }
 @media screen and (min-width: 768px) {
-.news article {
-    width: 80%;
-    margin: 0 auto;
-    padding: 5vh;
-}
-.news article dl {
+.talking {
 display: flex;
 flex-wrap: wrap;
 align-items: top;
 width: 90%;
 margin: 0 auto;
-line-height: 2.5;
 }
-.news article dl dt {
+.talking dt {
 width: 30%;
 margin-top: 1.5vh;
 }
-.news article dl dd {
+.talking dd {
 width: 70%;
 margin-top: 2vh;
 }
 }
 @media screen and (max-width: 767px) {
-.news article {padding: 5vh 3vh;}
-.news article dl dt {
-margin-top: 4vh;
-}
+.talking dt {margin-top: 4vh;}
 }
 hr {
 margin: 5vh 0;
@@ -652,6 +665,7 @@ border-top: 2px solid #ccc;
 margin-top: 5vh;
 padding: 5vh 2vh;
 line-height: 2.0;
+text-align: center;
 background: #f7f8f8;
 }
 .link:before	{
@@ -822,6 +836,10 @@ background: #FF0000;
 color: #00F900;
 line-height: 3.5;
 }
+.english {
+letter-spacing: -0.2em;
+margin-right: 0.2em;
+}
 @media screen and (min-width: 768px) {
 .area01 {
 background-image: url("/assets/img/bg/bg-pc-top.svg"), url("/assets/img/bg/bg-pc-bottom.svg");
@@ -877,7 +895,6 @@ background-size: 100% auto, 100% auto;
 .pages .area01 .title:first-child {margin-top: 0;}
 .text {margin-top: 5vh;}
 .news-list dt {margin-top: 2vh;}
-.area01 {padding: 20vh 0;}
 .area02 {padding-top: 5vh;}
 .summary {margin-top: 1vh; margin-bottom: 5vh;}
 .mail-address {margin-top: 3vh;}
@@ -885,6 +902,12 @@ background-size: 100% auto, 100% auto;
 .address .summary {margin-bottom: 2vh;}
 .address .text,
 .area04 .text {margin-top: 0;}
-@media screen and (min-width: 768px) {.area03 {padding: 5vh;}}
-@media screen and (max-width: 767px) {.area03 {padding: 5vh 2vh;}}
+@media screen and (min-width: 768px) {
+.area01 {padding: 20vh 5vh;}
+.area03 {padding: 5vh;}
+}
+@media screen and (max-width: 767px) {
+.area01 {padding: 20vh 0;}
+.area03 {padding: 5vh 2vh;}
+}
 .area04 {padding-bottom: 10vh;}
