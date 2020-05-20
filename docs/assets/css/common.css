@@ -568,7 +568,7 @@ background: #FFF468;
 article {
 color: #000;
 text-align: left;
-background: #fff;
+background: rgba(255,255,255,0.7);
 }
 article .text {
 color: #000;
