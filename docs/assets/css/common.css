@@ -594,15 +594,14 @@ padding-top: 0;
 margin: 0 auto;
 display: flex;
 flex-wrap: wrap;
-align-items: top;
+align-items: center;
 line-height: 1.5;
 }
 .news-list dt {
-margin-top: 1.5vh;
 text-align: center;
 }
 .news-list dd {
-margin-top: 2vh;
+margin-top: 1.3em;
 }
 @media screen and (min-width: 768px) {
     .news article {
