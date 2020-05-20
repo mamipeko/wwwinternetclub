@@ -443,7 +443,7 @@ margin-left: -100px;
 .button a,
 .button span 				{background: rgba(50,50,50,0.4);}
 .members .button a,
-.wallpapers .button a 			{background: rgba(0,0,0,0.2);}
+.wallpapers .button a 		{background: rgba(0,0,0,0.2);}
 .mail .button a				{background: rgba(21,155,255,0.5);}
 @media screen and (min-width: 768px) {
 .button a:hover,
@@ -464,6 +464,7 @@ li.neon-logo:hover .button span,
 .pages-members .button-home a:hover {background: rgba(180,180,255,0.5);}
 .pages-videos .button-home a:hover,
 .pages-mail .button-home a:hover 	{background: rgba(255,0,0,0.5);}
+.pages-news .button-home a:hover 	{background: rgba(255,214,79,0.5);}
 }
 
 /* goods
@@ -565,7 +566,7 @@ letter-spacing: 0.1em;
 color: #000;
 background: #FFF468;
 }
-.news a {
+.news article a {
 color: #000;
 text-decoration: underline;
 }
