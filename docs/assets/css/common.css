@@ -566,7 +566,7 @@ letter-spacing: 0.1em;
 color: #000;
 background: #FFF468;
 }
-.news article a {
+.news a {
 color: #000;
 text-decoration: underline;
 }
@@ -658,6 +658,10 @@ background: #f7f8f8;
 content: "🔗";
 font-size: 120%;
 margin-right: 0.2em;
+}
+.news .button-home a {
+color: #fff;
+text-decoration: none;
 }
 
 /* address
