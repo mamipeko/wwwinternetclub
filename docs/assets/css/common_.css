@@ -285,6 +285,7 @@ z-index: 9999;
     width: 3.6vh;
     }
     .logo img {width: 70vh;}
+    .pages .logo img {width: 60vh;}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .visual {
@@ -787,6 +788,12 @@ z-index: 1;
 .pages-neon-logo .hashtag-color.hashtag				{border: solid 3px #FF00CA; background: rgba(255,255,255,0.1);}
 .pages-neon-logo .hashtag-color.hashtag-left:after 	{border-left: 7px solid #FF00CA;}
 .pages-neon-logo .hashtag-color.hashtag-right:after {border-right: 7px solid #FF00CA;}
+
+.pages-neon-logo .color-change .hashtag-color 					    {color: #7A40A9;}
+.pages-neon-logo .color-change .hashtag-color.hashtag			    {border: solid 3px #7A40A9; background: rgba(255,255,255,0.1);}
+.pages-neon-logo .color-change .hashtag-color.hashtag-left:after    {border-left: 7px solid #7A40A9;}
+.pages-neon-logo .color-change .hashtag-color.hashtag-right:after   {border-right: 7px solid #7A40A9;}
+
 @media screen and (max-width: 767px) {
 .hashtag-02 {top: 18%;}
 .hashtag-04 {top: 18%;}
@@ -809,7 +816,7 @@ z-index: 1;
 .pages-neon-logo .text {color: #FF00CA;}
 .pages-neon-logo .pages-goods-list {background: #FFCDFF;}
 .pages-neon-logo .pages-goods-list li:nth-last-child(odd) {background: #FF00CA;}
-
+.pages-neon-logo .pages-goods-list li.color-change {background: #D1B9F4;}
 
 /* pages-videos
 ================================================== */
