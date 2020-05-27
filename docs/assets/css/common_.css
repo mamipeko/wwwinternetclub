@@ -627,9 +627,6 @@ width: 40px;
 margin: 0 0.3em 0.3em 0.3em;
 vertical-align: bottom;
 }
-article iframe {
-margin: 5vh 0;
-}
 .talking {
 line-height: 2.5;
 }
@@ -642,7 +639,7 @@ display: flex;
 flex-wrap: wrap;
 align-items: top;
 width: 90%;
-margin: 0 auto;
+margin: 5vh auto 0 auto;
 }
 .talking dt {
 width: 30%;
@@ -661,7 +658,6 @@ margin: 5vh 0;
 border-top: 2px solid #ccc;
 }
 .link {
-margin-top: 5vh;
 padding: 5vh 2vh;
 line-height: 2.0;
 text-align: center;
@@ -892,7 +888,9 @@ background-size: 100% auto, 100% auto;
 ================================================== */
 .pages .area01 .title {margin-top: 15vh;}
 .pages .area01 .title:first-child {margin-top: 0;}
-.text {margin-top: 5vh;}
+.text,
+.link,
+article iframe {margin-top: 5vh;}
 .news-list dt {margin-top: 2vh;}
 .area02 {padding-top: 5vh;}
 .summary {margin-top: 1vh; margin-bottom: 5vh;}
