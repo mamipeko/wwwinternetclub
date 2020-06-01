@@ -123,6 +123,7 @@ footer ::selection,
 .pages-not-found ::selection		{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
 .pages-neon-logo ::selection		{background: #B2008D;}
+.pages-free-wifi ::selection		{background: #EFE460;}
 .pages-members ::selection			{background: #B4B3FF;}
 .pages-mail ::selection				{background: #BE0000;}
 .videos ::selection				    {background: #BE0000;}
@@ -308,7 +309,7 @@ z-index: 9999;
     width: 8%;
     }
     .logo img {width: 85%;}
-    .pages .logo img {width: 40vh;}
+    .pages .logo img {width: 70vw;}
 }
 @keyframes logo-animation {
 28%{opacity: 1;}
@@ -454,18 +455,21 @@ background: rgba(0,249,0,0.5);
 }
 li.not-found:hover .button span,
 .pages-not-found li:hover .button span,
-.pages-not-found .button-home a:hover {background: rgba(0,183,255,0.5);}
+.pages-not-found .button-home a:hover   {background: rgba(0,183,255,0.5);}
 li.neon-logo:hover .button span,
 .pages-neon-logo li:hover .button span,
-.pages-neon-logo .button-home a:hover {background: rgba(255,0,202,0.5);}
+.pages-neon-logo .button-home a:hover   {background: rgba(255,0,202,0.5);}
+li.free-wifi:hover .button span,
+.pages-free-wifi li:hover .button span,
+.pages-free-wifi .button-home a:hover   {background: rgba(249,226,49,0.5);}
 .videos .button a:hover,
 .members .button a:hover,
 .wallpapers .button a:hover,
-.mail .button a:hover				{background: rgba(255,255,255,0.2);}
-.pages-members .button-home a:hover {background: rgba(180,180,255,0.5);}
+.mail .button a:hover				    {background: rgba(255,255,255,0.2);}
+.pages-members .button-home a:hover     {background: rgba(180,180,255,0.5);}
 .pages-videos .button-home a:hover,
-.pages-mail .button-home a:hover 	{background: rgba(255,0,0,0.5);}
-.pages-news .button-home a:hover 	{background: rgba(255,214,79,0.5);}
+.pages-mail .button-home a:hover 	    {background: rgba(255,0,0,0.5);}
+.pages-news .button-home a:hover 	    {background: rgba(255,214,79,0.5);}
 }
 
 /* goods
@@ -479,6 +483,7 @@ position: relative;
 .goods-list li.not-found    {background: #00B7FF;}
 .goods-list li.neon-logo    {background: #FF00CA;}
 .goods-list li.hello-world  {background: #00F900;}
+.goods-list li.free-wifi    {background: #F9E231;}
 @media screen and (min-width: 768px) {
 .goods-list li      {width: 33.3333%;}
 .goods-list li img  {width: 100%; padding-top: 5vh;}
@@ -727,11 +732,11 @@ flex-wrap: wrap;
 }
 .pages-goods-list li {position: relative;}
 .pages-goods-list li img {
-width: 100%;
 height: auto;
 }
 @media screen and (min-width: 768px) {
 .pages-goods-list li {width: 50%;}
+.pages-goods-list li img {width: 80%;}
 li.max {width: 100%;}
 li.max img {width: 50%;}
 .order1 {order: 1;}
@@ -743,6 +748,9 @@ li.max img {width: 50%;}
 .order7 {order: 8;}
 .order8 {order: 7;}
 .order9 {order: 9;}
+}
+@media screen and (max-width: 767px) {
+.pages-goods-list li img {width: 100%;}
 }
 
 /* hashtag
@@ -809,14 +817,20 @@ z-index: 1;
 ================================================== */
 .pages-hello-world .text {color: #00F900;}
 .pages-hello-world .pages-goods-list {background: #797979;}
-.pages-hello-world .pages-goods-list li:nth-last-child(odd) {background: #00F900;}
+.pages-hello-world .pages-goods-list li:nth-child(odd) {background: #00F900;}
 
 /* neon-logo
 ================================================== */
 .pages-neon-logo .text {color: #FF00CA;}
 .pages-neon-logo .pages-goods-list {background: #FFCDFF;}
-.pages-neon-logo .pages-goods-list li:nth-last-child(odd) {background: #FF00CA;}
+.pages-neon-logo .pages-goods-list li:nth-child(odd) {background: #FF00CA;}
 .pages-neon-logo .pages-goods-list li.color-change {background: #D1B9F4;}
+
+/* pages-free-wifi
+================================================== */
+.pages-free-wifi .text {color: #F9E231;}
+.pages-free-wifi .pages-goods-list {background: #212121;}
+.pages-free-wifi .pages-goods-list li:nth-child(odd) {background: #F9E231;}
 
 /* pages-videos
 ================================================== */
@@ -838,7 +852,7 @@ background: #FF0000;
 color: #00F900;
 line-height: 3.5;
 }
-.english {
+.kerning {
 letter-spacing: -0.2em;
 margin-right: 0.2em;
 }
