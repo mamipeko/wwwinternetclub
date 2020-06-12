@@ -530,9 +530,9 @@ margin: auto;
 .photo {width: 100%;}
 }
 
-/* virtual
+/* cluster
 ================================================== */
-.virtual {background: #24D3D9;}
+.cluster {background: #24D3D9;}
 
 /* members
 ================================================== */
@@ -956,7 +956,6 @@ background-size: 100% auto, 100% auto;
 blockquote,
 article iframe {margin-top: 5vh;}
 .news-list dt {margin-top: 2vh;}
-.area02 {padding-top: 5vh;}
 .summary {margin-top: 1vh; margin-bottom: 5vh;}
 .mail-address {margin-top: 3vh;}
 .address .title {padding-top: 6vh;}
