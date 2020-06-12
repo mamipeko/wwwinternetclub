@@ -401,6 +401,8 @@ display: inline-block;
 .color-gray .pixels 		{background: #2E3030;}
 .color-red .pixel 			{background: #FF0000;}
 .color-red .pixels 			{background: #C70000;}
+.color-ice .pixel 			{background: #24D3D9;}
+.color-ice .pixels 			{background: #1FC1C7;}
 .color-purple .pixel 		{background: #8783FF;}
 .color-purple .pixels 		{background: #6764C8;}
 .color-aqua .pixel 			{background: #2D8CFF;}
@@ -521,12 +523,16 @@ margin: auto;
 }
 @media screen and (min-width: 768px) {
 .videos-wrapper {width: 80%;}
-.wallpapers img {width: 80%;}
+.photo {width: 80%;}
 }
 @media screen and (max-width: 767px) {
 .videos-wrapper {width: 100%;}    
-.wallpapers img {width: 100%;}
+.photo {width: 100%;}
 }
+
+/* virtual
+================================================== */
+.virtual {background: #24D3D9;}
 
 /* members
 ================================================== */
