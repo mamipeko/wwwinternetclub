@@ -232,6 +232,9 @@ font-size: 400%;
 line-height: 0.4;
 color: #fff;
 }
+.about .title {
+line-height: 0.8; 
+}
 .animationable-active.title:not(.balloon) 	{animation: text-animation linear 3.5s 3;}
 .animationable-active.button a,
 .goods .animationable-active.button span	{animation: text-animation 4s 3;}
