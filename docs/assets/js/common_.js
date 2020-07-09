@@ -52,7 +52,6 @@ $("body")
 
 AOS.init({
 	offset: 200,
-	delay: 100,
 	duration: 500,
 });
 

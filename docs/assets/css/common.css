@@ -430,12 +430,17 @@ bottom: 5vh;
 left: 50%;
 margin-left: -100px;
 }
+@media screen and (max-width: 767px) {
+.button a,
+.goods .button span {font-size: 13px; width: 170px; line-height: 3.0;}
+.goods .button span {margin-left: -85px;}
+}
 @media screen and (max-width: 320px) {
 .button a,
-.goods .button span {width: 160px; line-height: 2.8;}
-.goods .button span {margin-left: -80px;}
+.goods .button span {font-size: 11.5px; width: 144px; line-height: 3.0;}
+.goods .button span {margin-left: -72px;}
 }
-.button a:before			{content: "💬"; font-size: 120%; margin-right: 0.2em;}
+.button a:before			{content: "👉"; font-size: 120%; margin-right: 0.2em;}
 .button span:before			{content: "👕"; font-size: 120%; margin-right: 0.2em;}
 .button a:after,
 .button span:after			{content: ">";}
@@ -528,6 +533,7 @@ margin: auto;
 @media screen and (min-width: 768px) {
 .videos-wrapper {width: 80%;}
 .photo {width: 80%;}
+.wallpapers-list .photo {width: 99%;}
 }
 @media screen and (max-width: 767px) {
 .videos-wrapper {width: 100%;}    
@@ -573,8 +579,22 @@ letter-spacing: 0.1em;
 /* wallpapers
 ================================================== */
 .wallpapers {background: #2D8CFF;}
-.button-wallpapers a {letter-spacing: -0.06em;}
+.button-wallpapers a {
+margin-top: 3vh;
+letter-spacing: -0.17em;
+}
 .wallpapers .text {line-height: 1;}
+.wallpapers-list {
+width: 100%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.wallpapers-list > li {
+width: 49%;
+text-align: center;
+}
+
 
 /* news
 ================================================== */
