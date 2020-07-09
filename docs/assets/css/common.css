@@ -533,7 +533,6 @@ margin: auto;
 @media screen and (min-width: 768px) {
 .videos-wrapper {width: 80%;}
 .photo {width: 80%;}
-.block2-list .photo {width: 99%;}
 }
 @media screen and (max-width: 767px) {
 .videos-wrapper {width: 100%;}    
@@ -576,11 +575,9 @@ letter-spacing: 0.1em;
 /* wallpapers
 ================================================== */
 .wallpapers {background: #2D8CFF;}
-.button-wallpapers a {
-margin-top: 3vh;
-letter-spacing: -0.17em;
-}
+.button-wallpapers a {letter-spacing: -0.17em;}
 .wallpapers .text {line-height: 1;}
+@media screen and (min-width: 768px) {
 .block2-list {
 width: 100%;
 display: flex;
@@ -590,6 +587,11 @@ flex-wrap: wrap;
 .block2-list > li {
 width: 49%;
 text-align: center;
+}
+.block2-list .photo {width: 100%;}
+}
+@media screen and (max-width: 767px) {
+.block2-list > li:nth-child(2) {margin-top: 5vh;}
 }
 
 /* news
@@ -980,6 +982,7 @@ background-size: 100% auto, 100% auto;
 .margin,
 blockquote,
 article iframe {margin-top: 5vh;}
+.button a {margin-top: 2vh;}
 .news-list dt {margin-top: 2vh;}
 .summary {margin-top: 1vh; margin-bottom: 5vh;}
 .mail-address {margin-top: 3vh;}
