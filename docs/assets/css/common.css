@@ -652,7 +652,7 @@ text-decoration: underline;
 @media screen and (max-width: 767px) {
     .news article {padding: 5vh 3vh;}
     .news-list dt {width: 35%; line-height: 1.0;}
-    .news-list dd {width: 62%;}
+    .news-list dd {width: 65%;}
 }
 .news-about {
 text-align: center;
@@ -982,7 +982,7 @@ background-size: 100% auto, 100% auto;
 .margin,
 blockquote,
 article iframe {margin-top: 5vh;}
-.button a {margin-top: 2vh;}
+.button a {margin-top: 3vh;}
 .news-list dt {margin-top: 2vh;}
 .summary {margin-top: 1vh; margin-bottom: 5vh;}
 .mail-address {margin-top: 3vh;}
