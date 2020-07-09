@@ -403,6 +403,8 @@ display: inline-block;
 .color-red .pixels 			{background: #C70000;}
 .color-ice .pixel 			{background: #24D3D9;}
 .color-ice .pixels 			{background: #1FC1C7;}
+.color-pink .pixel 			{background: #FDC9DC;}
+.color-pink .pixels 		{background: #F39CC5;}
 .color-purple .pixel 		{background: #8783FF;}
 .color-purple .pixels 		{background: #6764C8;}
 .color-aqua .pixel 			{background: #2D8CFF;}
@@ -469,14 +471,12 @@ li.neon-logo:hover .button span,
 li.free-wifi:hover .button span,
 .pages-free-wifi li:hover .button span,
 .pages-free-wifi .button-home a:hover   {background: rgba(249,226,49,0.5);}
+.pages .button a:hover,
 .videos .button a:hover,
+.cluster .button a:hover,
 .members .button a:hover,
 .wallpapers .button a:hover,
 .mail .button a:hover				    {background: rgba(255,255,255,0.2);}
-.pages-members .button-home a:hover     {background: rgba(180,180,255,0.5);}
-.pages-videos .button-home a:hover,
-.pages-mail .button-home a:hover 	    {background: rgba(255,0,0,0.5);}
-.pages-news .button-home a:hover 	    {background: rgba(255,214,79,0.5);}
 }
 
 /* goods
@@ -533,16 +533,13 @@ margin: auto;
 @media screen and (min-width: 768px) {
 .videos-wrapper {width: 80%;}
 .photo {width: 80%;}
-.wallpapers-list .photo {width: 99%;}
+.block2-list .photo {width: 99%;}
 }
 @media screen and (max-width: 767px) {
 .videos-wrapper {width: 100%;}    
 .photo {width: 100%;}
 }
-
-/* cluster
-================================================== */
-.cluster {background: #24D3D9;}
+.pages-videos .text {color: #fff;}
 
 /* members
 ================================================== */
@@ -584,17 +581,16 @@ margin-top: 3vh;
 letter-spacing: -0.17em;
 }
 .wallpapers .text {line-height: 1;}
-.wallpapers-list {
+.block2-list {
 width: 100%;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 }
-.wallpapers-list > li {
+.block2-list > li {
 width: 49%;
 text-align: center;
 }
-
 
 /* news
 ================================================== */
@@ -900,9 +896,11 @@ z-index: 1;
 .pages-free-wifi .pages-goods-list {background: #212121;}
 .pages-free-wifi .pages-goods-list li:nth-child(odd) {background: #F9E231;}
 
-/* pages-videos
+/* pages-cluster
 ================================================== */
-.pages-videos .text {color: #fff;}
+.cluster {background: #24D3D9;}
+.cluster-buriburipoipoi {background: #F39CC5;}
+.pages-cluster .text {color: #fff;}
 
 /* pages-mail
 ================================================== */
