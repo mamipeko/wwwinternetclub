@@ -707,10 +707,6 @@ margin-right: 0.2em;
 .link a {
 text-decoration: underline;
 }
-.news .button-home a {
-color: #fff;
-text-decoration: none;
-}
 
 /* blockquote
 ================================================== */
@@ -983,6 +979,7 @@ background-size: 100% auto, 100% auto;
 blockquote,
 article iframe {margin-top: 5vh;}
 .button a {margin-top: 3vh;}
+.button-home a {margin-top: 5vh;}
 .news-list dt {margin-top: 2vh;}
 .summary {margin-top: 1vh; margin-bottom: 5vh;}
 .mail-address {margin-top: 3vh;}
