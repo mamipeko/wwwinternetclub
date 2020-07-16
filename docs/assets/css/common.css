@@ -910,6 +910,27 @@ padding: 10px;
 background: #FF0000;
 }
 
+/* credit
+================================================== */
+.credit-list {
+display: flex;
+flex-wrap: wrap;
+margin: 0 auto;
+padding: 5%;
+text-align: left;
+line-height: 3.0;
+letter-spacing: -0.2em;
+background:rgba(255,255,255,0.3);
+}
+.credit-list dt {width: 34%; margin-top: 1.5vh;}
+.credit-list dd {width: 66%; margin-top: 1.5vh;}
+@media screen and (min-width: 768px) {
+.credit-list {width: 50%;}
+}
+@media screen and (max-width: 767px) {
+.credit-long {line-height: 1.5;}
+}
+
 /* background
 ================================================== */
 .text {
