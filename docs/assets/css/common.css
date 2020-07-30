@@ -432,6 +432,7 @@ bottom: 5vh;
 left: 50%;
 margin-left: -100px;
 }
+.button-all {margin-bottom: 5vh;}
 @media screen and (max-width: 767px) {
 .button a,
 .goods .button span {font-size: 13px; width: 170px; line-height: 3.0;}
