@@ -472,6 +472,12 @@ li.neon-logo:hover .button span,
 li.free-wifi:hover .button span,
 .pages-free-wifi li:hover .button span,
 .pages-free-wifi .button-home a:hover   {background: rgba(249,226,49,0.5);}
+li.footer-sandal:hover .button span,
+.pages-footer-sandal li:hover .button span,
+.pages-footer-sandal .button-home a:hover   {background: rgba(255,105,107,0.5);}
+li.header-cap:hover .button span,
+.pages-header-cap li:hover .button span,
+.pages-header-cap .button-home a:hover   {background: rgba(37,177,255,0.5);}
 .pages .button a:hover,
 .videos .button a:hover,
 .cluster .button a:hover,
@@ -488,14 +494,18 @@ display: flex;
 .goods-list li {
 position: relative;
 }
-.goods-list li.not-found    {background: #00B7FF;}
-.goods-list li.neon-logo    {background: #FF00CA;}
-.goods-list li.hello-world  {background: #00F900;}
-.goods-list li.free-wifi    {background: #F9E231;}
+.goods-list li.not-found        {background: #00B7FF;}
+.goods-list li.neon-logo        {background: #FF00CA;}
+.goods-list li.hello-world      {background: #00F900;}
+.goods-list li.free-wifi        {background: #F9E231;}
+.goods-list li.footer-sandal    {background: #DA5859;}
+.goods-list li.header-cap       {background: #376EC5;}
+.goods-list li.coming-soon01    {background: #333333;}
+.goods-list li.coming-soon02    {background: #212121;}
 @media screen and (min-width: 768px) {
 .goods-list {
 flex-wrap: wrap;
-justify-content: center;
+justify-content: flex-start;
 }
 .goods-list li      {width: 25%; line-height: 0;}
 .goods-list li img  {width: 100%; height: auto;}
@@ -894,6 +904,18 @@ z-index: 1;
 .pages-free-wifi .text {color: #F9E231;}
 .pages-free-wifi .pages-goods-list {background: #212121;}
 .pages-free-wifi .pages-goods-list li:nth-child(odd) {background: #F9E231;}
+
+/* pages-footer-sandal
+================================================== */
+.pages-footer-sandal .text {color: #FF5859;}
+.pages-footer-sandal .pages-goods-list {background: #DA5859;}
+.pages-footer-sandal .pages-goods-list li:nth-last-child(odd) {background: #212121;}
+
+/* pages-header-cap
+================================================== */
+.pages-header-cap .text {color: #25B1FF;}
+.pages-header-cap .pages-goods-list {background: #376EC5;}
+.pages-header-cap .pages-goods-list li:nth-last-child(odd) {background: #212121;}
 
 /* pages-cluster
 ================================================== */
