@@ -118,7 +118,7 @@ footer ::selection,
 .about ::selection					{background: #00C801;}
 .goods ::selection					{background: #ccc;}
 .members ::selection				{background: #A795FF;}
-.wallpapers ::selection				{background: #257CE4;}
+.free ::selection				{background: #257CE4;}
 .news ::selection					{background: #EFE460;}
 .pages-not-found ::selection		{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
@@ -447,15 +447,12 @@ margin-left: -100px;
 .button span:before			{content: "👕"; font-size: 120%; margin-right: 0.2em;}
 .button a:after,
 .button span:after			{content: ">";}
-.button-wallpapers a:before	{content: "🖼";}
+.button-free a:before	{content: "🖼";}
 .button-home a:before		{content: "<🏠";}
 .button-home a:after		{content: "";}
 .mail .button a:before		{content: "💌";}
-
 .button a,
 .button span 				{background: rgba(50,50,50,0.4);}
-.members .button a,
-.wallpapers .button a 		{background: rgba(0,0,0,0.2);}
 .mail .button a				{background: rgba(21,155,255,0.5);}
 @media screen and (min-width: 768px) {
 .button a:hover,
@@ -482,7 +479,7 @@ li.header-cap:hover .button span,
 .videos .button a:hover,
 .cluster .button a:hover,
 .members .button a:hover,
-.wallpapers .button a:hover,
+.free .button a:hover,
 .mail .button a:hover				    {background: rgba(255,255,255,0.2);}
 }
 
@@ -583,11 +580,11 @@ letter-spacing: 0.1em;
 }
 .pages-members .text {color: #A1A1FF;}
 
-/* wallpapers
+/* free
 ================================================== */
-.wallpapers {background: #2D8CFF;}
-.button-wallpapers a {letter-spacing: -0.17em;}
-.wallpapers .text {line-height: 1;}
+.free {background: #2D8CFF;}
+.button-free a {letter-spacing: -0.17em;}
+.free .text {line-height: 1;}
 @media screen and (min-width: 768px) {
 .block2-list {
 width: 100%;
