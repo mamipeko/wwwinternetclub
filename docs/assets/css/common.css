@@ -426,6 +426,9 @@ letter-spacing: 0.1em;
 border: 3px solid #fff;
 border-radius: 50px;
 }
+.button a.kerning {
+letter-spacing: 0em;
+}
 .goods .button span {
 position: absolute;
 bottom: 5vh;
