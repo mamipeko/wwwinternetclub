@@ -118,7 +118,7 @@ footer ::selection,
 .about ::selection					{background: #00C801;}
 .goods ::selection					{background: #ccc;}
 .members ::selection				{background: #A795FF;}
-.free ::selection				{background: #257CE4;}
+.free ::selection				    {background: #257CE4;}
 .news ::selection					{background: #EFE460;}
 .pages-not-found ::selection		{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
@@ -502,6 +502,8 @@ li.footer-sandal    {background: #DA5859;}
 li.header-cap       {background: #376EC5;}
 li.coming-soon01    {background: #333333;}
 li.coming-soon02    {background: #212121;}
+li.denshi-meru      {background: #ECD0D0;}
+li.meiwaku-meru     {background: #DBD0F4;}
 @media screen and (min-width: 768px) {
 .goods-list {
 flex-wrap: wrap;
