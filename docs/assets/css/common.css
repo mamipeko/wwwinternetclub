@@ -478,6 +478,12 @@ li.footer-sandal:hover .button span,
 li.header-cap:hover .button span,
 .pages-header-cap li:hover .button span,
 .pages-header-cap .button-home a:hover   {background: rgba(37,177,255,0.5);}
+li.denshi-meru:hover .button span,
+.pages-denshi-meru li:hover .button span,
+.pages-denshi-meru .button-home a:hover   {background: rgba(243,178,211,0.5);}
+li.meiwaku-meru:hover .button span,
+.pages-meiwaku-meru li:hover .button span,
+.pages-meiwaku-meru .button-home a:hover   {background: rgba(198,168,255,0.5);}
 .pages .button a:hover,
 .videos .button a:hover,
 .cluster .button a:hover,
