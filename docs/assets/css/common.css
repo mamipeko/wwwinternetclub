@@ -665,17 +665,20 @@ text-decoration: underline;
     margin: 0 auto;
     padding: 5vh;
     }
-    .news-list {width: 80%;}
-    .news-list dt {width: 25%;}
-    .news-list dd {width: 75%;}
+    .news-list {width: 85%;}
+    .news-list dt {width: 27%;}
+    .news-list dd {width: 73%;}
 }
 @media screen and (max-width: 767px) {
     .news article {padding: 5vh 3vh;}
-    .news-list dt {width: 35%; line-height: 1.0;}
-    .news-list dd {width: 65%;}
+    .news-list dt {width: 30%; line-height: 1.0;}
+    .news-list dd {width: 70%;}
 }
 .news-about {
 text-align: center;
+}
+cite {
+color: #929292;
 }
 .icon-img {
 border-radius: 50%;
