@@ -118,7 +118,7 @@ footer ::selection,
 .about ::selection					{background: #00C801;}
 .goods ::selection					{background: #ccc;}
 .members ::selection				{background: #A795FF;}
-.free ::selection				    {background: #257CE4;}
+.wallpapers ::selection			    {background: #257CE4;}
 .news ::selection					{background: #EFE460;}
 .pages-not-found ::selection		{background: #0086BA;}
 .pages-hello-world ::selection		{background: #00C801;}
@@ -592,11 +592,11 @@ letter-spacing: 0.1em;
 }
 .pages-members .text {color: #A1A1FF;}
 
-/* free
+/* wallpapers
 ================================================== */
-.free {background: #2D8CFF;}
-.button-free a {letter-spacing: -0.17em;}
-.free .text {line-height: 1;}
+.wallpapers {background: #2D8CFF;}
+.button-wallpapers a {letter-spacing: -0.17em;}
+.wallpapers .text {line-height: 1;}
 @media screen and (min-width: 768px) {
 .block2-list {
 width: 100%;
