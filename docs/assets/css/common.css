@@ -450,7 +450,7 @@ margin-left: -100px;
 .button span:before			{content: "👕"; font-size: 120%; margin-right: 0.2em;}
 .button a:after,
 .button span:after			{content: ">";}
-.button-free a:before	{content: "🖼";}
+.button-wallpapers a:before	{content: "🖼";}
 .button-home a:before		{content: "<🏠";}
 .button-home a:after		{content: "";}
 .mail .button a:before		{content: "💌";}
