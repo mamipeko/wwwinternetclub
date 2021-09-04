@@ -792,6 +792,7 @@ vertical-align: middle;
 .accounts-list {
 display: flex;
 justify-content: center;
+padding-top: 6vh;
 }
 .accounts-list li {width: 25%; margin: 0 auto;}
 .accounts-suzuri {background: #EDECED;}
